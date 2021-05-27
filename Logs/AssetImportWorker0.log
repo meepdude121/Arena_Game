@@ -1,0 +1,348 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.8f1 (507919d4fff5) revision 5273881'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19043.985; Version 2009; 64bit' Language: 'en' Physical Memory: 15808 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.8f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/minec/Documents/GitHub/ArenaGame
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+50062
+Successfully changed project path to: C:/Users/minec/Documents/GitHub/ArenaGame
+C:/Users/minec/Documents/GitHub/ArenaGame
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 201.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.8f1 (507919d4fff5)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/minec/Documents/GitHub/ArenaGame/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f91)
+    Vendor:   
+    VRAM:     3962 MB
+    Driver:   27.21.14.6611
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56488
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004618 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 115.83 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.923 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003183 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 112.13 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.766 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 2.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3655 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 157.8 MB.
+System memory in use after: 152.1 MB.
+
+Unloading 85 unused Assets to reduce memory usage. Loaded Objects now: 4030.
+Total: 15.235100 ms (FindLiveObjects: 0.695600 ms CreateObjectMapping: 0.374000 ms MarkObjects: 5.618000 ms  DeleteObjects: 8.544000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002858 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.652 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.91 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3614 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 154.5 MB.
+System memory in use after: 148.8 MB.
+
+Unloading 78 unused Assets to reduce memory usage. Loaded Objects now: 4033.
+Total: 7.996200 ms (FindLiveObjects: 0.716800 ms CreateObjectMapping: 0.151600 ms MarkObjects: 2.800200 ms  DeleteObjects: 4.324700 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/GUI Assets
+  artifactKey: Guid(87a16ea3ab18fa148b9fcf8683fc589b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Assets using Guid(87a16ea3ab18fa148b9fcf8683fc589b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50b9147d8631517a4b6eac9adca0539d') in 0.017250 seconds
+  Import took 0.025904 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.051948 seconds.
+  path: Assets/GUI Assets/OdibeeSans-Regular.ttf
+  artifactKey: Guid(b44a686beed114a478380afb8a55c0c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Assets/OdibeeSans-Regular.ttf using Guid(b44a686beed114a478380afb8a55c0c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37e14703188d32ae7a119e8ac4ec6df4') in 0.193824 seconds
+  Import took 0.202233 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002309 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.476 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.85 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3614 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 157.8 MB.
+System memory in use after: 152.2 MB.
+
+Unloading 78 unused Assets to reduce memory usage. Loaded Objects now: 4080.
+Total: 8.211900 ms (FindLiveObjects: 0.425400 ms CreateObjectMapping: 0.122900 ms MarkObjects: 3.374700 ms  DeleteObjects: 4.286800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003400 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.10 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.607 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.74 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3614 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 157.9 MB.
+System memory in use after: 152.2 MB.
+
+Unloading 78 unused Assets to reduce memory usage. Loaded Objects now: 4083.
+Total: 9.789600 ms (FindLiveObjects: 0.506100 ms CreateObjectMapping: 0.147400 ms MarkObjects: 3.403800 ms  DeleteObjects: 5.729200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003473 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.94 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.403 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.78 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3614 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 157.9 MB.
+System memory in use after: 152.3 MB.
+
+Unloading 78 unused Assets to reduce memory usage. Loaded Objects now: 4086.
+Total: 9.937300 ms (FindLiveObjects: 0.497500 ms CreateObjectMapping: 0.172400 ms MarkObjects: 3.298300 ms  DeleteObjects: 5.966200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 3060.376317 seconds.
+  path: Assets/GUI Assets/OdibeeSans-Regular SDF.asset
+  artifactKey: Guid(b6e804d2c1f8c2342befc78f6e4ad57b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Assets/OdibeeSans-Regular SDF.asset using Guid(b6e804d2c1f8c2342befc78f6e4ad57b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bda44c0ac4fe62e48872e34e430cc72') in 0.171648 seconds
+  Import took 0.180118 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 407.732353 seconds.
+  path: Assets/Menu_Panel.cs
+  artifactKey: Guid(503053b0d7f7b6843a17474aef2391f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu_Panel.cs using Guid(503053b0d7f7b6843a17474aef2391f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4adcfd6a552ec7bd0d5c41c5d48414bb') in 0.022484 seconds
+  Import took 0.034564 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004539 seconds.
+  path: Assets/Menu_Panel.cs
+  artifactKey: Guid(503053b0d7f7b6843a17474aef2391f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu_Panel.cs using Guid(503053b0d7f7b6843a17474aef2391f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4adcfd6a552ec7bd0d5c41c5d48414bb') in 0.018375 seconds
+  Import took 0.036139 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002155 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.369 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.73 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3615 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 157.9 MB.
+System memory in use after: 152.3 MB.
+
+Unloading 78 unused Assets to reduce memory usage. Loaded Objects now: 4093.
+Total: 9.336900 ms (FindLiveObjects: 0.417600 ms CreateObjectMapping: 0.098100 ms MarkObjects: 2.781300 ms  DeleteObjects: 6.037700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002262 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.376 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.74 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3615 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 158.0 MB.
+System memory in use after: 152.3 MB.
+
+Unloading 78 unused Assets to reduce memory usage. Loaded Objects now: 4096.
+Total: 10.435900 ms (FindLiveObjects: 0.459100 ms CreateObjectMapping: 0.168300 ms MarkObjects: 3.282700 ms  DeleteObjects: 6.523200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1106.349697 seconds.
+  path: Assets/Menu_Panel.cs
+  artifactKey: Guid(503053b0d7f7b6843a17474aef2391f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu_Panel.cs using Guid(503053b0d7f7b6843a17474aef2391f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5a990e0c7b52cb9d38816852db8028d') in 0.009351 seconds
+  Import took 0.016881 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002536 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.329 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.75 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3615 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 158.0 MB.
+System memory in use after: 152.3 MB.
+
+Unloading 78 unused Assets to reduce memory usage. Loaded Objects now: 4099.
+Total: 9.384100 ms (FindLiveObjects: 0.475800 ms CreateObjectMapping: 0.137600 ms MarkObjects: 3.302700 ms  DeleteObjects: 5.465400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 358.108805 seconds.
+  path: Assets/Menu_Panel.cs
+  artifactKey: Guid(503053b0d7f7b6843a17474aef2391f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu_Panel.cs using Guid(503053b0d7f7b6843a17474aef2391f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '981ac3d5d18e6957ab154f2637182162') in 0.012147 seconds
+  Import took 0.019907 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002201 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.403 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.77 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3615 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 158.0 MB.
+System memory in use after: 152.4 MB.
+
+Unloading 78 unused Assets to reduce memory usage. Loaded Objects now: 4102.
+Total: 8.390800 ms (FindLiveObjects: 0.392900 ms CreateObjectMapping: 0.095900 ms MarkObjects: 2.506600 ms  DeleteObjects: 5.393700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 485.400690 seconds.
+  path: Assets/Menu_Panel.cs
+  artifactKey: Guid(503053b0d7f7b6843a17474aef2391f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu_Panel.cs using Guid(503053b0d7f7b6843a17474aef2391f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '523e5fe79523e5f47d8bcd77e5ebdb57') in 0.009125 seconds
+  Import took 0.016388 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003105 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.324 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.73 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3615 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 158.0 MB.
+System memory in use after: 152.3 MB.
+
+Unloading 78 unused Assets to reduce memory usage. Loaded Objects now: 4105.
+Total: 9.589800 ms (FindLiveObjects: 0.456100 ms CreateObjectMapping: 0.135100 ms MarkObjects: 3.472100 ms  DeleteObjects: 5.523800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 153.809337 seconds.
+  path: Assets/Menu_Panel.cs
+  artifactKey: Guid(503053b0d7f7b6843a17474aef2391f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu_Panel.cs using Guid(503053b0d7f7b6843a17474aef2391f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19953dd0f7c385056fa8629881215263') in 0.010374 seconds
+  Import took 0.018406 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002255 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.299 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.79 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3615 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 158.0 MB.
+System memory in use after: 152.4 MB.
+
+Unloading 78 unused Assets to reduce memory usage. Loaded Objects now: 4108.
+Total: 10.041200 ms (FindLiveObjects: 0.516900 ms CreateObjectMapping: 0.143500 ms MarkObjects: 3.606400 ms  DeleteObjects: 5.771600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 234.862564 seconds.
+  path: Assets/Menu_Panel.cs
+  artifactKey: Guid(503053b0d7f7b6843a17474aef2391f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu_Panel.cs using Guid(503053b0d7f7b6843a17474aef2391f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a52c4242be85921674bd996b6152584') in 0.009967 seconds
+  Import took 0.016464 seconds .
+
