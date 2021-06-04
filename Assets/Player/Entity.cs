@@ -9,9 +9,17 @@ public class Entity : MonoBehaviour
     public float Health;
     public float MaxHealth;
     public float Damage;
+    [HideInInspector]
     public float DistanceToTarget;
-    public int Target;
+    [HideInInspector]
+    public GameObject Target;
+    public float BulletDelay;
+    //[HideInInspector]
+    public float InternalBulletDelay;
+    public float DistanceToStop;
+    public float Speed;
 
+    public GameObject Projectile;
     public bool AIActive;
-    private static float CalculateDistanceToPoint(Vector2 A, Vector2 B) => Mathf.Sqrt((B.x - A.x) * (B.x - A.x) + (B.y - A.y) * (B.y - A.y));
+
 }
