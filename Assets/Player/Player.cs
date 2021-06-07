@@ -13,6 +13,8 @@ public class Player : MonoBehaviour
     public Slider healthSlider;
 
     public Weapon weapon;
+
+    private Vector3 a;
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -25,8 +27,18 @@ public class Player : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Mouse0))
 		{
-            if ()
+            if (weapon.InternalCooldown >= weapon.Cooldown)
+            {
+                GameObject a = Instantiate(weapon.projectile);
+                a.transform.position = transform.position;
+                Vector3 target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                target.z = 0;
+                a.GetComponent<Bullet>().TARGET = target;
+                weapon.InternalCooldown = 0;
+            }
 		}
+        weapon.InternalCooldown += Time.deltaTime;
+        Camera.main.transform.position = Vector3.SmoothDamp(Camera.main.transform.position, new Vector3(transform.position.x, transform.position.y, -1f), ref a, 0.1f);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -35,9 +47,12 @@ public class Player : MonoBehaviour
         {
             Entity entity = other.GetComponent<Entity>();
             Health -= entity.Damage;
-            healthSlider.value = Health / maxHealth;
+            //healthSlider.value = Health / maxHealth;
 
             if (other.CompareTag("Projectile")) Destroy(other.gameObject);
+        } else if (other.CompareTag("Room"))
+        {
+            other.GetComponent<Room>().RoomEnter();
         }
     }
 }
