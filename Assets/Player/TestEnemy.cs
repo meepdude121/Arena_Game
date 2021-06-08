@@ -71,7 +71,8 @@ public class TestEnemy : MonoBehaviour
             if (entityComponent.InternalBulletDelay >= entityComponent.BulletDelay)
             {
                 GameObject a = Instantiate(entityComponent.Projectile);
-                a.GetComponent<Bullet>().TARGET = Target.transform.position;
+                Vector3 bulletOffset = new Vector3((Target.GetComponent<Rigidbody>().velocity.x / 2.5f) + Random.Range(-1f, 1f), (Target.GetComponent<Rigidbody>().velocity.y / 2.5f) + Random.Range(-1f, 1f), 0f);
+                a.GetComponent<Bullet>().TARGET = Target.transform.position + bulletOffset;
                 a.transform.position = transform.position;
                 entityComponent.InternalBulletDelay = 0f;
             }

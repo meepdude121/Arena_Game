@@ -4,24 +4,41 @@ using UnityEngine;
 
 public class Room : MonoBehaviour
 {
-    public GameObject Darkness;
+    public GameObject DarknessObject;
     public bool Explored;
     public GameObject[] Enemies;
 
-    
+    public GameObject player;
+    private Player playerComponent;
 
-    public void RoomEnter()
+	private void Awake()
+	{
+        player = GameObject.Find("Player");
+        playerComponent = player.GetComponent<Player>();
+	}
+
+	public void RoomEnter()
     {
         if (!Explored)
         {
-            Darkness.SetActive(false);
-            Explored = true;
-            if (Enemies != null)
+            playerComponent.transitionPosition = new Vector3(transform.position.x, transform.position.y, -1f);
+            playerComponent.InTransition = true;
+            DarknessObject.GetComponent<Darkness>().FadeOut(0.75f, this);
+        }
+    }
+
+    public void FinishedFading()
+	{
+        Explored = true;
+        playerComponent.InTransition = false;
+        if (Enemies != null)
+        {
+            foreach (GameObject Enemy in Enemies)
             {
-                foreach (GameObject Enemy in Enemies)
-                {
-                    Enemy.GetComponent<Entity>().AIActive = true;
-                }
+                Entity e = Enemy.GetComponent<Entity>();
+
+                e.InternalBulletDelay = Random.Range(-1.5f, -0.5f);
+                e.AIActive = true;
             }
         }
     }

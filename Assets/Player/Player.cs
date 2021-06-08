@@ -9,11 +9,14 @@ public class Player : MonoBehaviour
     public float Speed;
     public float Health;
     public float maxHealth;
-
+    float healthSliderValue = 1f;
     public Slider healthSlider;
 
     public Weapon weapon;
-
+    public bool InTransition = false;
+    public bool ExitTransition = false;
+    public Vector3 transitionPosition;
+    private float b;
     private Vector3 a;
     private void Awake()
     {
@@ -21,24 +24,35 @@ public class Player : MonoBehaviour
     }
     private void Update()
     {
+        healthSlider.value = Mathf.SmoothDamp(healthSlider.value, healthSliderValue, ref b, 0.5f);
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
-        rb.AddForce(new Vector3(horizontal, vertical, 0).normalized * Speed * Time.deltaTime, ForceMode.VelocityChange);
+        if (!InTransition)
+        {
+            rb.AddForce(new Vector3(horizontal, vertical, 0).normalized * Speed * Time.deltaTime, ForceMode.VelocityChange);
 
-        if (Input.GetKey(KeyCode.Mouse0))
-		{
-            if (weapon.InternalCooldown >= weapon.Cooldown)
+            if (Input.GetKey(KeyCode.Mouse0))
             {
-                GameObject a = Instantiate(weapon.projectile);
-                a.transform.position = transform.position;
-                Vector3 target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                target.z = 0;
-                a.GetComponent<Bullet>().TARGET = target;
-                weapon.InternalCooldown = 0;
+                if (weapon.InternalCooldown >= weapon.Cooldown)
+                {
+                    GameObject a = Instantiate(weapon.projectile);
+                    a.transform.position = transform.position;
+                    Vector3 target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                    target.z = 0;
+                    a.GetComponent<Bullet>().TARGET = target;
+                    weapon.InternalCooldown = 0;
+                }
             }
-		}
-        weapon.InternalCooldown += Time.deltaTime;
-        Camera.main.transform.position = Vector3.SmoothDamp(Camera.main.transform.position, new Vector3(transform.position.x, transform.position.y, -1f), ref a, 0.1f);
+            weapon.InternalCooldown += Time.deltaTime;
+            Camera.main.transform.position = Vector3.SmoothDamp(Camera.main.transform.position, new Vector3(transform.position.x, transform.position.y, -1f), ref a, 0.1f);
+        }
+        else if (!ExitTransition)
+		{
+            Camera.main.transform.position = Vector3.SmoothDamp(Camera.main.transform.position, transitionPosition, ref a, 0.25f);
+        } else
+		{
+            Camera.main.transform.position = Vector3.SmoothDamp(Camera.main.transform.position, new Vector3(transform.position.x, transform.position.y, -1f), ref a, 0.25f);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -47,7 +61,7 @@ public class Player : MonoBehaviour
         {
             Entity entity = other.GetComponent<Entity>();
             Health -= entity.Damage;
-            //healthSlider.value = Health / maxHealth;
+            healthSliderValue = (float)Health / maxHealth;
 
             if (other.CompareTag("Projectile")) Destroy(other.gameObject);
         } else if (other.CompareTag("Room"))

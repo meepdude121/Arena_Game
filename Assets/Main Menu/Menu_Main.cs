@@ -8,6 +8,6 @@ public class Menu_Main : MonoBehaviour
 	public static void Quit()
 	{ 
 		Application.Quit(0);
-		EditorApplication.ExecuteMenuItem("Edit/Play");
+		//EditorApplication.ExecuteMenuItem("Edit/Play");
 	}
 }

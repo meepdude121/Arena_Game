@@ -14,7 +14,7 @@ public class Entity : MonoBehaviour
     [HideInInspector]
     public GameObject Target;
     public float BulletDelay;
-    //[HideInInspector]
+    [HideInInspector]
     public float InternalBulletDelay;
     public float DistanceToStop;
     public float Speed;
