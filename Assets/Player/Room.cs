@@ -23,7 +23,7 @@ public class Room : MonoBehaviour
         {
             playerComponent.transitionPosition = new Vector3(transform.position.x, transform.position.y, -1f);
             playerComponent.InTransition = true;
-            DarknessObject.GetComponent<Darkness>().FadeOut(0.75f, this);
+            DarknessObject.GetComponent<Darkness>().FadeOut(1f, this);
         }
     }
 

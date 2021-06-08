@@ -11,10 +11,9 @@ public class Player : MonoBehaviour
     public float maxHealth;
     float healthSliderValue = 1f;
     public Slider healthSlider;
-
+    public TextMeshProUGUI healthText;
     public Weapon weapon;
     public bool InTransition = false;
-    public bool ExitTransition = false;
     public Vector3 transitionPosition;
     private float b;
     private Vector3 a;
@@ -24,7 +23,8 @@ public class Player : MonoBehaviour
     }
     private void Update()
     {
-        healthSlider.value = Mathf.SmoothDamp(healthSlider.value, healthSliderValue, ref b, 0.5f);
+        healthSlider.value = Mathf.SmoothDamp(healthSlider.value, healthSliderValue, ref b, 0.05f);
+        healthText.text = $"{Health}/{maxHealth}";
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         if (!InTransition)
@@ -46,13 +46,7 @@ public class Player : MonoBehaviour
             weapon.InternalCooldown += Time.deltaTime;
             Camera.main.transform.position = Vector3.SmoothDamp(Camera.main.transform.position, new Vector3(transform.position.x, transform.position.y, -1f), ref a, 0.1f);
         }
-        else if (!ExitTransition)
-		{
-            Camera.main.transform.position = Vector3.SmoothDamp(Camera.main.transform.position, transitionPosition, ref a, 0.25f);
-        } else
-		{
-            Camera.main.transform.position = Vector3.SmoothDamp(Camera.main.transform.position, new Vector3(transform.position.x, transform.position.y, -1f), ref a, 0.25f);
-        }
+        else Camera.main.transform.position = Vector3.SmoothDamp(Camera.main.transform.position, transitionPosition, ref a, 0.25f);
     }
 
     private void OnTriggerEnter(Collider other)
