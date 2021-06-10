@@ -8,6 +8,7 @@ TagManager:
   - Projectile
   - PlayerProjectile
   - Room
+  - ColliderProvider
   layers:
   - Default
   - TransparentFX

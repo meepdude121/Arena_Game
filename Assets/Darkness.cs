@@ -25,7 +25,6 @@ public class Darkness : MonoBehaviour
 		TimeToTake = _Time;
 		while (TimeTaken <= TimeToTake)
 		{
-			
 			TimeTaken += Time.deltaTime;
 			// Gets 1 - progress. 1 - progress inverts the progress completion so the more it 
 			// progresses, the less visible the shader is.

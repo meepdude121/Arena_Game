@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Room : MonoBehaviour
 {
-    public GameObject DarknessObject;
+    public GameObject[] DarknessObjects;
     public bool Explored;
     public GameObject[] Enemies;
 
@@ -23,7 +23,7 @@ public class Room : MonoBehaviour
         {
             playerComponent.transitionPosition = new Vector3(transform.position.x, transform.position.y, -1f);
             playerComponent.InTransition = true;
-            DarknessObject.GetComponent<Darkness>().FadeOut(1f, this);
+            foreach (GameObject Darkness in DarknessObjects) Darkness.GetComponent<Darkness>().FadeOut(1f, this);
         }
     }
 

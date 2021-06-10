@@ -21,13 +21,15 @@ public class Bullet : MonoBehaviour
 		t += Time.deltaTime;
 		if (t > 4) Destroy(gameObject);
 	}
-
-	/*private void OnCollisionEnter(Collision collision)
+	private void OnTriggerEnter(Collider other)
 	{
-		if (!collision.transform.CompareTag("Enemy") && !collision.transform.CompareTag("Projectile"))
+		if (other.transform.CompareTag("ColliderProvider"))
 		{
-			Debug.Log("Bam");
 			Destroy(gameObject);
 		}
-	}*/
+	}
+	private void OnTriggerEnter(Collision collision)
+	{
+		
+	}
 }

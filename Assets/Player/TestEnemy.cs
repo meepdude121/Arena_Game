@@ -5,11 +5,13 @@ public class TestEnemy : MonoBehaviour
 {
     Entity entityComponent;
     GameObject[] players;
+    Rigidbody rb;
     private void Awake()
     {
         entityComponent = GetComponent<Entity>();
         players = GameObject.FindGameObjectsWithTag("Player");
         entityComponent.InternalBulletDelay = Random.Range(0, entityComponent.BulletDelay);
+        rb = GetComponent<Rigidbody>();
     }
 
     private void Update()
@@ -47,25 +49,26 @@ public class TestEnemy : MonoBehaviour
                     closestEnemyDistance = Vector3.Distance(Enemy.transform.position, transform.position);
                 }
             }
-
+            Vector3 velocity = Vector3.zero;
             // if (distance to closestEnemy) < distanceToStop + 2
             if (closestEnemy != null)
             {
                 if (Vector3.Distance(transform.position, closestEnemy.transform.position) < entityComponent.DistanceToStop - 1.25f)
                 {
                     Vector3 direction = closestEnemy.transform.position - transform.position;
-                    transform.position -= direction.normalized * entityComponent.Speed * Time.deltaTime;
+                    rb.AddForce(-direction.normalized * entityComponent.Speed * 1.25f * Time.deltaTime, ForceMode.VelocityChange);
                 }
             }
             if (Vector3.Distance(transform.position, Target.transform.position) > entityComponent.DistanceToStop)
             {
                 Vector3 direction = Target.transform.position - transform.position;
-                transform.position += direction.normalized * entityComponent.Speed * Time.deltaTime;
+                
+                rb.AddForce(direction.normalized * entityComponent.Speed * Time.deltaTime, ForceMode.VelocityChange);
             }
             else if (Vector3.Distance(transform.position, Target.transform.position) < entityComponent.DistanceToStop - 0.5f)
             {
                 Vector3 direction = Target.transform.position - transform.position;
-                transform.position -= direction.normalized * entityComponent.Speed * Time.deltaTime;
+                rb.AddForce(-direction.normalized * entityComponent.Speed * Time.deltaTime, ForceMode.VelocityChange);
             }
 
             if (entityComponent.InternalBulletDelay >= entityComponent.BulletDelay)
@@ -80,6 +83,7 @@ public class TestEnemy : MonoBehaviour
             {
                 entityComponent.InternalBulletDelay += Time.deltaTime;
             }
+            rb.AddForce(velocity, ForceMode.VelocityChange);
         }
         if (entityComponent.Health <= 0)
         {
