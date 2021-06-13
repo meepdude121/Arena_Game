@@ -15,8 +15,6 @@ public class PlayerBullet : MonoBehaviour
         {
             Entity entity = collision.gameObject.GetComponent<Entity>();
             entity.Health -= bulletEntity.Damage;
-            //healthSlider.value = Health / maxHealth;
-
             Destroy(gameObject);
         }
     }

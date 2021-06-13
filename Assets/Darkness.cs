@@ -14,11 +14,9 @@ public class Darkness : MonoBehaviour
 	{
 		renderer = GetComponent<Renderer>();
 	}
+
 	// Requires caller component so it is possible to tell the caller's component it has finished fading in the room.
-	public void FadeOut(float _Time, Room Caller)
-	{
-		StartCoroutine(internal_FadeOut(_Time, Caller));
-	}
+	public void FadeOut(float _Time, Room Caller) => StartCoroutine(internal_FadeOut(_Time, Caller));
 
 	IEnumerator internal_FadeOut(float _Time, Room Caller)
 	{

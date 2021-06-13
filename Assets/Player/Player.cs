@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
         {
             rb.AddForce(new Vector3(horizontal, vertical, 0).normalized * Speed * Time.deltaTime, ForceMode.VelocityChange);
 
-            if (Input.GetKey(KeyCode.Mouse0))
+            if (Input.GetKey(KeyCode.Mouse0) || Input.GetAxis("Fire1") >= 0.2f)
             {
                 if (weapon.InternalCooldown >= weapon.Cooldown)
                 {

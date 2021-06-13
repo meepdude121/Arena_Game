@@ -50,10 +50,9 @@ public class TestEnemy : MonoBehaviour
                 }
             }
             Vector3 velocity = Vector3.zero;
-            // if (distance to closestEnemy) < distanceToStop + 2
             if (closestEnemy != null)
             {
-                if (Vector3.Distance(transform.position, closestEnemy.transform.position) < entityComponent.DistanceToStop - 1.25f)
+                if (Vector3.Distance(transform.position, closestEnemy.transform.position) < entityComponent.DistanceToStop + 2.5f)
                 {
                     Vector3 direction = closestEnemy.transform.position - transform.position;
                     rb.AddForce(-direction.normalized * entityComponent.Speed * 1.25f * Time.deltaTime, ForceMode.VelocityChange);
@@ -88,6 +87,32 @@ public class TestEnemy : MonoBehaviour
         if (entityComponent.Health <= 0)
         {
             Destroy(gameObject);
+        }
+        
+        Vector2 positiveVelocity = new Vector2();
+        // set positiveVelocity to velocity, if velocity is negative set to positive
+        positiveVelocity.x = rb.velocity.x < 0 ? -rb.velocity.x : rb.velocity.x;
+        positiveVelocity.y = rb.velocity.y < 0 ? -rb.velocity.y : rb.velocity.y;
+
+        if (positiveVelocity.x > positiveVelocity.y)
+        {
+            if (rb.velocity.x < 0)
+            {
+                // moving left
+            }
+            else
+            {
+                // moving right
+            }
+        } else
+        {
+            if (rb.velocity.y < 0)
+            {
+                // moving down
+            } else
+            {
+                // moving up
+            }
         }
     }
 }
