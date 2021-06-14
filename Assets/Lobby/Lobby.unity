@@ -594,10 +594,10 @@ GameObject:
   m_Component:
   - component: {fileID: 204068932}
   - component: {fileID: 204068929}
-  - component: {fileID: 204068928}
   - component: {fileID: 204068926}
   - component: {fileID: 204068927}
   - component: {fileID: 204068930}
+  - component: {fileID: 204068928}
   m_Layer: 11
   m_Name: Player
   m_TagString: Player
@@ -641,30 +641,25 @@ MonoBehaviour:
   weapon: {fileID: 948141800}
   InTransition: 0
   transitionPosition: {x: 0, y: 0, z: 0}
---- !u!114 &204068928
-MonoBehaviour:
+--- !u!95 &204068928
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 204068925}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82175515a7357e347978fd0d90bd9af4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Health: 3
-  MaxHealth: 5
-  Damage: 5
-  DistanceToTarget: 0
-  Target: {fileID: 0}
-  BulletDelay: 1
-  InternalBulletDelay: 0
-  DistanceToStop: 3
-  Speed: 4
-  Projectile: {fileID: 3430732034538023096, guid: 5932859fefa0e4c42aecfb49651099a0, type: 3}
-  AIActive: 1
-  Type: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c4c58b533564941478bf2189149805fd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!64 &204068929
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -719,7 +714,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1000
-  m_Sprite: {fileID: 21300000, guid: 0f89c95fc255a004ea4e0de04aae39d0, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -727,7 +722,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &204068932

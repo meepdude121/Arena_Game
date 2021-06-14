@@ -17,9 +17,11 @@ public class Player : MonoBehaviour
     public Vector3 transitionPosition;
     private float b;
     private Vector3 a;
+    Animator animator;
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
     }
     private void Update()
     {
@@ -47,6 +49,55 @@ public class Player : MonoBehaviour
             Camera.main.transform.position = Vector3.SmoothDamp(Camera.main.transform.position, new Vector3(transform.position.x, transform.position.y, -1f), ref a, 0.1f);
         }
         else Camera.main.transform.position = Vector3.SmoothDamp(Camera.main.transform.position, transitionPosition, ref a, 0.25f);
+
+        Vector2 positiveVelocity = new Vector2();
+        // set positiveVelocity to velocity, if velocity is negative set to positive
+        positiveVelocity.x = rb.velocity.x < 0 ? -rb.velocity.x : rb.velocity.x;
+        positiveVelocity.y = rb.velocity.y < 0 ? -rb.velocity.y : rb.velocity.y;
+
+        animator.SetBool("Left", false);
+        animator.SetBool("Right", false);
+        animator.SetBool("Up", false);
+        animator.SetBool("Down", false);
+
+        if (positiveVelocity.x > positiveVelocity.y)
+        {
+            if (rb.velocity.x < 0)
+            {
+                // moving left
+                animator.SetBool("Left", true);
+                animator.SetBool("Right", false);
+                animator.SetBool("Up", false);
+                animator.SetBool("Down", false);
+            }
+            else
+            {
+                // moving right
+                animator.SetBool("Left", false);
+                animator.SetBool("Right", true);
+                animator.SetBool("Up", false);
+                animator.SetBool("Down", false);
+            }
+        }
+        else
+        {
+            if (rb.velocity.y < 0)
+            {
+                // moving down
+                animator.SetBool("Left", false);
+                animator.SetBool("Right", false);
+                animator.SetBool("Up", false);
+                animator.SetBool("Down", true);
+            }
+            else
+            {
+                // moving up
+                animator.SetBool("Left", false);
+                animator.SetBool("Right", false);
+                animator.SetBool("Up", true);
+                animator.SetBool("Down", false);
+            }
+        }
     }
 
     private void OnTriggerEnter(Collider other)
