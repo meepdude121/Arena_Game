@@ -51,16 +51,26 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Enemy") || other.CompareTag("Projectile"))
+        if (other.CompareTag("Projectile"))
         {
             Entity entity = other.GetComponent<Entity>();
             Health -= entity.Damage;
-            healthSliderValue = (float)Health / maxHealth;
-
-            if (other.CompareTag("Projectile")) Destroy(other.gameObject);
-        } else if (other.CompareTag("Room"))
+            healthSliderValue = Health / maxHealth;
+            Destroy(other.gameObject);
+        } 
+        else if (other.CompareTag("Room"))
         {
             other.GetComponent<Room>().RoomEnter();
+        }
+
+        Entity entityScript;
+        if (other.CompareTag("Enemy") && other.GetComponentInParent<Entity>().Type == EnemyType.GreenSlime)
+		{
+            entityScript = other.GetComponentInParent<Entity>();
+            Debug.Log(entityScript.transform);
+            Health -= entityScript.Damage;
+            entityScript.Health -= entityScript.MaxHealth;
+            healthSliderValue = Health / maxHealth;
         }
     }
 }

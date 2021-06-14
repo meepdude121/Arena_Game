@@ -21,5 +21,11 @@ public class Entity : MonoBehaviour
 
     public GameObject Projectile;
     public bool AIActive;
-
+    public EnemyType Type;
+}
+public enum EnemyType
+{
+    GreenSlime,
+    BlueSlime,
+    Miniboss_SlimePrince
 }

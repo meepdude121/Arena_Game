@@ -1,17 +1,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 [RequireComponent(typeof(Entity))]
-public class TestEnemy : MonoBehaviour
+public class GreenSlimeAI : MonoBehaviour
 {
     Entity entityComponent;
     GameObject[] players;
     Rigidbody rb;
+    Animator animator;
     private void Awake()
     {
         entityComponent = GetComponent<Entity>();
         players = GameObject.FindGameObjectsWithTag("Player");
         entityComponent.InternalBulletDelay = Random.Range(0, entityComponent.BulletDelay);
         rb = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -99,19 +101,36 @@ public class TestEnemy : MonoBehaviour
             if (rb.velocity.x < 0)
             {
                 // moving left
+                animator.SetBool("Left", true);
+                animator.SetBool("Right", false);
+                animator.SetBool("Up", false);
+                animator.SetBool("Down", false);
             }
             else
             {
                 // moving right
+                animator.SetBool("Left", false);
+                animator.SetBool("Right", true);
+                animator.SetBool("Up", false);
+                animator.SetBool("Down", false);
             }
         } else
         {
             if (rb.velocity.y < 0)
             {
                 // moving down
-            } else
+                animator.SetBool("Left", false);
+                animator.SetBool("Right", false);
+                animator.SetBool("Up", false);
+                animator.SetBool("Down", true);
+            } 
+            else
             {
                 // moving up
+                animator.SetBool("Left", false);
+                animator.SetBool("Right", false);
+                animator.SetBool("Up", true);
+                animator.SetBool("Down", false);
             }
         }
     }
