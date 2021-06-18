@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        animator = GetComponent<Animator>();
+        //animator = GetComponent<Animator>();
     }
     private void Update()
     {
@@ -55,28 +55,28 @@ public class Player : MonoBehaviour
         positiveVelocity.x = rb.velocity.x < 0 ? -rb.velocity.x : rb.velocity.x;
         positiveVelocity.y = rb.velocity.y < 0 ? -rb.velocity.y : rb.velocity.y;
 
-        animator.SetBool("Left", false);
-        animator.SetBool("Right", false);
-        animator.SetBool("Up", false);
-        animator.SetBool("Down", false);
+        //animator.SetBool("Left", false);
+        //animator.SetBool("Right", false);
+        //animator.SetBool("Up", false);
+        //animator.SetBool("Down", false);
 
         if (positiveVelocity.x > positiveVelocity.y)
         {
             if (rb.velocity.x < 0)
             {
                 // moving left
-                animator.SetBool("Left", true);
-                animator.SetBool("Right", false);
-                animator.SetBool("Up", false);
-                animator.SetBool("Down", false);
+                //animator.SetBool("Left", true);
+                //animator.SetBool("Right", false);
+                //animator.SetBool("Up", false);
+                //animator.SetBool("Down", false);
             }
             else
             {
                 // moving right
-                animator.SetBool("Left", false);
-                animator.SetBool("Right", true);
-                animator.SetBool("Up", false);
-                animator.SetBool("Down", false);
+                //animator.SetBool("Left", false);
+                //animator.SetBool("Right", true);
+                //animator.SetBool("Up", false);
+                //animator.SetBool("Down", false);
             }
         }
         else
@@ -84,18 +84,18 @@ public class Player : MonoBehaviour
             if (rb.velocity.y < 0)
             {
                 // moving down
-                animator.SetBool("Left", false);
-                animator.SetBool("Right", false);
-                animator.SetBool("Up", false);
-                animator.SetBool("Down", true);
+                //animator.SetBool("Left", false);
+                //animator.SetBool("Right", false);
+                //animator.SetBool("Up", false);
+                //animator.SetBool("Down", true);
             }
             else
             {
                 // moving up
-                animator.SetBool("Left", false);
-                animator.SetBool("Right", false);
-                animator.SetBool("Up", true);
-                animator.SetBool("Down", false);
+                //animator.SetBool("Left", false);
+                //animator.SetBool("Right", false);
+                //animator.SetBool("Up", true);
+                //animator.SetBool("Down", false);
             }
         }
     }
@@ -118,7 +118,6 @@ public class Player : MonoBehaviour
         if (other.CompareTag("Enemy") && other.GetComponentInParent<Entity>().Type == EnemyType.GreenSlime)
 		{
             entityScript = other.GetComponentInParent<Entity>();
-            Debug.Log(entityScript.transform);
             Health -= entityScript.Damage;
             entityScript.Health -= entityScript.MaxHealth;
             healthSliderValue = Health / maxHealth;

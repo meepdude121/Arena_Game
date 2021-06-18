@@ -7,6 +7,7 @@ public class GreenSlimeAI : MonoBehaviour
     GameObject[] players;
     Rigidbody rb;
     Animator animator;
+    public Room parentRoom;
     private void Awake()
     {
         entityComponent = GetComponent<Entity>();
@@ -63,7 +64,6 @@ public class GreenSlimeAI : MonoBehaviour
             if (Vector3.Distance(transform.position, Target.transform.position) > entityComponent.DistanceToStop)
             {
                 Vector3 direction = Target.transform.position - transform.position;
-                
                 rb.AddForce(direction.normalized * entityComponent.Speed * Time.deltaTime, ForceMode.VelocityChange);
             }
             else if (Vector3.Distance(transform.position, Target.transform.position) < entityComponent.DistanceToStop - 0.5f)
@@ -88,6 +88,7 @@ public class GreenSlimeAI : MonoBehaviour
         }
         if (entityComponent.Health <= 0)
         {
+            parentRoom.EnemyCount -= 1;
             Destroy(gameObject);
         }
         
