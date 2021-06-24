@@ -22,25 +22,25 @@ public class Menu_Panel : MonoBehaviour
 
         // If this Menu_Panel is set to LoadingPanel, find these components, otherwise don't bother
         if (LoadingMenu)
-		{
+        {
             LoadingSlider = GameObject.Find("Loading Bar").GetComponent<Slider>();
             LoadingText = GameObject.Find("Loading Text").GetComponent<TextMeshProUGUI>();
-		}
+        }
     }
     void Update()
     {
         if (LoadingMenu)
-		{
+        {
             // start initializing the world
             if (!InitializingWorld && StartInitializingWorld)
-			{
+            {
                 // starts loading the scene asyncronously.
                 loadOperation = SceneManager.LoadSceneAsync(1, LoadSceneMode.Additive);
                 InitializingWorld = true;
             }
             // set progress bar and percentage text.
             if (InitializingWorld)
-			{
+            {
                 LoadingSlider.value = loadOperation.progress;
                 LoadingText.text = Mathf.RoundToInt(loadOperation.progress * 100f).ToString();
 
@@ -51,7 +51,7 @@ public class Menu_Panel : MonoBehaviour
                     SceneManager.UnloadSceneAsync(0, UnloadSceneOptions.None);
                 }
             }
-		}
+        }
     }
     /// <summary>
     /// Toggles the panel's visibility.

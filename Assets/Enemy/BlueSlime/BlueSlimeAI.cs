@@ -34,75 +34,29 @@ public class BlueSlimeAI : MonoBehaviour
         if (entityComponent.AIActive)
         {
             if (!Initialized)
-			{
+            {
                 StartCoroutine(getTargetPosition());
                 Initialized = true;
-			}
+            }
             if (entityComponent.Health <= 0)
             {
                 if (parentRoom != null)
-				{
+                {
                     parentRoom.EnemyCount -= 1;
-                } else
-				{
+                }
+                else
+                {
                     Debug.LogWarning("[WARN] Enemy is not assigned to a room!");
-				}
+                }
                 Destroy(gameObject);
             }
-
-            // Finds the correct way to be facing.
-            /*#region Animation
-            Vector2 positiveVelocity = new Vector2();
-            // set positiveVelocity to velocity, if velocity is negative set to positive
-            positiveVelocity.x = rb.velocity.x < 0 ? -rb.velocity.x : rb.velocity.x;
-            positiveVelocity.y = rb.velocity.y < 0 ? -rb.velocity.y : rb.velocity.y;
-
-            if (positiveVelocity.x > positiveVelocity.y)
-            {
-                if (rb.velocity.x < 0)
-                {
-                    // moving left
-                    animator.SetBool("Left", true);
-                    animator.SetBool("Right", false);
-                    animator.SetBool("Up", false);
-                    animator.SetBool("Down", false);
-                }
-                else
-                {
-                    // moving right
-                    animator.SetBool("Left", false);
-                    animator.SetBool("Right", true);
-                    animator.SetBool("Up", false);
-                    animator.SetBool("Down", false);
-                }
-            }
-            else
-            {
-                if (rb.velocity.y < 0)
-                {
-                    // moving down
-                    animator.SetBool("Left", false);
-                    animator.SetBool("Right", false);
-                    animator.SetBool("Up", false);
-                    animator.SetBool("Down", true);
-                }
-                else
-                {
-                    // moving up
-                    animator.SetBool("Left", false);
-                    animator.SetBool("Right", false);
-                    animator.SetBool("Up", true);
-                    animator.SetBool("Down", false);
-                }
-            }
-            #endregion*/
         }
     }
-	IEnumerator getTargetPosition()
-	{
+    IEnumerator getTargetPosition()
+    {
         // runs forever 
         while (false == false)
-		{
+        {
             float closest = 0f;
             GameObject Target = null;
             foreach (GameObject player in players)
@@ -114,7 +68,7 @@ public class BlueSlimeAI : MonoBehaviour
                 }
             }
             entityComponent.Target = Target;
-            
+
             Vector3 Direction = Target.transform.position - transform.position;
             Direction += Target.GetComponent<Rigidbody>().velocity;
             Direction.Normalize();
@@ -122,6 +76,6 @@ public class BlueSlimeAI : MonoBehaviour
             targetPosition = Direction * entityComponent.Speed;
             rb.AddForce(targetPosition * entityComponent.Speed, ForceMode.Impulse);
             yield return new WaitForSeconds(1f);
-		}
-	}
+        }
+    }
 }

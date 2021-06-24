@@ -73,16 +73,16 @@ namespace Tayx.Graphy
         /// </summary>
         public void InitializeShader()
         {
-            Image.material.SetFloatArray( Name, new float[ ArrayMaxSize ] );
+            Image.material.SetFloatArray(Name, new float[ArrayMaxSize]);
 
-            m_averagePropertyId = Shader.PropertyToID( "Average" );
+            m_averagePropertyId = Shader.PropertyToID("Average");
 
-            m_goodThresholdPropertyId = Shader.PropertyToID( "_GoodThreshold" );
-            m_cautionThresholdPropertyId = Shader.PropertyToID( "_CautionThreshold" );
+            m_goodThresholdPropertyId = Shader.PropertyToID("_GoodThreshold");
+            m_cautionThresholdPropertyId = Shader.PropertyToID("_CautionThreshold");
 
-            m_goodColorPropertyId = Shader.PropertyToID( "_GoodColor" );
-            m_cautionColorPropertyId = Shader.PropertyToID( "_CautionColor" );
-            m_criticalColorPropertyId = Shader.PropertyToID( "_CriticalColor" );
+            m_goodColorPropertyId = Shader.PropertyToID("_GoodColor");
+            m_cautionColorPropertyId = Shader.PropertyToID("_CautionColor");
+            m_criticalColorPropertyId = Shader.PropertyToID("_CriticalColor");
         }
 
         /// <summary>
@@ -90,7 +90,7 @@ namespace Tayx.Graphy
         /// </summary>
         public void UpdateArray()
         {
-            Image.material.SetInt( Name_Length, ShaderArrayValues.Length );
+            Image.material.SetInt(Name_Length, ShaderArrayValues.Length);
         }
 
         /// <summary>
@@ -98,7 +98,7 @@ namespace Tayx.Graphy
         /// </summary>
         public void UpdateAverage()
         {
-            Image.material.SetFloat( m_averagePropertyId, Average );
+            Image.material.SetFloat(m_averagePropertyId, Average);
         }
 
         /// <summary>
@@ -106,8 +106,8 @@ namespace Tayx.Graphy
         /// </summary>
         public void UpdateThresholds()
         {
-            Image.material.SetFloat( m_goodThresholdPropertyId, GoodThreshold );
-            Image.material.SetFloat( m_cautionThresholdPropertyId, CautionThreshold );
+            Image.material.SetFloat(m_goodThresholdPropertyId, GoodThreshold);
+            Image.material.SetFloat(m_cautionThresholdPropertyId, CautionThreshold);
         }
 
         /// <summary>
@@ -115,9 +115,9 @@ namespace Tayx.Graphy
         /// </summary>
         public void UpdateColors()
         {
-            Image.material.SetColor( m_goodColorPropertyId, GoodColor );
-            Image.material.SetColor( m_cautionColorPropertyId, CautionColor );
-            Image.material.SetColor( m_criticalColorPropertyId, CriticalColor );
+            Image.material.SetColor(m_goodColorPropertyId, GoodColor);
+            Image.material.SetColor(m_cautionColorPropertyId, CautionColor);
+            Image.material.SetColor(m_criticalColorPropertyId, CriticalColor);
         }
 
         /// <summary>
@@ -128,7 +128,7 @@ namespace Tayx.Graphy
             // Requires an array called "name"
             // and another one called "name_Length"
 
-            Image.material.SetFloatArray( Name, ShaderArrayValues );
+            Image.material.SetFloatArray(Name, ShaderArrayValues);
         }
 
         #endregion

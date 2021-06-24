@@ -22,22 +22,22 @@ namespace Tayx.Graphy.Utils.NumString
         /// <summary>
         /// Float represented as a string, formatted.
         /// </summary>
-        private const   string      m_floatFormat         = "0.0";
+        private const string m_floatFormat = "0.0";
 
         /// <summary>
         /// The currently defined, globally used decimal multiplier.
         /// </summary>
-        private static  float       m_decimalMultiplier   = 10f;
+        private static float m_decimalMultiplier = 10f;
 
         /// <summary>
         /// List of negative floats casted to strings.
         /// </summary>
-        private static  string[]    m_negativeBuffer      = new string[0];
+        private static string[] m_negativeBuffer = new string[0];
 
         /// <summary>
         /// List of positive floats casted to strings.
         /// </summary>
-        private static  string[]    m_positiveBuffer      = new string[0];
+        private static string[] m_positiveBuffer = new string[0];
 
         #endregion
 
@@ -66,26 +66,26 @@ namespace Tayx.Graphy.Utils.NumString
         /// <param name="maxPositiveValue">
         /// Highest positive value allowed.
         /// </param>
-        public static void Init( float minNegativeValue, float maxPositiveValue )
+        public static void Init(float minNegativeValue, float maxPositiveValue)
         {
             int negativeLength = minNegativeValue.ToIndex();
             int positiveLength = maxPositiveValue.ToIndex();
 
-            if ( MinValue > minNegativeValue && negativeLength >= 0 )
+            if (MinValue > minNegativeValue && negativeLength >= 0)
             {
-                m_negativeBuffer = new string[ negativeLength ];
-                for ( int i = 0; i < negativeLength; i++ )
+                m_negativeBuffer = new string[negativeLength];
+                for (int i = 0; i < negativeLength; i++)
                 {
-                    m_negativeBuffer[ i ] = (-i - 1).FromIndex().ToString( m_floatFormat );
+                    m_negativeBuffer[i] = (-i - 1).FromIndex().ToString(m_floatFormat);
                 }
             }
 
-            if ( MaxValue < maxPositiveValue && positiveLength >= 0 )
+            if (MaxValue < maxPositiveValue && positiveLength >= 0)
             {
-                m_positiveBuffer = new string[ positiveLength + 1 ];
-                for ( int i = 0; i < positiveLength + 1; i++ )
+                m_positiveBuffer = new string[positiveLength + 1];
+                for (int i = 0; i < positiveLength + 1; i++)
                 {
-                    m_positiveBuffer[ i ] = i.FromIndex().ToString( m_floatFormat );
+                    m_positiveBuffer[i] = i.FromIndex().ToString(m_floatFormat);
                 }
             }
         }

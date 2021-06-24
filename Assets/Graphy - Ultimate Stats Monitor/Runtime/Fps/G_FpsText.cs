@@ -21,32 +21,32 @@ namespace Tayx.Graphy.Fps
     {
         #region Variables -> Serialized Private
 
-        [SerializeField] private    Text            m_fpsText               = null;
-        [SerializeField] private    Text            m_msText                = null;
+        [SerializeField] private Text m_fpsText = null;
+        [SerializeField] private Text m_msText = null;
 
-        [SerializeField] private    Text            m_avgFpsText            = null;
-        [SerializeField] private    Text            m_onePercentFpsText     = null;
-        [SerializeField] private    Text            m_zero1PercentFpsText   = null;
+        [SerializeField] private Text m_avgFpsText = null;
+        [SerializeField] private Text m_onePercentFpsText = null;
+        [SerializeField] private Text m_zero1PercentFpsText = null;
 
         #endregion
 
         #region Variables -> Private
 
-        private                     GraphyManager   m_graphyManager     = null;
+        private GraphyManager m_graphyManager = null;
 
-        private                     G_FpsMonitor    m_fpsMonitor        = null;
+        private G_FpsMonitor m_fpsMonitor = null;
 
-        private                     int             m_updateRate        = 4;  // 4 updates per sec.
+        private int m_updateRate = 4;  // 4 updates per sec.
 
-        private                     int             m_frameCount        = 0;
+        private int m_frameCount = 0;
 
-        private                     float           m_deltaTime         = 0f;
+        private float m_deltaTime = 0f;
 
-        private                     float           m_fps               = 0f;
+        private float m_fps = 0f;
 
-        private                     float           m_ms               = 0f;
+        private float m_ms = 0f;
 
-        private const               string          m_msStringFormat    = "0.0";
+        private const string m_msStringFormat = "0.0";
 
         #endregion
 
@@ -97,7 +97,7 @@ namespace Tayx.Graphy.Fps
         }
 
         #endregion
-        
+
         #region Methods -> Public
 
         public void UpdateParameters()
@@ -139,13 +139,13 @@ namespace Tayx.Graphy.Fps
 
         private void Init()
         {
-            G_IntString.Init( 0, 2000 );  // Max fps expected
-            G_FloatString.Init( 0, 100 ); // Max ms expected per frame
+            G_IntString.Init(0, 2000);  // Max fps expected
+            G_FloatString.Init(0, 100); // Max ms expected per frame
 
             m_graphyManager = transform.root.GetComponentInChildren<GraphyManager>();
 
             m_fpsMonitor = GetComponent<G_FpsMonitor>();
-            
+
             UpdateParameters();
         }
 

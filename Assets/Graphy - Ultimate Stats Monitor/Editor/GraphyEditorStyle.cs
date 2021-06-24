@@ -47,23 +47,23 @@ namespace Tayx.Graphy
 
         static GraphyEditorStyle()
         {
-            string managerLogoGuid = AssetDatabase.FindAssets( $"Manager_Logo_{(EditorGUIUtility.isProSkin ? "White" : "Dark")}" )[0];
-            string debuggerLogoGuid = AssetDatabase.FindAssets( $"Debugger_Logo_{(EditorGUIUtility.isProSkin ? "White" : "Dark")}" )[0];
-            string guiSkinGuid = AssetDatabase.FindAssets( "GraphyGUISkin" )[ 0 ];
+            string managerLogoGuid = AssetDatabase.FindAssets($"Manager_Logo_{(EditorGUIUtility.isProSkin ? "White" : "Dark")}")[0];
+            string debuggerLogoGuid = AssetDatabase.FindAssets($"Debugger_Logo_{(EditorGUIUtility.isProSkin ? "White" : "Dark")}")[0];
+            string guiSkinGuid = AssetDatabase.FindAssets("GraphyGUISkin")[0];
 
             _managerLogoTexture = AssetDatabase.LoadAssetAtPath<Texture2D>
             (
-                AssetDatabase.GUIDToAssetPath( managerLogoGuid )
+                AssetDatabase.GUIDToAssetPath(managerLogoGuid)
             );
 
             _debuggerLogoTexture = AssetDatabase.LoadAssetAtPath<Texture2D>
             (
-                AssetDatabase.GUIDToAssetPath( debuggerLogoGuid )
+                AssetDatabase.GUIDToAssetPath(debuggerLogoGuid)
             );
 
             m_skin = AssetDatabase.LoadAssetAtPath<GUISkin>
             (
-                AssetDatabase.GUIDToAssetPath( guiSkinGuid )
+                AssetDatabase.GUIDToAssetPath(guiSkinGuid)
             );
 
             if (m_skin != null)

@@ -29,40 +29,40 @@ namespace Tayx.Graphy.Advanced
     {
         #region Variables -> Serialized Private
 
-        [SerializeField] private    List<Image>                 m_backgroundImages = new List<Image>();
+        [SerializeField] private List<Image> m_backgroundImages = new List<Image>();
 
-        [SerializeField] private    Text                        m_graphicsDeviceVersionText = null;
+        [SerializeField] private Text m_graphicsDeviceVersionText = null;
 
-        [SerializeField] private    Text                        m_processorTypeText = null;
+        [SerializeField] private Text m_processorTypeText = null;
 
-        [SerializeField] private    Text                        m_operatingSystemText = null;
+        [SerializeField] private Text m_operatingSystemText = null;
 
-        [SerializeField] private    Text                        m_systemMemoryText = null;
+        [SerializeField] private Text m_systemMemoryText = null;
 
-        [SerializeField] private    Text                        m_graphicsDeviceNameText = null;
-        [SerializeField] private    Text                        m_graphicsMemorySizeText = null;
-        [SerializeField] private    Text                        m_screenResolutionText = null;
-        [SerializeField] private    Text                        m_gameWindowResolutionText = null;
+        [SerializeField] private Text m_graphicsDeviceNameText = null;
+        [SerializeField] private Text m_graphicsMemorySizeText = null;
+        [SerializeField] private Text m_screenResolutionText = null;
+        [SerializeField] private Text m_gameWindowResolutionText = null;
 
         [Range(1, 60)]
-        [SerializeField] private    float                       m_updateRate                    = 1f;  // 1 update per sec.
+        [SerializeField] private float m_updateRate = 1f;  // 1 update per sec.
 
         #endregion
 
         #region Variables -> Private
 
-        private                     GraphyManager               m_graphyManager = null;
+        private GraphyManager m_graphyManager = null;
 
-        private                     RectTransform               m_rectTransform = null;
+        private RectTransform m_rectTransform = null;
 
-        private                     float                       m_deltaTime                     = 0.0f;
+        private float m_deltaTime = 0.0f;
 
-        private                     StringBuilder               m_sb = null;
+        private StringBuilder m_sb = null;
 
-        private                     GraphyManager.ModuleState   m_previousModuleState = GraphyManager.ModuleState.FULL;
-        private                     GraphyManager.ModuleState   m_currentModuleState = GraphyManager.ModuleState.FULL;
+        private GraphyManager.ModuleState m_previousModuleState = GraphyManager.ModuleState.FULL;
+        private GraphyManager.ModuleState m_currentModuleState = GraphyManager.ModuleState.FULL;
 
-        private readonly            string[]                    m_windowStrings =
+        private readonly string[] m_windowStrings =
         {
             "Window: ",
             "x",
@@ -110,58 +110,58 @@ namespace Tayx.Graphy.Advanced
 
         public void SetPosition(GraphyManager.ModulePosition newModulePosition)
         {
-            float xSideOffsetBackgroundImage    = Mathf.Abs(m_backgroundImages[0].rectTransform.anchoredPosition.x);
-            float ySideOffset                   = Mathf.Abs(m_rectTransform.anchoredPosition.y);
+            float xSideOffsetBackgroundImage = Mathf.Abs(m_backgroundImages[0].rectTransform.anchoredPosition.x);
+            float ySideOffset = Mathf.Abs(m_rectTransform.anchoredPosition.y);
 
             switch (newModulePosition)
             {
                 case GraphyManager.ModulePosition.TOP_LEFT:
 
-                    m_rectTransform.anchorMax                               = Vector2.one;
-                    m_rectTransform.anchorMin                               = Vector2.up;
-                    m_rectTransform.anchoredPosition                        = new Vector2(0, -ySideOffset);
-                    
-                    
-                    m_backgroundImages[0].rectTransform.anchorMax           = Vector2.up;
-                    m_backgroundImages[0].rectTransform.anchorMin           = Vector2.zero;
-                    m_backgroundImages[0].rectTransform.anchoredPosition    = new Vector2(xSideOffsetBackgroundImage, 0);
+                    m_rectTransform.anchorMax = Vector2.one;
+                    m_rectTransform.anchorMin = Vector2.up;
+                    m_rectTransform.anchoredPosition = new Vector2(0, -ySideOffset);
+
+
+                    m_backgroundImages[0].rectTransform.anchorMax = Vector2.up;
+                    m_backgroundImages[0].rectTransform.anchorMin = Vector2.zero;
+                    m_backgroundImages[0].rectTransform.anchoredPosition = new Vector2(xSideOffsetBackgroundImage, 0);
 
                     break;
 
                 case GraphyManager.ModulePosition.TOP_RIGHT:
 
-                    m_rectTransform.anchorMax                               = Vector2.one;
-                    m_rectTransform.anchorMin                               = Vector2.up;
-                    m_rectTransform.anchoredPosition                        = new Vector2(0, -ySideOffset);
+                    m_rectTransform.anchorMax = Vector2.one;
+                    m_rectTransform.anchorMin = Vector2.up;
+                    m_rectTransform.anchoredPosition = new Vector2(0, -ySideOffset);
 
-                    m_backgroundImages[0].rectTransform.anchorMax           = Vector2.one;
-                    m_backgroundImages[0].rectTransform.anchorMin           = Vector2.right;
-                    m_backgroundImages[0].rectTransform.anchoredPosition    = new Vector2(-xSideOffsetBackgroundImage, 0);
-                    
+                    m_backgroundImages[0].rectTransform.anchorMax = Vector2.one;
+                    m_backgroundImages[0].rectTransform.anchorMin = Vector2.right;
+                    m_backgroundImages[0].rectTransform.anchoredPosition = new Vector2(-xSideOffsetBackgroundImage, 0);
+
                     break;
 
                 case GraphyManager.ModulePosition.BOTTOM_LEFT:
 
-                    m_rectTransform.anchorMax                               = Vector2.right;
-                    m_rectTransform.anchorMin                               = Vector2.zero;
-                    m_rectTransform.anchoredPosition                        = new Vector2(0, ySideOffset);
+                    m_rectTransform.anchorMax = Vector2.right;
+                    m_rectTransform.anchorMin = Vector2.zero;
+                    m_rectTransform.anchoredPosition = new Vector2(0, ySideOffset);
 
-                    m_backgroundImages[0].rectTransform.anchorMax           = Vector2.up;
-                    m_backgroundImages[0].rectTransform.anchorMin           = Vector2.zero;
-                    m_backgroundImages[0].rectTransform.anchoredPosition    = new Vector2(xSideOffsetBackgroundImage, 0);
-                    
+                    m_backgroundImages[0].rectTransform.anchorMax = Vector2.up;
+                    m_backgroundImages[0].rectTransform.anchorMin = Vector2.zero;
+                    m_backgroundImages[0].rectTransform.anchoredPosition = new Vector2(xSideOffsetBackgroundImage, 0);
+
                     break;
 
                 case GraphyManager.ModulePosition.BOTTOM_RIGHT:
 
-                    m_rectTransform.anchorMax                               = Vector2.right;
-                    m_rectTransform.anchorMin                               = Vector2.zero;
-                    m_rectTransform.anchoredPosition                        = new Vector2(0, ySideOffset);
+                    m_rectTransform.anchorMax = Vector2.right;
+                    m_rectTransform.anchorMin = Vector2.zero;
+                    m_rectTransform.anchoredPosition = new Vector2(0, ySideOffset);
 
-                    m_backgroundImages[0].rectTransform.anchorMax           = Vector2.one;
-                    m_backgroundImages[0].rectTransform.anchorMin           = Vector2.right;
-                    m_backgroundImages[0].rectTransform.anchoredPosition    = new Vector2(-xSideOffsetBackgroundImage, 0);
-                    
+                    m_backgroundImages[0].rectTransform.anchorMax = Vector2.one;
+                    m_backgroundImages[0].rectTransform.anchorMin = Vector2.right;
+                    m_backgroundImages[0].rectTransform.anchoredPosition = new Vector2(-xSideOffsetBackgroundImage, 0);
+
                     break;
 
                 case GraphyManager.ModulePosition.FREE:
@@ -173,29 +173,29 @@ namespace Tayx.Graphy.Advanced
                 case GraphyManager.ModulePosition.TOP_LEFT:
                 case GraphyManager.ModulePosition.BOTTOM_LEFT:
 
-                    m_processorTypeText             .alignment = TextAnchor.UpperLeft;
-                    m_systemMemoryText              .alignment = TextAnchor.UpperLeft;
-                    m_graphicsDeviceNameText        .alignment = TextAnchor.UpperLeft;
-                    m_graphicsDeviceVersionText     .alignment = TextAnchor.UpperLeft;
-                    m_graphicsMemorySizeText        .alignment = TextAnchor.UpperLeft;
-                    m_screenResolutionText          .alignment = TextAnchor.UpperLeft;
-                    m_gameWindowResolutionText      .alignment = TextAnchor.UpperLeft;
-                    m_operatingSystemText           .alignment = TextAnchor.UpperLeft;
+                    m_processorTypeText.alignment = TextAnchor.UpperLeft;
+                    m_systemMemoryText.alignment = TextAnchor.UpperLeft;
+                    m_graphicsDeviceNameText.alignment = TextAnchor.UpperLeft;
+                    m_graphicsDeviceVersionText.alignment = TextAnchor.UpperLeft;
+                    m_graphicsMemorySizeText.alignment = TextAnchor.UpperLeft;
+                    m_screenResolutionText.alignment = TextAnchor.UpperLeft;
+                    m_gameWindowResolutionText.alignment = TextAnchor.UpperLeft;
+                    m_operatingSystemText.alignment = TextAnchor.UpperLeft;
 
                     break;
 
                 case GraphyManager.ModulePosition.TOP_RIGHT:
                 case GraphyManager.ModulePosition.BOTTOM_RIGHT:
 
-                    m_processorTypeText             .alignment = TextAnchor.UpperRight;
-                    m_systemMemoryText              .alignment = TextAnchor.UpperRight;
-                    m_graphicsDeviceNameText        .alignment = TextAnchor.UpperRight;
-                    m_graphicsDeviceVersionText     .alignment = TextAnchor.UpperRight;
-                    m_graphicsMemorySizeText        .alignment = TextAnchor.UpperRight;
-                    m_screenResolutionText          .alignment = TextAnchor.UpperRight;
-                    m_gameWindowResolutionText      .alignment = TextAnchor.UpperRight;
-                    m_operatingSystemText           .alignment = TextAnchor.UpperRight;
-                    
+                    m_processorTypeText.alignment = TextAnchor.UpperRight;
+                    m_systemMemoryText.alignment = TextAnchor.UpperRight;
+                    m_graphicsDeviceNameText.alignment = TextAnchor.UpperRight;
+                    m_graphicsDeviceVersionText.alignment = TextAnchor.UpperRight;
+                    m_graphicsMemorySizeText.alignment = TextAnchor.UpperRight;
+                    m_screenResolutionText.alignment = TextAnchor.UpperRight;
+                    m_gameWindowResolutionText.alignment = TextAnchor.UpperRight;
+                    m_operatingSystemText.alignment = TextAnchor.UpperRight;
+
                     break;
 
                 case GraphyManager.ModulePosition.FREE:
@@ -228,14 +228,14 @@ namespace Tayx.Graphy.Advanced
         {
             SetState(m_previousModuleState);
         }
-        
+
         public void UpdateParameters()
         {
             foreach (var image in m_backgroundImages)
             {
                 image.color = m_graphyManager.BackgroundColor;
             }
-            
+
             SetPosition(m_graphyManager.AdvancedModulePosition);
             SetState(m_graphyManager.AdvancedModuleState);
         }
@@ -257,7 +257,7 @@ namespace Tayx.Graphy.Advanced
 
         private void Init()
         {
-            G_IntString.Init( 0, 7680 );
+            G_IntString.Init(0, 7680);
 
             m_graphyManager = transform.root.GetComponentInChildren<GraphyManager>();
 
@@ -314,9 +314,9 @@ namespace Tayx.Graphy.Advanced
                 + "]";
 
             float preferredWidth = 0;
-            
+
             // Resize the background overlay
-            
+
             List<Text> texts = new List<Text>()
             {
                 m_graphicsDeviceVersionText,

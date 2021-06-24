@@ -22,24 +22,24 @@ namespace Tayx.Graphy.Fps
     {
         #region Variables -> Private
 
-        private                     short[]        m_fpsSamples;
-        private                     short[]        m_fpsSamplesSorted;
-        private                     short          m_fpsSamplesCapacity        = 1024;
-        private                     short          m_onePercentSamples         = 10;
-        private                     short          m_zero1PercentSamples       = 1;
-        private                     short          m_fpsSamplesCount           = 0;
-        private                     short          m_indexSample               = 0;
+        private short[] m_fpsSamples;
+        private short[] m_fpsSamplesSorted;
+        private short m_fpsSamplesCapacity = 1024;
+        private short m_onePercentSamples = 10;
+        private short m_zero1PercentSamples = 1;
+        private short m_fpsSamplesCount = 0;
+        private short m_indexSample = 0;
 
-        private                     float          m_unscaledDeltaTime         = 0f;
+        private float m_unscaledDeltaTime = 0f;
 
         #endregion
 
         #region Properties -> Public
 
-        public                      short          CurrentFPS      { get; private set; } = 0;
-        public                      short          AverageFPS      { get; private set; } = 0;
-        public                      short          OnePercentFPS   { get; private set; } = 0;
-        public                      short          Zero1PercentFps { get; private set; } = 0;
+        public short CurrentFPS { get; private set; } = 0;
+        public short AverageFPS { get; private set; } = 0;
+        public short OnePercentFPS { get; private set; } = 0;
+        public short Zero1PercentFps { get; private set; } = 0;
 
         #endregion
 
@@ -64,9 +64,9 @@ namespace Tayx.Graphy.Fps
 
             m_indexSample++;
 
-            if ( m_indexSample >= m_fpsSamplesCapacity ) m_indexSample = 0;
+            if (m_indexSample >= m_fpsSamplesCapacity) m_indexSample = 0;
 
-            m_fpsSamples[ m_indexSample ] = CurrentFPS;
+            m_fpsSamples[m_indexSample] = CurrentFPS;
 
             if (m_fpsSamplesCount < m_fpsSamplesCapacity)
             {
@@ -82,7 +82,7 @@ namespace Tayx.Graphy.Fps
 
             // Update percent lows
 
-            m_fpsSamples.CopyTo( m_fpsSamplesSorted, 0 );
+            m_fpsSamples.CopyTo(m_fpsSamplesSorted, 0);
 
             /*
              * TODO: Find a faster way to do this.
@@ -95,7 +95,7 @@ namespace Tayx.Graphy.Fps
 
             uint totalAddedFps = 0;
 
-            short samplesToIterateThroughForOnePercent = m_fpsSamplesCount < m_onePercentSamples 
+            short samplesToIterateThroughForOnePercent = m_fpsSamplesCount < m_onePercentSamples
                 ? m_fpsSamplesCount : m_onePercentSamples;
 
             short samplesToIterateThroughForZero1Percent = m_fpsSamplesCount < m_zero1PercentSamples
@@ -103,7 +103,7 @@ namespace Tayx.Graphy.Fps
 
             short sampleToStartIn = (short)(m_fpsSamplesCapacity - m_fpsSamplesCount);
 
-            for ( short i = sampleToStartIn; i < sampleToStartIn + samplesToIterateThroughForOnePercent; i++ )
+            for (short i = sampleToStartIn; i < sampleToStartIn + samplesToIterateThroughForOnePercent; i++)
             {
                 totalAddedFps += (ushort)m_fpsSamplesSorted[i];
 
@@ -134,8 +134,8 @@ namespace Tayx.Graphy.Fps
 
         private void Init()
         {
-            m_fpsSamples          = new short[m_fpsSamplesCapacity];
-            m_fpsSamplesSorted    = new short[m_fpsSamplesCapacity];
+            m_fpsSamples = new short[m_fpsSamplesCapacity];
+            m_fpsSamplesSorted = new short[m_fpsSamplesCapacity];
 
             UpdateParameters();
         }

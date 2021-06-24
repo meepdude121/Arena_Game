@@ -14,29 +14,34 @@ public class Room : MonoBehaviour
     public int EnemyCount;
     RoomManager roomManager;
     public Collider[] doorwayColliders;
-	private void Awake()
-	{
+    private void Awake()
+    {
         EnemyCount = Enemies.Length;
         player = GameObject.Find("Player");
         playerComponent = player.GetComponent<Player>();
         roomManager = GameObject.Find("RoomManager").GetComponent<RoomManager>();
-	}
-	public void Update()
-	{
-		if (roomRunning)
-		{
+    }
+    public void Update()
+    {
+        if (roomRunning)
+        {
             if (EnemyCount <= 0)
-			{
+            {
                 roomManager.UpdateRooms(false);
                 roomRunning = false;
-				foreach (Collider collider in doorwayColliders) collider.isTrigger = true;
-			}
-		}
-	}
-	public void RoomEnter()
+                foreach (Collider collider in doorwayColliders)
+                {
+                    collider.isTrigger = true;
+                    collider.gameObject.GetComponent<Shield>().FadeOut(1f);
+
+                }
+            }
+        }
+    }
+    public void RoomEnter()
     {
         if (!Locked)
-		{
+        {
             if (!Explored)
             {
                 roomManager.UpdateRooms(true);
@@ -44,13 +49,17 @@ public class Room : MonoBehaviour
                 playerComponent.transitionPosition = new Vector3(transform.position.x, transform.position.y, -1f);
                 playerComponent.InTransition = true;
                 foreach (GameObject Darkness in DarknessObjects) Darkness.GetComponent<Darkness>().FadeOut(1f, this);
-                foreach (Collider collider in doorwayColliders) collider.isTrigger = false;
+                foreach (Collider collider in doorwayColliders)
+                {
+                    collider.isTrigger = false;
+                    collider.gameObject.GetComponent<Shield>().FadeIn(1f);
+                }
             }
         }
     }
 
     public void FinishedFading()
-	{
+    {
         Explored = true;
         playerComponent.InTransition = false;
         if (Enemies != null)

@@ -25,9 +25,9 @@ namespace Tayx.Graphy.Utils
     {
         #region Variables -> Private
 
-        private static  T       _instance;
+        private static T _instance;
 
-        private static  object  _lock       = new object();
+        private static object _lock = new object();
 
         #endregion
 

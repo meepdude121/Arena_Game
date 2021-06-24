@@ -91,7 +91,7 @@ public class GreenSlimeAI : MonoBehaviour
             parentRoom.EnemyCount -= 1;
             Destroy(gameObject);
         }
-        
+
         Vector2 positiveVelocity = new Vector2();
         // set positiveVelocity to velocity, if velocity is negative set to positive
         positiveVelocity.x = rb.velocity.x < 0 ? -rb.velocity.x : rb.velocity.x;
@@ -115,7 +115,8 @@ public class GreenSlimeAI : MonoBehaviour
                 animator.SetBool("Up", false);
                 animator.SetBool("Down", false);
             }
-        } else
+        }
+        else
         {
             if (rb.velocity.y < 0)
             {
@@ -124,7 +125,7 @@ public class GreenSlimeAI : MonoBehaviour
                 animator.SetBool("Right", false);
                 animator.SetBool("Up", false);
                 animator.SetBool("Down", true);
-            } 
+            }
             else
             {
                 // moving up

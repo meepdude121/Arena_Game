@@ -33,9 +33,9 @@ namespace Tayx.Graphy.Ram
 
         private void Update()
         {
-            AllocatedRam = Profiler.GetTotalAllocatedMemoryLong()/ 1048576f;
-            ReservedRam  = Profiler.GetTotalReservedMemoryLong() / 1048576f;
-            MonoRam      = Profiler.GetMonoUsedSizeLong()        / 1048576f;
+            AllocatedRam = Profiler.GetTotalAllocatedMemoryLong() / 1048576f;
+            ReservedRam = Profiler.GetTotalReservedMemoryLong() / 1048576f;
+            MonoRam = Profiler.GetMonoUsedSizeLong() / 1048576f;
         }
 
         #endregion 

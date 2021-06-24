@@ -56,35 +56,35 @@ namespace Tayx.Graphy.Utils.NumString
         /// <param name="maxPositiveValue">
         /// Highest positive value allowed.
         /// </param>
-        public static void Init( int minNegativeValue, int maxPositiveValue )
+        public static void Init(int minNegativeValue, int maxPositiveValue)
         {
-            if ( MinValue > minNegativeValue && minNegativeValue <= 0 )
+            if (MinValue > minNegativeValue && minNegativeValue <= 0)
             {
-                int length = Mathf.Abs( minNegativeValue );
+                int length = Mathf.Abs(minNegativeValue);
 
-                m_negativeBuffer = new string[ length ];
+                m_negativeBuffer = new string[length];
 
-                for ( int i = 0; i < length; i++ )
+                for (int i = 0; i < length; i++)
                 {
-                    m_negativeBuffer[ i ] = (-i - 1).ToString();
+                    m_negativeBuffer[i] = (-i - 1).ToString();
                 }
             }
 
-            if ( MaxValue < maxPositiveValue && maxPositiveValue >= 0 )
+            if (MaxValue < maxPositiveValue && maxPositiveValue >= 0)
             {
-                m_positiveBuffer = new string[ maxPositiveValue + 1 ];
+                m_positiveBuffer = new string[maxPositiveValue + 1];
 
-                for ( int i = 0; i < maxPositiveValue + 1; i++ )
+                for (int i = 0; i < maxPositiveValue + 1; i++)
                 {
-                    m_positiveBuffer[ i ] = i.ToString();
+                    m_positiveBuffer[i] = i.ToString();
                 }
             }
         }
 
         public static void Dispose()
         {
-            m_negativeBuffer = new string[ 0 ];
-            m_positiveBuffer = new string[ 0 ];
+            m_negativeBuffer = new string[0];
+            m_positiveBuffer = new string[0];
         }
 
         /// <summary>

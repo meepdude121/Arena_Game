@@ -38,7 +38,7 @@ namespace Tayx.Graphy
          * Simplify the initializers of the DebugPackets, but check wether we should as some wont work with certain lists.
          * --------------------------------------*/
 
-        protected GraphyDebugger () { }
+        protected GraphyDebugger() { }
 
         #region Enums -> Public
 
@@ -89,7 +89,7 @@ namespace Tayx.Graphy
             [Tooltip("Comparer operator to use")]
             public DebugComparer Comparer;
             [Tooltip("Value to compare against the chosen variable")]
-            public float         Value;
+            public float Value;
         }
 
         #endregion
@@ -101,38 +101,38 @@ namespace Tayx.Graphy
         {
 
             [Tooltip("If false, it won't be checked")]
-            public bool                 Active                  = true;
+            public bool Active = true;
             [Tooltip("Optional Id. It's used to get or remove DebugPackets in runtime")]
-            public int                  Id;
+            public int Id;
             [Tooltip("If true, once the actions are executed, this DebugPacket will delete itself")]
-            public bool                 ExecuteOnce             = true;
+            public bool ExecuteOnce = true;
             [Tooltip("Time to wait before checking if conditions are met (use this to avoid low fps drops triggering the conditions when loading the game)")]
-            public float                InitSleepTime           = 2;
+            public float InitSleepTime = 2;
             [Tooltip("Time to wait before checking if conditions are met again (once they have already been met and if ExecuteOnce is false)")]
-            public float                ExecuteSleepTime        = 2;
+            public float ExecuteSleepTime = 2;
 
-            public ConditionEvaluation  ConditionEvaluation     = ConditionEvaluation.All_conditions_must_be_met;
+            public ConditionEvaluation ConditionEvaluation = ConditionEvaluation.All_conditions_must_be_met;
             [Tooltip("List of conditions that will be checked each frame")]
-            public List<DebugCondition> DebugConditions         = new List<DebugCondition>();
+            public List<DebugCondition> DebugConditions = new List<DebugCondition>();
 
             // Actions on conditions met
 
-            public MessageType          MessageType;
+            public MessageType MessageType;
             [Multiline]
-            public string               Message                 = string.Empty;
-            public bool                 TakeScreenshot          = false;
-            public string               ScreenshotFileName      = "Graphy_Screenshot";
+            public string Message = string.Empty;
+            public bool TakeScreenshot = false;
+            public string ScreenshotFileName = "Graphy_Screenshot";
             [Tooltip("If true, it pauses the editor")]
-            public bool                 DebugBreak              = false;
-            public UnityEvent           UnityEvents;
-            public List<System.Action>  Callbacks               = new List<System.Action>();
+            public bool DebugBreak = false;
+            public UnityEvent UnityEvents;
+            public List<System.Action> Callbacks = new List<System.Action>();
 
 
             private bool canBeChecked = false;
             private bool executed = false;
 
             private float timePassed = 0;
-            
+
             public bool Check { get { return canBeChecked; } }
 
             public void Update()
@@ -141,7 +141,7 @@ namespace Tayx.Graphy
                 {
                     timePassed += Time.deltaTime;
 
-                    if (    (executed && timePassed >= ExecuteSleepTime)
+                    if ((executed && timePassed >= ExecuteSleepTime)
                         || (!executed && timePassed >= InitSleepTime))
                     {
                         canBeChecked = true;
@@ -162,15 +162,15 @@ namespace Tayx.Graphy
 
         #region Variables -> Serialized Private
 
-        [SerializeField] private    List<DebugPacket>   m_debugPackets = new List<DebugPacket>();
+        [SerializeField] private List<DebugPacket> m_debugPackets = new List<DebugPacket>();
 
         #endregion
 
         #region Variables -> Private
 
-        private                     G_FpsMonitor          m_fpsMonitor = null;
-        private                     G_RamMonitor          m_ramMonitor = null;
-        private                     G_AudioMonitor        m_audioMonitor = null;
+        private G_FpsMonitor m_fpsMonitor = null;
+        private G_RamMonitor m_ramMonitor = null;
+        private G_AudioMonitor m_audioMonitor = null;
 
         #endregion
 
@@ -178,9 +178,9 @@ namespace Tayx.Graphy
 
         private void Start()
         {
-            m_fpsMonitor    = GetComponentInChildren<G_FpsMonitor>();
-            m_ramMonitor    = GetComponentInChildren<G_RamMonitor>();
-            m_audioMonitor  = GetComponentInChildren<G_AudioMonitor>();
+            m_fpsMonitor = GetComponentInChildren<G_FpsMonitor>();
+            m_ramMonitor = GetComponentInChildren<G_RamMonitor>();
+            m_audioMonitor = GetComponentInChildren<G_AudioMonitor>();
         }
 
         private void Update()
@@ -487,23 +487,23 @@ namespace Tayx.Graphy
             switch (debugVariable)
             {
                 case DebugVariable.Fps:
-                    return m_fpsMonitor != null     ? m_fpsMonitor.CurrentFPS   : 0;
+                    return m_fpsMonitor != null ? m_fpsMonitor.CurrentFPS : 0;
                 case DebugVariable.Fps_Min:
-                    return m_fpsMonitor != null     ? m_fpsMonitor.OnePercentFPS       : 0;
+                    return m_fpsMonitor != null ? m_fpsMonitor.OnePercentFPS : 0;
                 case DebugVariable.Fps_Max:
-                    return m_fpsMonitor != null     ? m_fpsMonitor.Zero1PercentFps       : 0;
+                    return m_fpsMonitor != null ? m_fpsMonitor.Zero1PercentFps : 0;
                 case DebugVariable.Fps_Avg:
-                    return m_fpsMonitor != null     ? m_fpsMonitor.AverageFPS   : 0;
+                    return m_fpsMonitor != null ? m_fpsMonitor.AverageFPS : 0;
 
                 case DebugVariable.Ram_Allocated:
-                    return m_ramMonitor != null     ? m_ramMonitor.AllocatedRam : 0;
+                    return m_ramMonitor != null ? m_ramMonitor.AllocatedRam : 0;
                 case DebugVariable.Ram_Reserved:
-                    return m_ramMonitor != null     ? m_ramMonitor.AllocatedRam : 0;
+                    return m_ramMonitor != null ? m_ramMonitor.AllocatedRam : 0;
                 case DebugVariable.Ram_Mono:
-                    return m_ramMonitor != null     ? m_ramMonitor.AllocatedRam : 0;
+                    return m_ramMonitor != null ? m_ramMonitor.AllocatedRam : 0;
 
                 case DebugVariable.Audio_DB:
-                    return m_audioMonitor != null   ? m_audioMonitor.MaxDB      : 0;
+                    return m_audioMonitor != null ? m_audioMonitor.MaxDB : 0;
 
                 default:
                     return 0;

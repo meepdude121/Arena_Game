@@ -25,17 +25,17 @@ namespace Tayx.Graphy.Audio
     {
         #region Variables -> Private
 
-        private const   float                               m_refValue                          = 1f;
+        private const float m_refValue = 1f;
 
-        private         GraphyManager                       m_graphyManager                     = null;
+        private GraphyManager m_graphyManager = null;
 
-        private         AudioListener                       m_audioListener                     = null;
+        private AudioListener m_audioListener = null;
 
-        private         GraphyManager.LookForAudioListener  m_findAudioListenerInCameraIfNull   = GraphyManager.LookForAudioListener.ON_SCENE_LOAD;
+        private GraphyManager.LookForAudioListener m_findAudioListenerInCameraIfNull = GraphyManager.LookForAudioListener.ON_SCENE_LOAD;
 
-        private         FFTWindow                           m_FFTWindow                         = FFTWindow.Blackman;
+        private FFTWindow m_FFTWindow = FFTWindow.Blackman;
 
-        private         int                                 m_spectrumSize                      = 512;
+        private int m_spectrumSize = 512;
 
         #endregion
 
@@ -115,8 +115,8 @@ namespace Tayx.Graphy.Audio
                     }
                 }
             }
-            else if(     m_audioListener == null 
-                     &&  m_findAudioListenerInCameraIfNull == GraphyManager.LookForAudioListener.ALWAYS)
+            else if (m_audioListener == null
+                     && m_findAudioListenerInCameraIfNull == GraphyManager.LookForAudioListener.ALWAYS)
             {
                 m_audioListener = FindAudioListener();
             }
@@ -133,11 +133,11 @@ namespace Tayx.Graphy.Audio
 
         public void UpdateParameters()
         {
-            m_findAudioListenerInCameraIfNull   = m_graphyManager.FindAudioListenerInCameraIfNull;
+            m_findAudioListenerInCameraIfNull = m_graphyManager.FindAudioListenerInCameraIfNull;
 
-            m_audioListener                     = m_graphyManager.AudioListener;
-            m_FFTWindow                         = m_graphyManager.FftWindow;
-            m_spectrumSize                      = m_graphyManager.SpectrumSize;
+            m_audioListener = m_graphyManager.AudioListener;
+            m_FFTWindow = m_graphyManager.FftWindow;
+            m_spectrumSize = m_graphyManager.SpectrumSize;
 
             if (m_audioListener == null
                     && m_findAudioListenerInCameraIfNull != GraphyManager.LookForAudioListener.NEVER)
@@ -145,7 +145,7 @@ namespace Tayx.Graphy.Audio
                 m_audioListener = FindAudioListener();
             }
 
-            Spectrum              = new float[m_spectrumSize];
+            Spectrum = new float[m_spectrumSize];
             SpectrumHighestValues = new float[m_spectrumSize];
         }
 
@@ -199,7 +199,7 @@ namespace Tayx.Graphy.Audio
         private void Init()
         {
             m_graphyManager = transform.root.GetComponentInChildren<GraphyManager>();
-            
+
             UpdateParameters();
 
             UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnSceneLoaded;

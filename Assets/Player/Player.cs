@@ -108,7 +108,7 @@ public class Player : MonoBehaviour
             Health -= entity.Damage;
             healthSliderValue = Health / maxHealth;
             Destroy(other.gameObject);
-        } 
+        }
         else if (other.CompareTag("Room"))
         {
             other.GetComponent<Room>().RoomEnter();
@@ -116,10 +116,16 @@ public class Player : MonoBehaviour
 
         Entity entityScript;
         if (other.CompareTag("Enemy") && other.GetComponentInParent<Entity>().Type == EnemyType.GreenSlime)
-		{
+        {
             entityScript = other.GetComponentInParent<Entity>();
             Health -= entityScript.Damage;
             entityScript.Health -= entityScript.MaxHealth;
+            healthSliderValue = Health / maxHealth;
+        }
+        else if (other.CompareTag("Enemy") && other.GetComponentInParent<Entity>().Type == EnemyType.BlueSlime)
+        {
+            entityScript = other.GetComponentInParent<Entity>();
+            Health -= entityScript.Damage;
             healthSliderValue = Health / maxHealth;
         }
     }
