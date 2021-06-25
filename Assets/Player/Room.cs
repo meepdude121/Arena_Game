@@ -14,12 +14,16 @@ public class Room : MonoBehaviour
     public int EnemyCount;
     RoomManager roomManager;
     public Collider[] doorwayColliders;
+    private Loot lootManager;
+    public Loot.LootTable LootTable;
+    public Vector2 Bounds;
     private void Awake()
     {
         EnemyCount = Enemies.Length;
         player = GameObject.Find("Player");
         playerComponent = player.GetComponent<Player>();
         roomManager = GameObject.Find("RoomManager").GetComponent<RoomManager>();
+        lootManager = GameObject.Find("LootManager").GetComponent<Loot>();
     }
     public void Update()
     {
@@ -33,8 +37,10 @@ public class Room : MonoBehaviour
                 {
                     collider.isTrigger = true;
                     collider.gameObject.GetComponent<Shield>().FadeOut(1f);
-
                 }
+                GameObject loot = Instantiate(lootManager.DecideDrop(LootTable));
+                loot.transform.position = transform.position;
+                loot.GetComponent<Item>().InitItem();
             }
         }
     }
@@ -57,7 +63,6 @@ public class Room : MonoBehaviour
             }
         }
     }
-
     public void FinishedFading()
     {
         Explored = true;

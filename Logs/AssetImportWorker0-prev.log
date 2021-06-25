@@ -1,0 +1,1084 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.8f1 (507919d4fff5) revision 5273881'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19043.1052; Version 2009; 64bit' Language: 'en' Physical Memory: 15808 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.8f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/minec/Documents/GitHub/ArenaGame
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+51438
+Successfully changed project path to: C:/Users/minec/Documents/GitHub/ArenaGame
+C:/Users/minec/Documents/GitHub/ArenaGame
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 115.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.8f1 (507919d4fff5)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/minec/Documents/GitHub/ArenaGame/Assets
+GfxDevice: creating device client; threaded=0
+[vulkan] LoadVulkanLibrary vulkan-1.dll[vulkan] Loaded instance function vkGetInstanceProcAddr
+[vulkan] Loaded instance function vkGetInstanceProcAddr
+[vulkan] Loaded instance function vkCreateInstance
+[vulkan] Loaded instance function vkEnumerateInstanceExtensionProperties
+[vulkan] Loaded instance function vkEnumerateInstanceLayerProperties
+[vulkan] Loaded instance function vkEnumerateInstanceVersion
+[Vulkan init] extensions: count=15
+[Vulkan init] extensions: name=VK_KHR_device_group_creation, enabled=0
+[Vulkan init] extensions: name=VK_KHR_display, enabled=1
+[Vulkan init] extensions: name=VK_KHR_external_fence_capabilities, enabled=0
+[Vulkan init] extensions: name=VK_KHR_external_memory_capabilities, enabled=0
+[Vulkan init] extensions: name=VK_KHR_external_semaphore_capabilities, enabled=0
+[Vulkan init] extensions: name=VK_KHR_get_display_properties2, enabled=0
+[Vulkan init] extensions: name=VK_KHR_get_physical_device_properties2, enabled=1
+[Vulkan init] extensions: name=VK_KHR_get_surface_capabilities2, enabled=0
+[Vulkan init] extensions: name=VK_KHR_surface, enabled=1
+[Vulkan init] extensions: name=VK_KHR_surface_protected_capabilities, enabled=0
+[Vulkan init] extensions: name=VK_KHR_win32_surface, enabled=1
+[Vulkan init] extensions: name=VK_EXT_debug_report, enabled=1
+[Vulkan init] extensions: name=VK_EXT_debug_utils, enabled=0
+[Vulkan init] extensions: name=VK_EXT_swapchain_colorspace, enabled=1
+[Vulkan init] extensions: name=VK_NV_external_memory_capabilities, enabled=0
+[vulkan] Loaded instance function vkDestroyInstance
+[vulkan] Loaded instance function vkGetPhysicalDeviceProperties
+[vulkan] Loaded instance function vkEnumeratePhysicalDevices
+Vulkan detection: 0
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f91)
+    Vendor:   
+    VRAM:     3962 MB
+    Driver:   27.21.14.6611
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56472
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004530 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 110.04 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.100 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003226 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 198.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.138 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
+Refreshing native plugins compatible for Editor in 1.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3045 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 138.5 MB.
+System memory in use after: 138.5 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3492.
+Total: 9.623000 ms (FindLiveObjects: 1.566500 ms CreateObjectMapping: 0.539500 ms MarkObjects: 7.027800 ms  DeleteObjects: 0.482100 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Enemy/OrangeSlime/OrangeSlimeAI.cs
+  artifactKey: Guid(ad62c8a4897f19f4db44ec16add5a59a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enemy/OrangeSlime/OrangeSlimeAI.cs using Guid(ad62c8a4897f19f4db44ec16add5a59a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb23878da7252dcaad40403c7fe1a560') in 0.068283 seconds
+  Import took 0.083717 seconds .
+
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 3.72 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.3 MB.
+System memory in use after: 72.3 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3492.
+Total: 7.549000 ms (FindLiveObjects: 0.855000 ms CreateObjectMapping: 0.444800 ms MarkObjects: 5.930100 ms  DeleteObjects: 0.316800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003004 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.660 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2920 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.2 MB.
+System memory in use after: 130.2 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3495.
+Total: 5.742400 ms (FindLiveObjects: 0.627400 ms CreateObjectMapping: 0.275900 ms MarkObjects: 4.540900 ms  DeleteObjects: 0.295600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 52.481811 seconds.
+  path: Assets/Enemy/OrangeSlime/OrangeSlimeAI.cs
+  artifactKey: Guid(ad62c8a4897f19f4db44ec16add5a59a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enemy/OrangeSlime/OrangeSlimeAI.cs using Guid(ad62c8a4897f19f4db44ec16add5a59a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48f8a0969e188e14db7a9a4f8de5aadc') in 0.012983 seconds
+  Import took 0.022288 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003058 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.09 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.615 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.72 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2920 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.3 MB.
+System memory in use after: 130.3 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3498.
+Total: 4.414100 ms (FindLiveObjects: 0.429200 ms CreateObjectMapping: 0.095900 ms MarkObjects: 3.690200 ms  DeleteObjects: 0.196500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.837968 seconds.
+  path: Assets/Enemy/OrangeSlime/OrangeSlimeAI.cs
+  artifactKey: Guid(ad62c8a4897f19f4db44ec16add5a59a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enemy/OrangeSlime/OrangeSlimeAI.cs using Guid(ad62c8a4897f19f4db44ec16add5a59a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65e02e4187c84c4d7aa78ee56ec95bab') in 0.014011 seconds
+  Import took 0.022105 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003033 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.603 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2920 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.3 MB.
+System memory in use after: 130.3 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3501.
+Total: 3.729500 ms (FindLiveObjects: 0.399800 ms CreateObjectMapping: 0.119000 ms MarkObjects: 3.019000 ms  DeleteObjects: 0.189900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 130.652868 seconds.
+  path: Assets/Enemy/OrangeSlime/OrangeSlimeAI.cs
+  artifactKey: Guid(ad62c8a4897f19f4db44ec16add5a59a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enemy/OrangeSlime/OrangeSlimeAI.cs using Guid(ad62c8a4897f19f4db44ec16add5a59a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86ad57da44d2f751351bc140f3675fa7') in 0.009920 seconds
+  Import took 0.016842 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002657 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.97 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.460 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2920 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.3 MB.
+System memory in use after: 130.3 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3504.
+Total: 4.147500 ms (FindLiveObjects: 0.360700 ms CreateObjectMapping: 0.088200 ms MarkObjects: 3.466300 ms  DeleteObjects: 0.230700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 437.638045 seconds.
+  path: Assets/Music
+  artifactKey: Guid(5d30776db6088574383a117564791132) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music using Guid(5d30776db6088574383a117564791132) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10a725fe4baeaa53127155620c038494') in 0.025990 seconds
+  Import took 0.035266 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.110143 seconds.
+  path: Assets/Music/battle.mp3
+  artifactKey: Guid(afa6d9ae544b08549b64ecc663c86ba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/battle.mp3 using Guid(afa6d9ae544b08549b64ecc663c86ba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '404096b3801f037d3a67ebfead7ae064') in 0.176177 seconds
+  Import took 0.183146 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/Music/stufg 3.mp3
+  artifactKey: Guid(c98f55939a92453499bcf43af49424ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/stufg 3.mp3 using Guid(c98f55939a92453499bcf43af49424ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68eb514f7f120f81cbbeea1318e842cd') in 0.024790 seconds
+  Import took 0.033233 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 213.697000 seconds.
+  path: Assets/Music/BattleMusic
+  artifactKey: Guid(c56abc6c20190134c836ec8665d4febc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic using Guid(c56abc6c20190134c836ec8665d4febc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91a8870518cca6b3af5ce15a1b7d3dbb') in 0.021149 seconds
+  Import took 0.028970 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.147638 seconds.
+  path: Assets/Music/BattleMusic/jl cymbals overhead crash 01.flac
+  artifactKey: Guid(e7e12e41aa1b70442b4c1d6a83a5a0e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl cymbals overhead crash 01.flac using Guid(e7e12e41aa1b70442b4c1d6a83a5a0e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59df3f56fce6013195b4d0365fb9803a') in 0.030471 seconds
+  Import took 0.037474 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000346 seconds.
+  path: Assets/Music/BattleMusic/jl hat 184 pedal hat 02.flac
+  artifactKey: Guid(e37247b94b7d4ac449a89383ddbc1b49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl hat 184 pedal hat 02.flac using Guid(e37247b94b7d4ac449a89383ddbc1b49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '860dab19d9f13f5b03a02b17fedc6d6a') in 0.027119 seconds
+  Import took 0.035320 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/Music/BattleMusic/jl hat 184 closed hat 02.flac
+  artifactKey: Guid(4d14d28eb62490746811f7d622e08278) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl hat 184 closed hat 02.flac using Guid(4d14d28eb62490746811f7d622e08278) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2425ac5a08289408ec002fe300a744b') in 0.036317 seconds
+  Import took 0.043379 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/Music/BattleMusic/jl hat 184 sizzle hat 04.flac
+  artifactKey: Guid(9be102a92371b5841a983ecfcbc4b0e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl hat 184 sizzle hat 04.flac using Guid(9be102a92371b5841a983ecfcbc4b0e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75023562d0465713cb2fb5d07af58912') in 0.031940 seconds
+  Import took 0.040721 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000441 seconds.
+  path: Assets/Music/BattleMusic/jl cymbals overhead ride bell 01.flac
+  artifactKey: Guid(e80fb0cc71b4f9f4499345accfbfce86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl cymbals overhead ride bell 01.flac using Guid(e80fb0cc71b4f9f4499345accfbfce86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b72638f0ac71a750962444bfb52e2a64') in 0.030269 seconds
+  Import took 0.039434 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/Music/BattleMusic/jl cymbals overhead splash 02.flac
+  artifactKey: Guid(69956fda8f0522a4b93d155ee4863e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl cymbals overhead splash 02.flac using Guid(69956fda8f0522a4b93d155ee4863e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '929a7f30f98b584b807e989e5afc4db6') in 0.032596 seconds
+  Import took 0.041673 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Music/BattleMusic/jl hat 184 pedal hat 04.flac
+  artifactKey: Guid(5cb4b080c80a7f34bbf5321ce5e6e764) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl hat 184 pedal hat 04.flac using Guid(5cb4b080c80a7f34bbf5321ce5e6e764) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29d64856fffb9241bd25ae68ca3091c3') in 0.027878 seconds
+  Import took 0.036362 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000385 seconds.
+  path: Assets/Music/BattleMusic/jl hat 184 sizzle hat 05.flac
+  artifactKey: Guid(95b7b68a82f8c584abb51d09f12c6fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl hat 184 sizzle hat 05.flac using Guid(95b7b68a82f8c584abb51d09f12c6fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d71dd71e778762f45ee6ba2b458b3de') in 0.030990 seconds
+  Import took 0.040851 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/Music/BattleMusic/jl cymbals overhead splash 03.flac
+  artifactKey: Guid(6e6cca391df1ffc47bd17ff5fa9b97a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl cymbals overhead splash 03.flac using Guid(6e6cca391df1ffc47bd17ff5fa9b97a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7c08c7ade88bc09b3ff9bc0be7da0fb') in 0.028130 seconds
+  Import took 0.037517 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/Music/BattleMusic/jl hat 184 sizzle hat 03.flac
+  artifactKey: Guid(119a3f537e3ddab42b72f84cb0354d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl hat 184 sizzle hat 03.flac using Guid(119a3f537e3ddab42b72f84cb0354d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92e22f955f6a3401aeafe42c40656e3f') in 0.023975 seconds
+  Import took 0.031758 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Music/BattleMusic/jl hat 184 closed hat 03.flac
+  artifactKey: Guid(95b812e8e8c1c2d4c8a110be7ba099bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl hat 184 closed hat 03.flac using Guid(95b812e8e8c1c2d4c8a110be7ba099bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd1adb98ec9cdd3d249e86ee0f38afee') in 0.026722 seconds
+  Import took 0.033973 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000386 seconds.
+  path: Assets/Music/BattleMusic/jl hat 184 open hat 01.flac
+  artifactKey: Guid(d753e0c1762f7e749a064c6377b9391b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl hat 184 open hat 01.flac using Guid(d753e0c1762f7e749a064c6377b9391b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f099cb9fd277cd9589a483ccaea01547') in 0.026879 seconds
+  Import took 0.034464 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000428 seconds.
+  path: Assets/Music/BattleMusic/jl hat 184 closed hat 05.flac
+  artifactKey: Guid(e3c5b83794eb3bf4ca8b7a1d2f85277e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl hat 184 closed hat 05.flac using Guid(e3c5b83794eb3bf4ca8b7a1d2f85277e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba7071384a0d1b9b5dfea9026d87f8b8') in 0.026267 seconds
+  Import took 0.034212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000560 seconds.
+  path: Assets/Music/BattleMusic/jl cymbals overhead ride 02.flac
+  artifactKey: Guid(e97975b61891936479e61d370f5456b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl cymbals overhead ride 02.flac using Guid(e97975b61891936479e61d370f5456b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d8e32b5b9a17061040e24254b510817') in 0.023235 seconds
+  Import took 0.032439 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/Music/BattleMusic/jl cymbals overhead crash 02.flac
+  artifactKey: Guid(e1c3b3f3bc776e34782094e2cd2fbfaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl cymbals overhead crash 02.flac using Guid(e1c3b3f3bc776e34782094e2cd2fbfaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aeba7da03ea39f35b307a53d92fc050') in 0.025249 seconds
+  Import took 0.033175 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000585 seconds.
+  path: Assets/Music/BattleMusic/jl hat 184 open hat 02.flac
+  artifactKey: Guid(8f46a71a23ef314429f2a1a2b9b8e12f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl hat 184 open hat 02.flac using Guid(8f46a71a23ef314429f2a1a2b9b8e12f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2f5ec5aeb43dc3021b6069c02497102') in 0.023799 seconds
+  Import took 0.032021 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000486 seconds.
+  path: Assets/Music/BattleMusic/jl hat 184 pedal hat 03.flac
+  artifactKey: Guid(f1c50b1e6f99be946a4d83b19323b293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl hat 184 pedal hat 03.flac using Guid(f1c50b1e6f99be946a4d83b19323b293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b81e65d4cdeff054680e27c27802c86') in 0.023112 seconds
+  Import took 0.031015 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Music/BattleMusic/jl hat 184 closed hat 04.flac
+  artifactKey: Guid(14aef88d1127aba4a8e8fe99ede1c9b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl hat 184 closed hat 04.flac using Guid(14aef88d1127aba4a8e8fe99ede1c9b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f2d503c729455147d0f22c75bd9ae0a') in 0.024511 seconds
+  Import took 0.032064 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000358 seconds.
+  path: Assets/Music/BattleMusic/jl cymbals overhead crash 03.flac
+  artifactKey: Guid(c29e86b5643635541bb1c49407dcee32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl cymbals overhead crash 03.flac using Guid(c29e86b5643635541bb1c49407dcee32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd94dffd25bc63ba8617c5eb3861a9cd8') in 0.023820 seconds
+  Import took 0.031531 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Music/BattleMusic/jl cymbals overhead ride bell 03.flac
+  artifactKey: Guid(f1d33aea2fa33064b82e8eec9c0becd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl cymbals overhead ride bell 03.flac using Guid(f1d33aea2fa33064b82e8eec9c0becd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78ed32ae86cf718cda700b14eb374189') in 0.026767 seconds
+  Import took 0.034723 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Music/BattleMusic/jl hat 184 open hat 04.flac
+  artifactKey: Guid(a2a54d947e7154a4aab670ea16dcd84b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl hat 184 open hat 04.flac using Guid(a2a54d947e7154a4aab670ea16dcd84b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3fd0f017779b12c6ea833efbb9e4393') in 0.023410 seconds
+  Import took 0.031454 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/Music/BattleMusic/jl cymbals overhead ride 01.flac
+  artifactKey: Guid(c95925cade109784c87b6dd7a7c43a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl cymbals overhead ride 01.flac using Guid(c95925cade109784c87b6dd7a7c43a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ea12d4f184a42c169b1517b8561067c') in 0.024941 seconds
+  Import took 0.031110 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Music/BattleMusic/jl hat 184 closed hat 01.flac
+  artifactKey: Guid(3537b7c4de2871c48ab573c013340b49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl hat 184 closed hat 01.flac using Guid(3537b7c4de2871c48ab573c013340b49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b93de01e9c3e135a2d683acc24141add') in 0.023115 seconds
+  Import took 0.031222 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/Music/BattleMusic/jl hat 184 pedal hat 05.flac
+  artifactKey: Guid(9fad32a1f602e874896996d61ccd549d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl hat 184 pedal hat 05.flac using Guid(9fad32a1f602e874896996d61ccd549d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f524d231cf1b84aa8948f5e31bde93ae') in 0.024224 seconds
+  Import took 0.033174 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000390 seconds.
+  path: Assets/Music/BattleMusic/jl cymbals overhead ride bell 02.flac
+  artifactKey: Guid(e58420cef8a2bb3448051a1ac8537b2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl cymbals overhead ride bell 02.flac using Guid(e58420cef8a2bb3448051a1ac8537b2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb20081682a7a00beb5be5eed25f6a21') in 0.026211 seconds
+  Import took 0.034278 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000403 seconds.
+  path: Assets/Music/BattleMusic/jl cymbals overhead ride 04.flac
+  artifactKey: Guid(4c7ab7d255b4ab9478b871def8774953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl cymbals overhead ride 04.flac using Guid(4c7ab7d255b4ab9478b871def8774953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cfbd3ce00c52c07607be690a907c0d9') in 0.026158 seconds
+  Import took 0.032800 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000356 seconds.
+  path: Assets/Music/BattleMusic/jl cymbals overhead crash 04.flac
+  artifactKey: Guid(e01e48ac2f617a640946c85a46b15985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl cymbals overhead crash 04.flac using Guid(e01e48ac2f617a640946c85a46b15985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc31b647c434b768aec2cc92a7e8a08e') in 0.023814 seconds
+  Import took 0.033455 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000544 seconds.
+  path: Assets/Music/BattleMusic/jl cymbals overhead ride 03.flac
+  artifactKey: Guid(1cb1bdfa399414c4ead0c124a7131434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl cymbals overhead ride 03.flac using Guid(1cb1bdfa399414c4ead0c124a7131434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da5282fdd096297c37bf96a39545911c') in 0.027804 seconds
+  Import took 0.037514 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/Music/BattleMusic/jl hat 184 pedal hat 01.flac
+  artifactKey: Guid(7e813341b20fae845af9ebab65c75e85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl hat 184 pedal hat 01.flac using Guid(7e813341b20fae845af9ebab65c75e85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4bf5407ad76497917b0cffb361df65e') in 0.024032 seconds
+  Import took 0.032538 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000388 seconds.
+  path: Assets/Music/BattleMusic/jl hat 184 open hat 03.flac
+  artifactKey: Guid(b68c1cb3b52bab54992025d41e67886f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl hat 184 open hat 03.flac using Guid(b68c1cb3b52bab54992025d41e67886f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6573ce3d96a421d43a4f346f7ad58a14') in 0.022742 seconds
+  Import took 0.031196 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Music/BattleMusic/jl hat 184 sizzle hat 01.flac
+  artifactKey: Guid(beb6b661e608fb44f88d8a00fbc6ca3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl hat 184 sizzle hat 01.flac using Guid(beb6b661e608fb44f88d8a00fbc6ca3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88a164612d8d5158ec2a895f15b72ca6') in 0.023074 seconds
+  Import took 0.031369 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000488 seconds.
+  path: Assets/Music/BattleMusic/jl hat 184 sizzle hat 02.flac
+  artifactKey: Guid(c6c92301daf8b464995722ebb8b55ffe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl hat 184 sizzle hat 02.flac using Guid(c6c92301daf8b464995722ebb8b55ffe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e241419760aed1a6f842df3438c44de4') in 0.023559 seconds
+  Import took 0.031580 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000457 seconds.
+  path: Assets/Music/BattleMusic/jl cymbals overhead ride bell 04.flac
+  artifactKey: Guid(e7d17887b85551a4784cc01b2f34496d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl cymbals overhead ride bell 04.flac using Guid(e7d17887b85551a4784cc01b2f34496d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9faeb6bee9cf19b33be3251bf5a998d6') in 0.023256 seconds
+  Import took 0.033387 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000478 seconds.
+  path: Assets/Music/BattleMusic/jl cymbals overhead splash 04.flac
+  artifactKey: Guid(1f122a05e9d1b134097a94d0c25d6190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl cymbals overhead splash 04.flac using Guid(1f122a05e9d1b134097a94d0c25d6190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'def5690ce06913cbe552cc35cf8e663e') in 0.022593 seconds
+  Import took 0.031412 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000462 seconds.
+  path: Assets/Music/BattleMusic/jl kick direct 1 kick 02.flac
+  artifactKey: Guid(ae64f7f64a0450b4ab7cc8832a47bd9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl kick direct 1 kick 02.flac using Guid(ae64f7f64a0450b4ab7cc8832a47bd9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85abcccdc6c937d91e13906508714a60') in 0.026338 seconds
+  Import took 0.035304 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000720 seconds.
+  path: Assets/Music/BattleMusic/jl kick direct 1 kick 04.flac
+  artifactKey: Guid(c2bacdf151de5ce45a68fad182adf029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl kick direct 1 kick 04.flac using Guid(c2bacdf151de5ce45a68fad182adf029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab704c7a0bc2cae0a1fabe30c7ea1b2f') in 0.023690 seconds
+  Import took 0.031588 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000347 seconds.
+  path: Assets/Music/BattleMusic/jl cymbals overhead ride 06.flac
+  artifactKey: Guid(1383b6cba8cf30244ad983910dea67b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl cymbals overhead ride 06.flac using Guid(1383b6cba8cf30244ad983910dea67b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1bdfe15ae557ce3ebd047a43b0ec2b9') in 0.023149 seconds
+  Import took 0.032120 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Music/BattleMusic/jl cymbals overhead splash 01.flac
+  artifactKey: Guid(342ea82693b88ba48b416f3e74641f81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl cymbals overhead splash 01.flac using Guid(342ea82693b88ba48b416f3e74641f81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29c0ab4a7fea38225e206e98a6dfb331') in 0.024236 seconds
+  Import took 0.034720 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/Music/BattleMusic/jl kick direct 1 kick 03.flac
+  artifactKey: Guid(57d727ba8e1344c41b569ec375b85ded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl kick direct 1 kick 03.flac using Guid(57d727ba8e1344c41b569ec375b85ded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a733c4574c2ad699d0a8f1354f4b4281') in 0.025504 seconds
+  Import took 0.035605 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000348 seconds.
+  path: Assets/Music/BattleMusic/jl kick direct 1 kick 01.flac
+  artifactKey: Guid(564c06d0c3c2a1648aad529cdd27aefe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl kick direct 1 kick 01.flac using Guid(564c06d0c3c2a1648aad529cdd27aefe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96f962fece906d2c5c40da7a4ecfd0c7') in 0.024890 seconds
+  Import took 0.033628 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000306 seconds.
+  path: Assets/Music/BattleMusic/jl cymbals overhead ride 05.flac
+  artifactKey: Guid(6217c6ed9026ec047bc00cc19bb5c8f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl cymbals overhead ride 05.flac using Guid(6217c6ed9026ec047bc00cc19bb5c8f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd370a2caff7f43617dd5522167677fde') in 0.023509 seconds
+  Import took 0.031592 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.444805 seconds.
+  path: Assets/Music/BattleMusic/jl kick direct 1 kick 05.flac
+  artifactKey: Guid(4cf4c67ac4e70fa489dcc3d0a0448ac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl kick direct 1 kick 05.flac using Guid(4cf4c67ac4e70fa489dcc3d0a0448ac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce3ced90cc2ad71417c27975d8dc390f') in 0.031167 seconds
+  Import took 0.037991 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Music/BattleMusic/jl snare bottom baggy 01.flac
+  artifactKey: Guid(423848391b2309945a194f415e321adf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl snare bottom baggy 01.flac using Guid(423848391b2309945a194f415e321adf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dc8c392c3cf8436794e205a121d9522') in 0.026302 seconds
+  Import took 0.033889 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/Music/BattleMusic/jl snare bottom rim 02.flac
+  artifactKey: Guid(76a19e6273d775b439070af23153411e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl snare bottom rim 02.flac using Guid(76a19e6273d775b439070af23153411e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a89a283ba614578cdeed21b1e15bf40e') in 0.019180 seconds
+  Import took 0.027143 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000341 seconds.
+  path: Assets/Music/BattleMusic/jl snare bottom rim 03.flac
+  artifactKey: Guid(fba339ac8fe664c46aea1dd5c1634179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl snare bottom rim 03.flac using Guid(fba339ac8fe664c46aea1dd5c1634179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9a35eb54e5f031880ebb7bf5da2ad66') in 0.023086 seconds
+  Import took 0.029992 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/Music/BattleMusic/jl snare bottom baggy 04.flac
+  artifactKey: Guid(0d15baef909e5814b9c2e7c8d97fc446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl snare bottom baggy 04.flac using Guid(0d15baef909e5814b9c2e7c8d97fc446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3771bbb78b497255a955c740d897d68') in 0.029220 seconds
+  Import took 0.037598 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/Music/BattleMusic/jl snare top rim 02.flac
+  artifactKey: Guid(642a7e69594d2e545a6fc4fd990df644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl snare top rim 02.flac using Guid(642a7e69594d2e545a6fc4fd990df644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17da0205fe38a4d48e165cc5e4872921') in 0.022979 seconds
+  Import took 0.031352 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Music/BattleMusic/jl snare top baggy 02.flac
+  artifactKey: Guid(24633690656bb904eb44a3e52c6b8f67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl snare top baggy 02.flac using Guid(24633690656bb904eb44a3e52c6b8f67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4dca7dd90d4400685a1e51189744984') in 0.021540 seconds
+  Import took 0.028800 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000458 seconds.
+  path: Assets/Music/BattleMusic/jl snare top baggy 03.flac
+  artifactKey: Guid(4fc7085a07d73d84689e03e4ad72946c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl snare top baggy 03.flac using Guid(4fc7085a07d73d84689e03e4ad72946c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fcf18ff6276b081aa5210cf0dbb7d86') in 0.022627 seconds
+  Import took 0.030655 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/Music/BattleMusic/jl snare top rim 04.flac
+  artifactKey: Guid(8ffc08c2c97fb5841b2e2bcc36baca20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl snare top rim 04.flac using Guid(8ffc08c2c97fb5841b2e2bcc36baca20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9cc9adf09645e4c6ffa5db155011ec3') in 0.024291 seconds
+  Import took 0.032635 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Music/BattleMusic/jl tom direct low 03.flac
+  artifactKey: Guid(64bb70fb4d172f749a5b262bbf76791a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl tom direct low 03.flac using Guid(64bb70fb4d172f749a5b262bbf76791a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12314423cc83a199af3fd4924a7d637b') in 0.021285 seconds
+  Import took 0.028591 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Music/BattleMusic/KSHMR Shaker Loops 100BPM 11.wav
+  artifactKey: Guid(32d126f9f99a60d45beefed89e346242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/KSHMR Shaker Loops 100BPM 11.wav using Guid(32d126f9f99a60d45beefed89e346242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5a65e26a23571ebe019ad3d1aca9dd7') in 0.025448 seconds
+  Import took 0.032994 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000401 seconds.
+  path: Assets/Music/BattleMusic/KSHMR Shaker Loops 100BPM 02.wav
+  artifactKey: Guid(73fbdd6d5ec59b74589667901387292c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/KSHMR Shaker Loops 100BPM 02.wav using Guid(73fbdd6d5ec59b74589667901387292c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13300f75d6c6af25a098eb89a1b7dc86') in 0.026183 seconds
+  Import took 0.034702 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/Music/BattleMusic/jl tom direct high 04.flac
+  artifactKey: Guid(5f4bc46f3e33dfc469ad8dc05aa73331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl tom direct high 04.flac using Guid(5f4bc46f3e33dfc469ad8dc05aa73331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '481ce90a9f3ede474a6afc0a8cab0315') in 0.022504 seconds
+  Import took 0.029494 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Music/BattleMusic/KSHMR Cymbal Transition 02.wav
+  artifactKey: Guid(0cc9af9b5372ff24999eec616b61a423) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/KSHMR Cymbal Transition 02.wav using Guid(0cc9af9b5372ff24999eec616b61a423) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '381f7fb156d05f61a7a1039c7c544c7b') in 0.022703 seconds
+  Import took 0.030768 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/Music/BattleMusic/jl tom direct high 01.flac
+  artifactKey: Guid(d62ec3b1b793fa5438d4c1f40a06dc11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl tom direct high 01.flac using Guid(d62ec3b1b793fa5438d4c1f40a06dc11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df59bf76c0dd6d42e518a62be77543a4') in 0.025203 seconds
+  Import took 0.032708 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/Music/BattleMusic/jl kick direct 2 kick 01.flac
+  artifactKey: Guid(32382688337cbe64bbc081d6ad939bd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl kick direct 2 kick 01.flac using Guid(32382688337cbe64bbc081d6ad939bd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49268a2caa9e59445530da380a059866') in 0.024676 seconds
+  Import took 0.033123 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000347 seconds.
+  path: Assets/Music/BattleMusic/jl snare bottom baggy 05.flac
+  artifactKey: Guid(fdee92f34eeef31429f513d3d794c6cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl snare bottom baggy 05.flac using Guid(fdee92f34eeef31429f513d3d794c6cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10e9f65b375debcba144dc21b7dfb749') in 0.021715 seconds
+  Import took 0.030783 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000372 seconds.
+  path: Assets/Music/BattleMusic/jl snare bottom rim 05.flac
+  artifactKey: Guid(6e503232e186f8a41b7573dd8a16d0ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl snare bottom rim 05.flac using Guid(6e503232e186f8a41b7573dd8a16d0ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '434848c054d5c559c8f241f9ce14889d') in 0.028141 seconds
+  Import took 0.036092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/Music/BattleMusic/jl tom direct low 02.flac
+  artifactKey: Guid(61357dce0c7aeac4fa2c1b49969a9785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl tom direct low 02.flac using Guid(61357dce0c7aeac4fa2c1b49969a9785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94b59b4be4c850a55c6d9e30ed308715') in 0.022039 seconds
+  Import took 0.030293 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/Music/BattleMusic/jl kick direct 2 kick 05.flac
+  artifactKey: Guid(0d0b67ccf9d46be4685b53395323762b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl kick direct 2 kick 05.flac using Guid(0d0b67ccf9d46be4685b53395323762b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f54a33b2ffd9936cc322c933a8fac76e') in 0.022076 seconds
+  Import took 0.029841 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000714 seconds.
+  path: Assets/Music/BattleMusic/jl kick direct 2 kick 04.flac
+  artifactKey: Guid(249af6c99c650d34a978577fe3a9c5ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl kick direct 2 kick 04.flac using Guid(249af6c99c650d34a978577fe3a9c5ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db8db12c65bfedecd96d8f38f45e813a') in 0.022338 seconds
+  Import took 0.031243 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Music/BattleMusic/jl snare bottom rim 07.flac
+  artifactKey: Guid(7bfdc1a880481ab4896ab82eb2f1294f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl snare bottom rim 07.flac using Guid(7bfdc1a880481ab4896ab82eb2f1294f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6ad7080981da8a800c9c623a61a014e') in 0.023648 seconds
+  Import took 0.031112 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/Music/BattleMusic/jl snare top rim 07.flac
+  artifactKey: Guid(0a4b2874a7daeae42bcf6d4743c661b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl snare top rim 07.flac using Guid(0a4b2874a7daeae42bcf6d4743c661b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c76ed06636b68785767ebc1a8ed1ab2') in 0.025824 seconds
+  Import took 0.033277 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/Music/BattleMusic/jl tom direct floor 06.flac
+  artifactKey: Guid(5f4ad953a0907d243be1ba921e5d2fa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl tom direct floor 06.flac using Guid(5f4ad953a0907d243be1ba921e5d2fa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6099cf20ee8c8f51a7876b2140a43b2') in 0.020353 seconds
+  Import took 0.028097 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000500 seconds.
+  path: Assets/Music/BattleMusic/jl tom direct high 03.flac
+  artifactKey: Guid(d1c346775462bd046931404647285a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl tom direct high 03.flac using Guid(d1c346775462bd046931404647285a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b19f4ebe55bc1e3b073797e526c0806') in 0.022813 seconds
+  Import took 0.031802 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Music/BattleMusic/KSHMR Impact 02.wav
+  artifactKey: Guid(c9b9505fe630b8d408250bfc0ffb7003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/KSHMR Impact 02.wav using Guid(c9b9505fe630b8d408250bfc0ffb7003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '398af0dc640a1d9950f645a45cae2920') in 0.021952 seconds
+  Import took 0.029698 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000314 seconds.
+  path: Assets/Music/BattleMusic/jl snare bottom baggy 02.flac
+  artifactKey: Guid(119a60fa34da9db45b05e9477d617c9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl snare bottom baggy 02.flac using Guid(119a60fa34da9db45b05e9477d617c9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2eb75ef6023500e6476fe4a87cd3b5c') in 0.027338 seconds
+  Import took 0.035810 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/Music/BattleMusic/jl kick direct 2 kick 03.flac
+  artifactKey: Guid(91e8625cacb661f43bb5ac71e3c7e7be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl kick direct 2 kick 03.flac using Guid(91e8625cacb661f43bb5ac71e3c7e7be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d73289150bf62dbf4ceee53e8a8bfae') in 0.027194 seconds
+  Import took 0.034378 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Assets/Music/BattleMusic/jl snare top baggy 01.flac
+  artifactKey: Guid(82a584c240e0bad40affd7a21cf8fcaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl snare top baggy 01.flac using Guid(82a584c240e0bad40affd7a21cf8fcaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55d975f73fd5bf685464d4e77cdb8f9e') in 0.020306 seconds
+  Import took 0.027651 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000353 seconds.
+  path: Assets/Music/BattleMusic/jl snare top rim 06.flac
+  artifactKey: Guid(685d4d9f68075234491b24d2e5fcd643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl snare top rim 06.flac using Guid(685d4d9f68075234491b24d2e5fcd643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcdcee85a788f9dd6b8e1c2741d620fb') in 0.022185 seconds
+  Import took 0.030548 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Music/BattleMusic/jl snare top rim 03.flac
+  artifactKey: Guid(0d4d57c57d9737648b67a2fb1d7e4e77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl snare top rim 03.flac using Guid(0d4d57c57d9737648b67a2fb1d7e4e77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06e32e0f243cc9aadb01673414d39ec9') in 0.025954 seconds
+  Import took 0.032585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000761 seconds.
+  path: Assets/Music/BattleMusic/jl snare top baggy 06.flac
+  artifactKey: Guid(1d21a3daf7509be4d9f7481851113ab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl snare top baggy 06.flac using Guid(1d21a3daf7509be4d9f7481851113ab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2675056e414991552892a51030e00670') in 0.022349 seconds
+  Import took 0.029426 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000347 seconds.
+  path: Assets/Music/BattleMusic/jl tom direct low 06.flac
+  artifactKey: Guid(910cff81ff082be48ae0ed2245d715c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl tom direct low 06.flac using Guid(910cff81ff082be48ae0ed2245d715c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8310382f7de8e953a59c1f7c58b03df0') in 0.021103 seconds
+  Import took 0.028415 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Music/BattleMusic/jl tom direct high 02.flac
+  artifactKey: Guid(e35b4d98f90ea9b42932dd6c6b5e7f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl tom direct high 02.flac using Guid(e35b4d98f90ea9b42932dd6c6b5e7f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74a42bac574a391e5f308e49c155cfc3') in 0.023785 seconds
+  Import took 0.030167 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000373 seconds.
+  path: Assets/Music/BattleMusic/jl snare top baggy 04.flac
+  artifactKey: Guid(cdf63393facb39e4c80952ffda8b019b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl snare top baggy 04.flac using Guid(cdf63393facb39e4c80952ffda8b019b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a731a667a2fe21f8c5cc7328c1c600d2') in 0.024942 seconds
+  Import took 0.032890 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Music/BattleMusic/jl tom direct floor 04.flac
+  artifactKey: Guid(1a00d3c9d7e462443a4afbbb106c3776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl tom direct floor 04.flac using Guid(1a00d3c9d7e462443a4afbbb106c3776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '284cdd6bdd0710248c57f6a48c145ddf') in 0.023699 seconds
+  Import took 0.032234 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Music/BattleMusic/jl tom direct floor 05.flac
+  artifactKey: Guid(cf3817e1593d5d94ab5d5dbdde027f94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl tom direct floor 05.flac using Guid(cf3817e1593d5d94ab5d5dbdde027f94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15820a0825b88eca9fdc04597fd8ff91') in 0.025093 seconds
+  Import took 0.035161 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/Music/BattleMusic/jl tom direct low 01.flac
+  artifactKey: Guid(0e9abd714b5a4284dac5118aff5c5e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl tom direct low 01.flac using Guid(0e9abd714b5a4284dac5118aff5c5e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d460474e237859378f50b6620121b64') in 0.031432 seconds
+  Import took 0.038157 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000453 seconds.
+  path: Assets/Music/BattleMusic/jl tom direct floor 01.flac
+  artifactKey: Guid(3040e81a37459bd46945f62837d6562e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl tom direct floor 01.flac using Guid(3040e81a37459bd46945f62837d6562e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '865d2d0b24e5bda1a8f7854eb1726e3d') in 0.026468 seconds
+  Import took 0.033546 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Music/BattleMusic/jl tom direct floor 02.flac
+  artifactKey: Guid(cfb73691327bc2f4dae5acdbb701fc95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl tom direct floor 02.flac using Guid(cfb73691327bc2f4dae5acdbb701fc95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7611d46b136cbb4038e027cb434441f7') in 0.025976 seconds
+  Import took 0.035117 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Music/BattleMusic/jl tom direct low 04.flac
+  artifactKey: Guid(c266034bcbc77bd41a789d51cb9343c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl tom direct low 04.flac using Guid(c266034bcbc77bd41a789d51cb9343c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77e45b11fe04c1998f4b0dedfcb54f02') in 0.022970 seconds
+  Import took 0.031250 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/Music/BattleMusic/KSHMR Short Sweep 12.wav
+  artifactKey: Guid(e2977d3d0c252b4459ee774320ef8c6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/KSHMR Short Sweep 12.wav using Guid(e2977d3d0c252b4459ee774320ef8c6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '673ef62ae1471f17f4fa14a754120146') in 0.024739 seconds
+  Import took 0.032754 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/Music/BattleMusic/jl kick direct 2 kick 02.flac
+  artifactKey: Guid(e8a2402f4bf612d4583746a43d237655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl kick direct 2 kick 02.flac using Guid(e8a2402f4bf612d4583746a43d237655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bcb7823c54c3c47b24a3c64a41475e3') in 0.028518 seconds
+  Import took 0.037117 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Music/BattleMusic/jl snare top rim 05.flac
+  artifactKey: Guid(1ed00287ad6367442880f09de169fcf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl snare top rim 05.flac using Guid(1ed00287ad6367442880f09de169fcf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3d9c493d8f43b6b2a902947c50683d6') in 0.024467 seconds
+  Import took 0.032500 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Music/BattleMusic/jl snare bottom rim 01.flac
+  artifactKey: Guid(9875a2adc4cb3ce4aafa61bd6604d149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl snare bottom rim 01.flac using Guid(9875a2adc4cb3ce4aafa61bd6604d149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55e59ff78552ebe240fc851f4ec2c4a3') in 0.027052 seconds
+  Import took 0.034048 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000434 seconds.
+  path: Assets/Music/BattleMusic/jl snare top baggy 05.flac
+  artifactKey: Guid(dacaf3c0da6d4734d99c08dc7eb4519f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl snare top baggy 05.flac using Guid(dacaf3c0da6d4734d99c08dc7eb4519f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa27682a158af376fe41e46c98d3c107') in 0.026374 seconds
+  Import took 0.034474 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000380 seconds.
+  path: Assets/Music/BattleMusic/jl snare bottom baggy 03.flac
+  artifactKey: Guid(ee304f392bffb564a96c393eae934059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl snare bottom baggy 03.flac using Guid(ee304f392bffb564a96c393eae934059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51847f828b97cfbff871980700123608') in 0.023406 seconds
+  Import took 0.032211 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/Music/BattleMusic/jl snare bottom rim 06.flac
+  artifactKey: Guid(56625ddc4f3456a48b0ba1f6db9df39f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl snare bottom rim 06.flac using Guid(56625ddc4f3456a48b0ba1f6db9df39f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd0a654832e0160e3b08f02134fa5da1') in 0.023858 seconds
+  Import took 0.031098 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Music/BattleMusic/KSHMR Short Fill 100BPM 02.wav
+  artifactKey: Guid(1ce4d17f0523cef40a685db667bee933) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/KSHMR Short Fill 100BPM 02.wav using Guid(1ce4d17f0523cef40a685db667bee933) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbd10599c09b2f805a3cdb8023322e2a') in 0.027436 seconds
+  Import took 0.035562 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/Music/BattleMusic/jl tom direct high 05.flac
+  artifactKey: Guid(0ceafc38cb7f85d459849fe93483433f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl tom direct high 05.flac using Guid(0ceafc38cb7f85d459849fe93483433f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8448c00a9293f4602c0203ed3a6cce16') in 0.025969 seconds
+  Import took 0.033719 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000478 seconds.
+  path: Assets/Music/BattleMusic/jl tom direct floor 03.flac
+  artifactKey: Guid(a98be6c54f05a8d49bdb9aaefa1d7c46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl tom direct floor 03.flac using Guid(a98be6c54f05a8d49bdb9aaefa1d7c46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2107867678e890401be8ae527d494cfa') in 0.022252 seconds
+  Import took 0.029877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Music/BattleMusic/jl snare bottom rim 04.flac
+  artifactKey: Guid(569b8e857596f9c4b95c3af5393698f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl snare bottom rim 04.flac using Guid(569b8e857596f9c4b95c3af5393698f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb67c9667f54c79583bedb4e67bfb198') in 0.023294 seconds
+  Import took 0.030336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000371 seconds.
+  path: Assets/Music/BattleMusic/jl snare top rim 01.flac
+  artifactKey: Guid(4275467b31a50a448bb3fd08d9922941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl snare top rim 01.flac using Guid(4275467b31a50a448bb3fd08d9922941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19638d427a9054d13611ba9206502af1') in 0.025467 seconds
+  Import took 0.032524 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/Music/BattleMusic/KSHMR Cinematic Drums 100BPM 02.wav
+  artifactKey: Guid(f7b2b585c30a0b04cafa99057547fac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/KSHMR Cinematic Drums 100BPM 02.wav using Guid(f7b2b585c30a0b04cafa99057547fac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a04ae2f9047eae7c0b8a51688d7daeb') in 0.027505 seconds
+  Import took 0.034889 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Music/BattleMusic/jl kick direct 1 kick 05.flac
+  artifactKey: Guid(4cf4c67ac4e70fa489dcc3d0a0448ac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl kick direct 1 kick 05.flac using Guid(4cf4c67ac4e70fa489dcc3d0a0448ac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce3ced90cc2ad71417c27975d8dc390f') in 0.012430 seconds
+  Import took 0.020104 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Music/BattleMusic/jl snare bottom baggy 06.flac
+  artifactKey: Guid(22ab83e548e98d249b689cecd630e189) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl snare bottom baggy 06.flac using Guid(22ab83e548e98d249b689cecd630e189) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcf01dbc92d6af710a907bbd47e77999') in 0.022541 seconds
+  Import took 0.029826 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000358 seconds.
+  path: Assets/Music/BattleMusic/jl tom direct low 05.flac
+  artifactKey: Guid(ddb5df3921929d64f98fe6cdbf18c399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/BattleMusic/jl tom direct low 05.flac using Guid(ddb5df3921929d64f98fe6cdbf18c399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5848ec055a81f9f1f34477152054066c') in 0.024491 seconds
+  Import took 0.032353 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002203 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.454 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.06 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2920 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.4 MB.
+System memory in use after: 133.4 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3516.
+Total: 4.402900 ms (FindLiveObjects: 0.412200 ms CreateObjectMapping: 0.107100 ms MarkObjects: 3.498000 ms  DeleteObjects: 0.382000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003611 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.17 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.636 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2920 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.4 MB.
+System memory in use after: 133.4 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3519.
+Total: 36.210400 ms (FindLiveObjects: 14.712600 ms CreateObjectMapping: 1.265400 ms MarkObjects: 19.674400 ms  DeleteObjects: 0.553300 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

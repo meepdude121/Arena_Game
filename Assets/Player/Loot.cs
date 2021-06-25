@@ -9,7 +9,20 @@ public class Loot : MonoBehaviour
     }
     private GameObject ParseReward(Reward reward)
     {
-        return null;
+		switch (reward)
+		{
+			case Reward.NONE:
+				break;
+			case Reward.HEART:
+				return HEART;
+			case Reward.DOUBLEHEART:
+				return DOUBLEHEART;
+			case Reward.HEARTCANISTER:
+				return HEARTCANISTER;
+			default:
+				break;
+		}
+		return null;
     }
     private Reward ParseTable(LootTable table)
     {
@@ -19,9 +32,8 @@ public class Loot : MonoBehaviour
             case LootTable.NONE:
                 return Reward.NONE;
             case LootTable.EASYROOM:
-                value = Random.Range(0, 1);
-                // if value = 0 return none, otherwise return heart
-                return value == 0 ? Reward.NONE : Reward.HEART;
+                // always drops a heart
+                return Reward.HEART;
             case LootTable.HARDROOM:
                 value = Random.Range(0, 10);
                 if (ValueWithinRange(value, 0, 2)) return Reward.HEARTCANISTER;

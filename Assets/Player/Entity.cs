@@ -28,5 +28,6 @@ public enum EnemyType
 {
     GreenSlime,
     BlueSlime,
+    OrangeSlime,
     Miniboss_SlimePrince
 }
