@@ -1,4 +1,8 @@
+// TODO:
+// Comment **everything** for extra credit
+
 using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 [RequireComponent(typeof(Entity))]
 public class GreenSlimeAI : MonoBehaviour
@@ -12,7 +16,7 @@ public class GreenSlimeAI : MonoBehaviour
     {
         entityComponent = GetComponent<Entity>();
         players = GameObject.FindGameObjectsWithTag("Player");
-        entityComponent.InternalBulletDelay = Random.Range(0, entityComponent.BulletDelay);
+        entityComponent.InternalBulletDelay = Random.Range(0, entityComponent.BulletDelay / 2f);
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
     }
@@ -52,50 +56,46 @@ public class GreenSlimeAI : MonoBehaviour
                     closestEnemyDistance = Vector3.Distance(Enemy.transform.position, transform.position);
                 }
             }
-            Vector3 velocity = Vector3.zero;
             if (closestEnemy != null)
             {
                 if (Vector3.Distance(transform.position, closestEnemy.transform.position) < entityComponent.DistanceToStop + 2.5f)
                 {
                     Vector3 direction = closestEnemy.transform.position - transform.position;
-                    rb.AddForce(-direction.normalized * entityComponent.Speed * 1.25f * Time.deltaTime, ForceMode.VelocityChange);
+                    rb.AddForce(1.25f * entityComponent.Speed * Time.deltaTime * -direction.normalized, ForceMode.VelocityChange);
                 }
             }
             if (Vector3.Distance(transform.position, Target.transform.position) > entityComponent.DistanceToStop)
             {
                 Vector3 direction = Target.transform.position - transform.position;
-                rb.AddForce(direction.normalized * entityComponent.Speed * Time.deltaTime, ForceMode.VelocityChange);
+                rb.AddForce(entityComponent.Speed * Time.deltaTime * direction.normalized, ForceMode.VelocityChange);
             }
             else if (Vector3.Distance(transform.position, Target.transform.position) < entityComponent.DistanceToStop - 0.5f)
             {
                 Vector3 direction = Target.transform.position - transform.position;
-                rb.AddForce(-direction.normalized * entityComponent.Speed * Time.deltaTime, ForceMode.VelocityChange);
+                rb.AddForce(entityComponent.Speed * Time.deltaTime * -direction.normalized, ForceMode.VelocityChange);
             }
 
             if (entityComponent.InternalBulletDelay >= entityComponent.BulletDelay)
             {
-                GameObject a = Instantiate(entityComponent.Projectile);
-                Vector3 bulletOffset = new Vector3((Target.GetComponent<Rigidbody>().velocity.x / 2.5f) + Random.Range(-1f, 1f), (Target.GetComponent<Rigidbody>().velocity.y / 2.5f) + Random.Range(-1f, 1f), 0f);
-                a.GetComponent<Bullet>().TARGET = Target.transform.position + bulletOffset;
-                a.transform.position = transform.position;
                 entityComponent.InternalBulletDelay = 0f;
+                StartCoroutine(FireBullet(Target));
             }
             else
             {
                 entityComponent.InternalBulletDelay += Time.deltaTime;
             }
-            rb.AddForce(velocity, ForceMode.VelocityChange);
         }
         if (entityComponent.Health <= 0)
         {
             parentRoom.EnemyCount -= 1;
             Destroy(gameObject);
         }
-
-        Vector2 positiveVelocity = new Vector2();
         // set positiveVelocity to velocity, if velocity is negative set to positive
-        positiveVelocity.x = rb.velocity.x < 0 ? -rb.velocity.x : rb.velocity.x;
-        positiveVelocity.y = rb.velocity.y < 0 ? -rb.velocity.y : rb.velocity.y;
+        Vector2 positiveVelocity = new Vector2
+        {
+            x = rb.velocity.x < 0 ? -rb.velocity.x : rb.velocity.x, // if x = negative, invert
+            y = rb.velocity.y < 0 ? -rb.velocity.y : rb.velocity.y  // if y = negative, invert
+        };
 
         if (positiveVelocity.x > positiveVelocity.y)
         {
@@ -135,5 +135,45 @@ public class GreenSlimeAI : MonoBehaviour
                 animator.SetBool("Down", false);
             }
         }
+    }
+    IEnumerator FireBullet(GameObject Target)
+    {
+        float t1 = 0;
+        float t2 = 0;
+
+        // t(1 or 2)f is the time for the object to finish scaling.
+        // We scale the object to make it clear to the player the AI is going to shoot
+        float t1f = 0.5f;
+        float t2f = 0.1f;
+        while (t1 < 0.5f)
+        {
+            t1 += Time.deltaTime;
+            transform.localScale = new Vector3(Mathf.Clamp(1f - (t1 / t1f / 2), 0.5f, 1f), Mathf.Clamp(1f - (t1 / t1f / 2), 0.5f, 1f), 1f);
+            yield return null;
+        }
+        // force to proper scale
+        transform.localScale = new Vector3(0.5f, 0.5f, 1f);
+
+        // create bullet object
+        GameObject a = Instantiate(entityComponent.Projectile);
+        // set bullet offset to player's velocity (where they're moving) + a random number for some spread
+        Vector3 bulletOffset = new Vector3((Target.GetComponent<Rigidbody>().velocity.x / 2.5f) + Random.Range(-1f, 1f), (Target.GetComponent<Rigidbody>().velocity.y / 2.5f) + Random.Range(-1f, 1f), 0f);
+        // set the bullet target position to the player position + the offset
+        // angle to move in is calculated in the bullet script to save space in the AI code
+        a.GetComponent<Bullet>().TARGET = Target.transform.position + bulletOffset;
+        // set the bullet's position to the object firing it
+        a.transform.position = transform.position;
+
+        while (t2 < 0.25f)
+        {
+            t2 += Time.deltaTime;
+            // set the scale to the percent of the operation complete (0f - 1f) divided by 2 to get (0f - 0.5f)
+            // Mathf.Clamp limits the value to a certain range. Used here so the scale doesn't go too large or too small
+            transform.localScale = new Vector3(Mathf.Clamp(0.75f + (t2 / t2f / 2), 0.5f, 1f), Mathf.Clamp(0.75f + (t2 / t2f / 2), 0.5f, 1f), 1f);
+            yield return null;
+        }
+        // Reset scale
+        transform.localScale = new Vector3(1f, 1f, 1f);
+        yield return null;
     }
 }
