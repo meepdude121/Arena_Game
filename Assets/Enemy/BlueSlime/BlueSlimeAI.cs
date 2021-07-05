@@ -7,7 +7,6 @@ public class BlueSlimeAI : MonoBehaviour
     Entity entityComponent;
     GameObject[] players;
     Rigidbody rb;
-    //Animator animator;
     public Room parentRoom;
     private bool Initialized;
     private Vector3 targetPosition;
@@ -15,39 +14,26 @@ public class BlueSlimeAI : MonoBehaviour
     {
         entityComponent = GetComponent<Entity>();
         players = GameObject.FindGameObjectsWithTag("Player");
-        entityComponent.InternalBulletDelay = Random.Range(0, entityComponent.BulletDelay);
         rb = GetComponent<Rigidbody>();
-        //animator = GetComponent<Animator>();
     }
 
     private void Update()
     {
-        GameObject[] _Enemies = GameObject.FindGameObjectsWithTag("Enemy");
-        List<GameObject> Enemies = new List<GameObject>();
-        foreach (GameObject e in _Enemies)
-        {
-            if (e != gameObject)
-            {
-                Enemies.Add(e);
-            }
-        }
         if (entityComponent.AIActive)
         {
+            // make sure this is only initialized once.
             if (!Initialized)
             {
+                // Start the loop.
                 StartCoroutine(getTargetPosition());
                 Initialized = true;
             }
+            // Kill enemy
             if (entityComponent.Health <= 0)
             {
-                if (parentRoom != null)
-                {
-                    parentRoom.EnemyCount -= 1;
-                }
-                else
-                {
-                    Debug.LogWarning("[WARN] Enemy is not assigned to a room!");
-                }
+                if (parentRoom != null) parentRoom.EnemyCount -= 1;
+                else Debug.LogWarning("[WARN] Enemy is not assigned to a room!");
+
                 Destroy(gameObject);
             }
         }
@@ -57,8 +43,10 @@ public class BlueSlimeAI : MonoBehaviour
         // runs forever 
         while (false == false)
         {
+            // Target nearest player
             float closest = 0f;
             GameObject Target = null;
+            // loop through every player and pick the closest one
             foreach (GameObject player in players)
             {
                 if (Vector3.Distance(player.transform.position, transform.position) > closest)
@@ -69,10 +57,11 @@ public class BlueSlimeAI : MonoBehaviour
             }
             entityComponent.Target = Target;
 
+            // Get the direction towards the player
             Vector3 Direction = Target.transform.position - transform.position;
+            // add the velocity of the player to 'predict' where the player will go
             Direction += Target.GetComponent<Rigidbody>().velocity;
-            Direction.Normalize();
-            Direction *= 2;
+            Direction = Direction.normalized * 2;
             targetPosition = Direction * entityComponent.Speed;
             rb.AddForce(targetPosition * entityComponent.Speed, ForceMode.Impulse);
             yield return new WaitForSeconds(1f);

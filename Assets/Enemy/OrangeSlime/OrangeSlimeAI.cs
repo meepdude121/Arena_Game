@@ -12,10 +12,12 @@ public class OrangeSlimeAI : MonoBehaviour
 	Rigidbody rb;
 	GameObject Target;
 	Animator animator;
+	// stores up, down, left, right
 	static Vector3[] XYDirections =
 	{
 		Vector3.up, Vector3.down, Vector3.left, Vector3.right
 	};
+	// stores N, NW, W, etc.
 	static Vector3[] Directions360 =
 	{
 		new Vector3(0, 1, 0),
@@ -38,14 +40,13 @@ public class OrangeSlimeAI : MonoBehaviour
 	}
 	void Update()
 	{
-		if (rb.velocity.magnitude > 0)
-			animator.speed = rb.velocity.magnitude / 5;
-		else
-			animator.speed = rb.velocity.magnitude / -5;
-		if (entityComponent.AIActive)
+		// if velocity.magnitude is positive, animator speed is positive, otherwise it's negative
+		animator.speed = rb.velocity.magnitude > 0 ? rb.velocity.magnitude / 5 : rb.velocity.magnitude / -5;
+        if (entityComponent.AIActive)
 		{
 			if (!setPosition)
 			{
+				// find a random position in the room
 				TargetPosition.x = Random.Range((-RoomBounds.x / 2f)+1f, (RoomBounds.x / 2f)-1f);
 				TargetPosition.y = Random.Range((-RoomBounds.y / 2f)+1f, (RoomBounds.y / 2f)-1f);
 				TargetPosition += room.transform.position;
@@ -58,11 +59,16 @@ public class OrangeSlimeAI : MonoBehaviour
 			{
 				setPosition = false;
 				int value = Random.Range(0, 1);
-				if (value == 0)
-					FireProjectile(FireMode.CardinalDirections);
-				else if (value == 1)
-					FireProjectile(FireMode.HorizVertic);
-			}
+                switch (value)
+                {
+                    case 0:
+                        FireProjectile(FireMode.CardinalDirections);
+                        break;
+                    case 1:
+                        FireProjectile(FireMode.HorizVertic);
+                        break;
+                }
+            }
 			// Check whether it's time to fire a bullet
 			if (entityComponent.InternalBulletDelay >= entityComponent.BulletDelay)
 			{

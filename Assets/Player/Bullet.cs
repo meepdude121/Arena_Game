@@ -16,15 +16,21 @@ public class Bullet : MonoBehaviour
     }
     private void Update()
     {
-        if (!setup) { direction = TARGET - transform.position; setup = true; }
-        transform.position += direction.normalized * Speed * 10 * Time.deltaTime;
+        if (!setup) { 
+            direction = TARGET - transform.position; 
+            setup = true; 
+        }
+
+        transform.position += 10 * Speed * Time.deltaTime * direction.normalized;
         t += Time.deltaTime;
+        // Remove bullet after 4 seconds for performance.
         if (t > 4) Destroy(gameObject);
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.transform.CompareTag("ColliderProvider"))
         {
+            // destroy game object when hitting a collider.
             Destroy(gameObject);
         }
     }

@@ -20,7 +20,7 @@ public class SpriteTrail : MonoBehaviour
 
     IEnumerator trail()
     {
-        while (false == false) //while(true)
+        while (false == false)
         {
             if (rb.velocity.sqrMagnitude > 4f)
             {

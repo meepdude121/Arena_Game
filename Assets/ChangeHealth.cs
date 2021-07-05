@@ -14,7 +14,6 @@ public class ChangeHealth : MonoBehaviour
 			Player player = other.gameObject.GetComponent<Player>();
 			if (MaxHealth && !Consumed)
 			{
-				Debug.Log("a");
 				Consumed = true;
 				player.maxHealth += ChangeValue;
 				player.Health += ChangeValue;
@@ -24,10 +23,9 @@ public class ChangeHealth : MonoBehaviour
 				Destroy(gameObject);
 			} else if (!MaxHealth && !Consumed && player.Health < player.maxHealth)
 			{
-				Debug.Log("b");
 				Consumed = true;
 				player.Health += ChangeValue;
-				// Force the value between 0 - MaxHealth
+				// Force the value between 0 to MaxHealth
 				Mathf.Clamp(player.Health, 0, player.maxHealth);
 				player.UpdateHealth();
 				if (ChangeValue > 0) player.CreateText($"Health +{ChangeValue}");

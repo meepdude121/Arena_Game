@@ -23,10 +23,15 @@ public class GreenSlimeAI : MonoBehaviour
 
     private void Update()
     {
+        // get every enemy
         GameObject[] _Enemies = GameObject.FindGameObjectsWithTag("Enemy");
         List<GameObject> Enemies = new List<GameObject>();
+        // loop through every enemy
         foreach (GameObject e in _Enemies)
         {
+            // if the current looping enemy is NOT this enemy
+            // this allows the use of the list without having
+            // to check whether the enemy is the current enemy
             if (e != gameObject)
             {
                 Enemies.Add(e);
@@ -34,6 +39,8 @@ public class GreenSlimeAI : MonoBehaviour
         }
         if (entityComponent.AIActive)
         {
+            // Find closest player in list of players. Currently only returns the player because 
+            // there is no multiplayer support.
             float closest = 0f;
             GameObject Target = null;
             foreach (GameObject player in players)
@@ -44,10 +51,13 @@ public class GreenSlimeAI : MonoBehaviour
                     closest = Vector3.Distance(player.transform.position, transform.position);
                 }
             }
+            // set the target in the target value in the Entity component.
             entityComponent.Target = Target;
 
+            // If there are no other enemies the closest enemy is an infinite distance away.
             float closestEnemyDistance = float.PositiveInfinity;
             GameObject closestEnemy = null;
+            // loop through each enemy
             foreach (GameObject Enemy in Enemies)
             {
                 if (Vector3.Distance(Enemy.transform.position, transform.position) < closestEnemyDistance)
@@ -56,34 +66,44 @@ public class GreenSlimeAI : MonoBehaviour
                     closestEnemyDistance = Vector3.Distance(Enemy.transform.position, transform.position);
                 }
             }
+            // if there is a closest enemy
             if (closestEnemy != null)
             {
+                // if enemy is too close to a different enemy, move away from the enemy
                 if (Vector3.Distance(transform.position, closestEnemy.transform.position) < entityComponent.DistanceToStop + 2.5f)
                 {
                     Vector3 direction = closestEnemy.transform.position - transform.position;
                     rb.AddForce(1.25f * entityComponent.Speed * Time.deltaTime * -direction.normalized, ForceMode.VelocityChange);
                 }
             }
-            if (Vector3.Distance(transform.position, Target.transform.position) > entityComponent.DistanceToStop)
+            float DistanceToTarget = Vector3.Distance(transform.position, Target.transform.position);
+            // if enemy is too far away from the player, move towards it
+            if (DistanceToTarget > entityComponent.DistanceToStop)
             {
+                // calculate direction by taking away target position by this decision and
+                // normalizing it. Normalizing makes the vector3 have a magnitude of 1.
                 Vector3 direction = Target.transform.position - transform.position;
                 rb.AddForce(entityComponent.Speed * Time.deltaTime * direction.normalized, ForceMode.VelocityChange);
             }
-            else if (Vector3.Distance(transform.position, Target.transform.position) < entityComponent.DistanceToStop - 0.5f)
+            // if enemy is too close to the player, move away
+            else if (DistanceToTarget < entityComponent.DistanceToStop - 0.5f)
             {
+                // calculate direction by taking away target position by this decision and
+                // normalizing it. Normalizing makes the vector3 have a magnitude of 1.
                 Vector3 direction = Target.transform.position - transform.position;
+                // -direction.normalized reverses the direction to move in.
                 rb.AddForce(entityComponent.Speed * Time.deltaTime * -direction.normalized, ForceMode.VelocityChange);
             }
-
+            // if the internal bullet delay is greater than or equal to the standard bullet delay
             if (entityComponent.InternalBulletDelay >= entityComponent.BulletDelay)
             {
+                // Reset bullet delay
                 entityComponent.InternalBulletDelay = 0f;
+                // fire a bullet.
                 StartCoroutine(FireBullet(Target));
             }
-            else
-            {
-                entityComponent.InternalBulletDelay += Time.deltaTime;
-            }
+            // Increment the internal bullet delay by the frame time.
+            entityComponent.InternalBulletDelay += Time.deltaTime;
         }
         if (entityComponent.Health <= 0)
         {
