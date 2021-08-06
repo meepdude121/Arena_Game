@@ -1,3 +1,5 @@
+// todo: rewrite whole thing.
+
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
@@ -17,14 +19,14 @@ public class Player : MonoBehaviour
     public Vector3 transitionPosition;
     private float b;
     private Vector3 a;
-    Animator animator;
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        //animator = GetComponent<Animator>();
     }
+    // make more simple! too complex
     private void Update()
     {
+        // Split into GUI handle script
         healthSlider.value = Mathf.SmoothDamp(healthSlider.value, healthSliderValue, ref b, 0.05f);
         healthText.text = $"{Health}/{maxHealth}";
         float horizontal = Input.GetAxisRaw("Horizontal");
@@ -37,6 +39,8 @@ public class Player : MonoBehaviour
             {
                 if (weapon.InternalCooldown >= weapon.Cooldown)
                 {
+                    // use object pooling (low priority)
+                    // could also split into separate weapon script
                     GameObject a = Instantiate(weapon.projectile);
                     a.transform.position = transform.position;
                     Vector3 target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -46,60 +50,13 @@ public class Player : MonoBehaviour
                 }
             }
             weapon.InternalCooldown += Time.deltaTime;
+            // split into separate camera script
             Camera.main.transform.position = Vector3.SmoothDamp(Camera.main.transform.position, new Vector3(transform.position.x, transform.position.y, -1f), ref a, 0.1f);
         }
+        // split into separate camera script
         else Camera.main.transform.position = Vector3.SmoothDamp(Camera.main.transform.position, transitionPosition, ref a, 0.25f);
-
-        Vector2 positiveVelocity = new Vector2();
-        // set positiveVelocity to velocity, if velocity is negative set to positive
-        positiveVelocity.x = rb.velocity.x < 0 ? -rb.velocity.x : rb.velocity.x;
-        positiveVelocity.y = rb.velocity.y < 0 ? -rb.velocity.y : rb.velocity.y;
-
-        //animator.SetBool("Left", false);
-        //animator.SetBool("Right", false);
-        //animator.SetBool("Up", false);
-        //animator.SetBool("Down", false);
-
-        if (positiveVelocity.x > positiveVelocity.y)
-        {
-            if (rb.velocity.x < 0)
-            {
-                // moving left
-                //animator.SetBool("Left", true);
-                //animator.SetBool("Right", false);
-                //animator.SetBool("Up", false);
-                //animator.SetBool("Down", false);
-            }
-            else
-            {
-                // moving right
-                //animator.SetBool("Left", false);
-                //animator.SetBool("Right", true);
-                //animator.SetBool("Up", false);
-                //animator.SetBool("Down", false);
-            }
-        }
-        else
-        {
-            if (rb.velocity.y < 0)
-            {
-                // moving down
-                //animator.SetBool("Left", false);
-                //animator.SetBool("Right", false);
-                //animator.SetBool("Up", false);
-                //animator.SetBool("Down", true);
-            }
-            else
-            {
-                // moving up
-                //animator.SetBool("Left", false);
-                //animator.SetBool("Right", false);
-                //animator.SetBool("Up", true);
-                //animator.SetBool("Down", false);
-            }
-        }
     }
-
+    //TODO: Move to different scripts! too much stuff
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Projectile"))
@@ -135,10 +92,9 @@ public class Player : MonoBehaviour
             UpdateHealth();
         }
     }
-    public void UpdateHealth()
-	{
-        healthSliderValue = Health / maxHealth;
-    }
+    public void UpdateHealth() => healthSliderValue = Health / maxHealth;
+
+    // TODO: Move to different script
     public void CreateText(string Content)
 	{
 
