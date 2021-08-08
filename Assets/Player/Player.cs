@@ -2,10 +2,58 @@
 
 using UnityEngine;
 using TMPro;
-using UnityEngine.UI;
+using System;
+using UnityEngine.InputSystem;
+
 [RequireComponent(typeof(Rigidbody))]
 public class Player : MonoBehaviour
 {
+    PlayerInput Player_Input;
+
+    private Rigidbody Player_Rigidbody;
+    // later on:
+    // change to Player_BaseSpeed and have Player_SpeedModifiers
+    // maybe use a void that adds to a list of speed modifiers like
+    // Player_EditSpeedModifier(id:"Locomotion_Modifier", amount:1.2f, type:SpeedModifier.ADD);
+    // adds to a dictionary with <string, SpeedModifier> where SpeedModifier is a struct containing data for amount and type
+    // when it changes recalculate player speed and set Player_Speed
+    private float Player_Speed;
+
+    // later on:
+    // change to Player_BaseEnergyCapacity and have Player_EnergyCapacityModifiers
+    private float Player_Energy = 100f;
+    private float Player_EnergyCapacity = 100f;
+
+    [SerializeField] private UIManager_Main UIManager;
+
+    #region Input Variables
+    
+    
+
+    #endregion
+
+    private void Awake()
+    {
+        Player_Input = new PlayerInput();
+
+        Player_Input.Player.Move.performed += context => UpdateMovement(context);
+
+    }
+    private void Start()
+    {
+        Player_Rigidbody = GetComponent<Rigidbody>();
+    }
+    private void Update()
+    {
+        
+    }
+    #region Update Input variables
+    void UpdateMovement(InputAction.CallbackContext context)
+    {
+
+    }
+    #endregion
+    /*
     Rigidbody rb;
     [Range(1, 1000)]
     public float Speed;
@@ -19,6 +67,7 @@ public class Player : MonoBehaviour
     public Vector3 transitionPosition;
     private float b;
     private Vector3 a;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -29,8 +78,11 @@ public class Player : MonoBehaviour
         // Split into GUI handle script
         healthSlider.value = Mathf.SmoothDamp(healthSlider.value, healthSliderValue, ref b, 0.05f);
         healthText.text = $"{Health}/{maxHealth}";
+
+        // Convert to new input system please god damn this system sucks ass huh
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
+
         if (!InTransition)
         {
             rb.AddForce(new Vector3(horizontal, vertical, 0).normalized * Speed * Time.deltaTime, ForceMode.VelocityChange);
@@ -95,8 +147,10 @@ public class Player : MonoBehaviour
     public void UpdateHealth() => healthSliderValue = Health / maxHealth;
 
     // TODO: Move to different script
+    // this is actually completely useless because there will be a different system for picking up items and such
     public void CreateText(string Content)
 	{
 
 	}
+    */
 }

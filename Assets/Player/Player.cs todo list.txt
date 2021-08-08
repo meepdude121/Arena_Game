@@ -1,0 +1,42 @@
+Player.cs Restructure todo list
+
+Step 1: Create UIManager.cs
+    Refactor to energy value
+    Add code:
+
+    This also needs to change to UpdateEnergy because of the change in game mechanics
+
+DONE
+
+Step 2: clean up this mess:
+    Rigidbody rb;
+    [Range(1, 1000)]
+    public float Speed;
+    public float Health;
+    public float maxHealth;
+    float healthSliderValue = 1f;
+    public Slider healthSlider;
+    public TextMeshProUGUI healthText;
+    public Weapon weapon;
+    public bool InTransition = false;
+    public Vector3 transitionPosition;
+    private float b;
+    private Vector3 a;
+
+    Solution
+
+        private Rigidbody Player_Rigidbody
+        private float Player_Speed;
+
+        private float Player_Energy;
+        private float Player_EnergyCapacity;
+    
+Most other things should be stored in other scripts to clean up the code.
+
+Step 3: Create separate script for camera. There is no input for the camera so it does not need to be in the Player.cs file
+
+    Store camera centric variables in the script. Includes
+        bool::InTransition
+        Vector3::TransitionPosition
+
+Step 4: Redo everything else

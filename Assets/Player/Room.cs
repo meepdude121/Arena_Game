@@ -50,6 +50,7 @@ public class Room : MonoBehaviour
         {
             if (!Explored)
             {
+                /*
                 roomManager.UpdateRooms(true);
                 roomRunning = true;
                 playerComponent.transitionPosition = new Vector3(transform.position.x, transform.position.y, -1f);
@@ -59,12 +60,13 @@ public class Room : MonoBehaviour
                 {
                     collider.isTrigger = false;
                     collider.gameObject.GetComponent<Shield>().FadeIn(1f);
-                }
+                }*/
             }
         }
     }
     public void FinishedFading()
     {
+        /*
         Explored = true;
         playerComponent.InTransition = false;
         if (Enemies != null)
@@ -76,6 +78,6 @@ public class Room : MonoBehaviour
                 e.InternalBulletDelay = Random.Range(-1.5f, -0.5f);
                 e.AIActive = true;
             }
-        }
+        }*/
     }
 }

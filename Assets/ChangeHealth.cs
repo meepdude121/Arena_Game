@@ -7,6 +7,7 @@ public class ChangeHealth : MonoBehaviour
 	public int ChangeValue;
 	public bool MaxHealth;
 	public bool Consumed;
+	/*
 	private void OnTriggerEnter(Collider other)
 	{
 		if (other.gameObject.CompareTag("Player"))
@@ -34,5 +35,5 @@ public class ChangeHealth : MonoBehaviour
 			}
 
 		}
-	}
+	}*/
 }
