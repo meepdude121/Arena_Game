@@ -13,6 +13,8 @@ public class UIManager_Main : MonoBehaviour
 
     [SerializeField] private float EnergyDisplay_SmoothTime = 0.05f;
 
+    public bool AcceptInput = true;
+
     private void OnEnergyChange(float Energy, float EnergyLimit)
     {
         EnergyDisplay.text = $"{Mathf.Clamp(Mathf.Round(Energy/EnergyLimit) * 100f, 0f, 100f)}%";
