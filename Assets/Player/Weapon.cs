@@ -1,8 +1,5 @@
 ﻿using UnityEngine;
-public class Weapon : MonoBehaviour
+public interface IWeapon
 {
-    public float Damage;
-    public float Cooldown;
-    public float InternalCooldown;
-    public GameObject projectile;
+	void AttemptFire();
 }
