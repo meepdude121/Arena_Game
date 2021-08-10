@@ -1,0 +1,1476 @@
+fileFormatVersion: 2
+guid: 1d0acc6358fe1b04cb01971c8880c3b2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2809782843691067168
+    second: pixfont_0
+  - first:
+      213: 1532870876975803179
+    second: pixfont_1
+  - first:
+      213: 9208449817007620336
+    second: pixfont_2
+  - first:
+      213: -7513382489849055795
+    second: pixfont_3
+  - first:
+      213: 2541068937041568118
+    second: pixfont_4
+  - first:
+      213: 5621124320257385330
+    second: pixfont_5
+  - first:
+      213: -8013673934992862254
+    second: pixfont_6
+  - first:
+      213: -119597744572404361
+    second: pixfont_7
+  - first:
+      213: -3782324040041278652
+    second: pixfont_8
+  - first:
+      213: -4888736962777236057
+    second: pixfont_9
+  - first:
+      213: 2531479302835307311
+    second: pixfont_10
+  - first:
+      213: -1985415435389857003
+    second: pixfont_11
+  - first:
+      213: -1135305070862764828
+    second: pixfont_12
+  - first:
+      213: 6960374517492417447
+    second: pixfont_13
+  - first:
+      213: -8269137287210068757
+    second: pixfont_14
+  - first:
+      213: 3759234703284247326
+    second: pixfont_15
+  - first:
+      213: 9121507534437657902
+    second: pixfont_16
+  - first:
+      213: 5448296700356838665
+    second: pixfont_17
+  - first:
+      213: 5314559106055779579
+    second: pixfont_18
+  - first:
+      213: 7729664304904444608
+    second: pixfont_19
+  - first:
+      213: 2223620449611076313
+    second: pixfont_20
+  - first:
+      213: 7681559552643395300
+    second: pixfont_21
+  - first:
+      213: 8880464643004549263
+    second: pixfont_22
+  - first:
+      213: 3128407748105703859
+    second: pixfont_23
+  - first:
+      213: -4157054528093954880
+    second: pixfont_24
+  - first:
+      213: 7028175768240907268
+    second: pixfont_25
+  - first:
+      213: 4761218280660949316
+    second: pixfont_26
+  - first:
+      213: 1960947866272674132
+    second: pixfont_27
+  - first:
+      213: 7752248208345629457
+    second: pixfont_28
+  - first:
+      213: -8900415619645791935
+    second: pixfont_29
+  - first:
+      213: 8896822567132725108
+    second: pixfont_30
+  - first:
+      213: -7035244157002011598
+    second: pixfont_31
+  - first:
+      213: -8527596628554509389
+    second: pixfont_32
+  - first:
+      213: 646719640025107894
+    second: pixfont_33
+  - first:
+      213: -2057554533457450068
+    second: pixfont_34
+  - first:
+      213: 7320776285983429108
+    second: pixfont_35
+  - first:
+      213: -5789518768886217603
+    second: pixfont_36
+  - first:
+      213: 5991893742960820061
+    second: pixfont_37
+  - first:
+      213: 1141427560140011612
+    second: pixfont_38
+  - first:
+      213: -2410590195089870866
+    second: pixfont_39
+  - first:
+      213: 8845299840212088928
+    second: pixfont_40
+  - first:
+      213: 6056513119015341060
+    second: pixfont_41
+  - first:
+      213: 8696165220935069490
+    second: pixfont_42
+  - first:
+      213: 2968883849214294780
+    second: pixfont_43
+  - first:
+      213: -8039637677064971782
+    second: pixfont_44
+  - first:
+      213: -2156404597304819190
+    second: pixfont_45
+  - first:
+      213: -3954214465751751253
+    second: pixfont_46
+  - first:
+      213: -5276876844303782169
+    second: pixfont_47
+  - first:
+      213: -2454173683238134817
+    second: pixfont_48
+  - first:
+      213: 7625240153705611236
+    second: pixfont_49
+  - first:
+      213: -2913564240031251757
+    second: pixfont_50
+  - first:
+      213: -6879802081182746451
+    second: pixfont_51
+  - first:
+      213: -2114721373118092327
+    second: pixfont_52
+  - first:
+      213: -8745283759755777145
+    second: pixfont_53
+  - first:
+      213: -4896000215326979536
+    second: pixfont_54
+  - first:
+      213: -4877411481550580448
+    second: pixfont_55
+  - first:
+      213: -534476196308761905
+    second: pixfont_56
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 4
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pixfont_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 59
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e89ec9f365a109d0800000000000000
+      internalID: -2809782843691067168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 59
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b2face0f9d54510800000000000000
+      internalID: 1532870876975803179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_2
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 59
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f000c2f15cfacf70800000000000000
+      internalID: 9208449817007620336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_3
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 59
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc538eede6a1bb790800000000000000
+      internalID: -7513382489849055795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_4
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 59
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 671642e2cb0b34320800000000000000
+      internalID: 2541068937041568118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_5
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 59
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 273204b89ce320e40800000000000000
+      internalID: 5621124320257385330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_6
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 59
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d391fea306b9c090800000000000000
+      internalID: -8013673934992862254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_7
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 59
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77de2d62c7a175ef0800000000000000
+      internalID: -119597744572404361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 59
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4435bef335c728bc0800000000000000
+      internalID: -3782324040041278652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_9
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 59
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ad375d42a7b72cb0800000000000000
+      internalID: -4888736962777236057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_10
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 59
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2380c9730f912320800000000000000
+      internalID: 2531479302835307311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_11
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 59
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51392024e236274e0800000000000000
+      internalID: -1985415435389857003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_12
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 59
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e4768b9d069e30f0800000000000000
+      internalID: -1135305070862764828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_13
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 59
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a301dafeb7389060800000000000000
+      internalID: 6960374517492417447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_14
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 59
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be418e4f27f1e3d80800000000000000
+      internalID: -8269137287210068757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 53
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1b149c9b0c7b2430800000000000000
+      internalID: 3759234703284247326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_16
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 53
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2da43656ca169e70800000000000000
+      internalID: 9121507534437657902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_17
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 53
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 905c3bf8bfc3c9b40800000000000000
+      internalID: 5448296700356838665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_18
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 53
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf4b546695b11c940800000000000000
+      internalID: 5314559106055779579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_19
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 53
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca98d65bb8454b60800000000000000
+      internalID: 7729664304904444608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_20
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 53
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d2dc568403ebde10800000000000000
+      internalID: 2223620449611076313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_21
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 53
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ee6158e6b16a9a60800000000000000
+      internalID: 7681559552643395300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_22
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 53
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f88c3b6ca8fbd3b70800000000000000
+      internalID: 8880464643004549263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_23
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 53
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b19b6a95465a6b20800000000000000
+      internalID: 3128407748105703859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_24
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 53
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ccd7058eec2f46c0800000000000000
+      internalID: -4157054528093954880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_25
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 53
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 404e105df98198160800000000000000
+      internalID: 7028175768240907268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_26
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 53
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44954ecdcce331240800000000000000
+      internalID: 4761218280660949316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_27
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 53
+        width: 1
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4513e30e1bfa63b10800000000000000
+      internalID: 1960947866272674132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_28
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 53
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113891d1ca4859b60800000000000000
+      internalID: 7752248208345629457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_29
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 53
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 141acad762f5b7480800000000000000
+      internalID: -8900415619645791935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_30
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 53
+        width: 1
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47fff97ccfcd77b70800000000000000
+      internalID: 8896822567132725108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_31
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 55
+        width: 2
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23ca0c9a6bacd5e90800000000000000
+      internalID: -7035244157002011598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 49
+        width: 4
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b390372c04e7a980800000000000000
+      internalID: -8527596628554509389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_33
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 47
+        width: 1
+        height: 2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bd07fc061c99f800800000000000000
+      internalID: 646719640025107894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_34
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 47
+        width: 2
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cab264f9d091273e0800000000000000
+      internalID: -2057554533457450068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_35
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 47
+        width: 2
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f15526be3f989560800000000000000
+      internalID: 7320776285983429108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_36
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 47
+        width: 2
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7484189a5f77afa0800000000000000
+      internalID: -5789518768886217603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_37
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 49
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5fb011ec9b772350800000000000000
+      internalID: 5991893742960820061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_38
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 47
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c587cf2815a27df00800000000000000
+      internalID: 1141427560140011612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_39
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 47
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eefe0aa4dfcdb8ed0800000000000000
+      internalID: -2410590195089870866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_40
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 47
+        width: 2
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06839ab1751d0ca70800000000000000
+      internalID: 8845299840212088928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_41
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 47
+        width: 2
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c076cc79e0d0450800000000000000
+      internalID: 6056513119015341060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_42
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 49
+        width: 3
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23fe0f5b13cfea870800000000000000
+      internalID: 8696165220935069490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_43
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 48
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfaffcb8128933920800000000000000
+      internalID: 2968883849214294780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_44
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 48
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af912b7e0287d6090800000000000000
+      internalID: -8039637677064971782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_45
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 47
+        width: 1
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0280a1a179e212e0800000000000000
+      internalID: -2156404597304819190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 41
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba5e72bc4eecf19c0800000000000000
+      internalID: -3954214465751751253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_47
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 41
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eee9cbd774c4c6b0800000000000000
+      internalID: -5276876844303782169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_48
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 41
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdb9a71b90601fdd0800000000000000
+      internalID: -2454173683238134817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_49
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 41
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4effaa0058b42d960800000000000000
+      internalID: 7625240153705611236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_50
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 41
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d208aaa2c0f097d0800000000000000
+      internalID: -2913564240031251757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_51
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 41
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da8fb1a35780680a0800000000000000
+      internalID: -6879802081182746451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_52
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 41
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dbae5c8d1007a2e0800000000000000
+      internalID: -2114721373118092327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_53
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 41
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78ba3c741c282a680800000000000000
+      internalID: -8745283759755777145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_54
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 41
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a03398eb9ed0cb0800000000000000
+      internalID: -4896000215326979536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_55
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 41
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02514c26914ff4cb0800000000000000
+      internalID: -4877411481550580448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixfont_56
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 41
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc24d123bb82598f0800000000000000
+      internalID: -534476196308761905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
