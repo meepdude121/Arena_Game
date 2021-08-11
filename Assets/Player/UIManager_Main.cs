@@ -8,17 +8,22 @@ public class UIManager_Main : MonoBehaviour
     private float SmoothDampRefValue;
     private float EnergyPercent;
 
-    private Slider EnergyDisplayBar;
-    private TextMeshProUGUI EnergyDisplay;
+    [SerializeField] private Slider EnergyDisplayBar;
+    [SerializeField] private TextMeshProUGUI EnergyDisplay;
 
     [SerializeField] private float EnergyDisplay_SmoothTime = 0.05f;
 
     public bool AcceptInput = true;
 
-    private void OnEnergyChange(float Energy, float EnergyLimit)
+    public void OnEnergyChange(float Energy, float EnergyLimit)
     {
         EnergyDisplay.text = $"{Mathf.Clamp(Mathf.Round(Energy/EnergyLimit) * 100f, 0f, 100f)}%";
         EnergyPercent = Energy / EnergyLimit;
+    }
+
+    public void OnAmmoTypeChange()
+    {
+
     }
 
     void Update()
@@ -27,5 +32,14 @@ public class UIManager_Main : MonoBehaviour
         {
             EnergyDisplayBar.value = Mathf.SmoothDamp(EnergyDisplayBar.value, EnergyPercent, ref SmoothDampRefValue, EnergyDisplay_SmoothTime);
         }
+    }
+    void Start()
+    {
+        OnAmmoTypeChange();
+    }
+    private void OnGUI()
+    {
+        GUILayout.Space(50f);
+        GUILayout.Box("[ERROR][UIManager_Main.cs:OnAmmoTypeChange()]: An exception was thrown while executing!\nException: UnimplementedException()");
     }
 }

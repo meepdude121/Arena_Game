@@ -390,6 +390,8 @@
         "m_GuidSerialized": "6944691a-838f-428c-be02-16902c606b61"
     },
     "m_Name": "_MainTex",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Texture2D_100ae17498c649a59754c83c3dc122ba",
     "m_OverrideReferenceName": "_MainTex",
     "m_GeneratePropertyBlock": true,
@@ -1597,6 +1599,8 @@
         "m_GuidSerialized": "f066ec68-af22-4be7-9167-6f314f5f6f5a"
     },
     "m_Name": "Visibility",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Vector1_f7f630dfb7c14182a998e8ba89508741",
     "m_OverrideReferenceName": "Visibility",
     "m_GeneratePropertyBlock": true,
