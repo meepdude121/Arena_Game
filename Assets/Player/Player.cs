@@ -19,8 +19,10 @@ public class Player : MonoBehaviour
 	private float Player_Speed = 1.5f;
 	// later on:
 	// change to Player_BaseEnergyCapacity and have Player_EnergyCapacityModifiers
-	private float Player_Energy = 100f;
+	[SerializeField] private float Player_Energy = 100f;
 	private float Player_EnergyCapacity = 100f;
+
+	internal float Player_Energy_LastFrame = 100f;
 
 	private Vector2 Input_Move = Vector2.zero;
 
@@ -42,6 +44,11 @@ public class Player : MonoBehaviour
 	private void Update()
 	{
 		if (UIManager.AcceptInput) Player_Rigidbody.AddForce(new Vector3(Input_Move.x, Input_Move.y, 0f) * Player_Speed * 100 * Time.deltaTime, ForceMode.VelocityChange);
+
+		if (Player_Energy > Player_EnergyCapacity) Player_Energy = Player_EnergyCapacity;
+		if (Player_Energy_LastFrame != Player_Energy) UIManager.OnEnergyChange(Player_Energy, Player_EnergyCapacity);
+
+		Player_Energy_LastFrame = Player_Energy;
 	}
 	#region Internal function garbage
 	private void OnEnable()
