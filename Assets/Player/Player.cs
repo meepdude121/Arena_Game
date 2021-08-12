@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
 	[SerializeField] private float Player_Energy = 100f;
 	private float Player_EnergyCapacity = 100f;
 
-	internal float Player_Energy_LastFrame = 100f;
+	internal float Player_Energy_LastFrame = -1f;
 
 	private Vector2 Input_Move = Vector2.zero;
 
