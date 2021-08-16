@@ -19,5 +19,4 @@ public class GunManager : MonoBehaviour
 	{
 		WeaponClass = GetComponentInChildren<Weapon>();
 	}
-
 }

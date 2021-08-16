@@ -7,6 +7,7 @@ public class TestWeapon : Weapon
 {
 	[SerializeField] GameObject bullet;
 	private float ShootTimer = 0f;
+	private ParticleSystem particles;
 	public override void OnShoot()
 	{
 		if (ShootTimer >= BaseShotsPerSecond)
@@ -21,11 +22,17 @@ public class TestWeapon : Weapon
 			newbullet.GetComponent<Bullet>().TARGET = mousePos;
 
 			ShootTimer = 0f;
+			particles.Play();
+			StartCoroutine(ShootAnim());
 		}
 	}
 	public void Update()
 	{
 		ShootTimer += Time.deltaTime;
 		Mathf.Clamp(ShootTimer, 0, BaseShotsPerSecond);
+	}
+	private void Awake()
+	{
+		particles = GetComponentInChildren<ParticleSystem>();
 	}
 }

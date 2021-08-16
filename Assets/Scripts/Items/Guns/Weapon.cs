@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 public abstract class Weapon : MonoBehaviour
 {
 	public float BaseDamage;
@@ -8,7 +9,8 @@ public abstract class Weapon : MonoBehaviour
 	public float BaseReloadTime;
 	public float BaseShotsPerSecond;
 	public UIManager_Main UIManager;
-	
+	private Color FlashColor = new Color( 1, 0.64705882352f, 0, 0);
+	public Light2D FlashLight;
 	/// <summary>
 	/// Runs when player attempts to shoot.
 	/// </summary>
@@ -33,6 +35,25 @@ public abstract class Weapon : MonoBehaviour
 			UpdateReloadProgress(Progress / ActionTime);
 		}
 
+		yield return null;
+	}
+	public IEnumerator ShootAnim()
+	{
+		float t = 0;
+		float t1 = 0;
+		while (t < 1)
+		{
+			FlashColor.a = Mathf.Clamp01(FlashColor.a = 1 - t1);
+
+			transform.parent.localScale = new Vector3(Mathf.Lerp(0.75f, 1f, t), 1f, 1f);
+			t += Time.deltaTime * 3f;
+			Mathf.Clamp01(t1 += Time.deltaTime * 5f);
+			t1 += Time.deltaTime * 5f;
+			FlashLight.color = FlashColor;
+			yield return null;
+		}
+		transform.parent.localScale = Vector3.one;
+		FlashColor.a = 0;
 		yield return null;
 	}
 	public void UpdateReloadProgress(float Progress) => UIManager.UpdateAmmoCount(Mathf.Clamp(Progress, 0, 1));
