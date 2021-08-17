@@ -20,7 +20,7 @@ public class Pathfinding_Pathing : MonoBehaviour
         grid = GetComponent<Pathfinding_Grid>();
     }
 
-    void FindPath(Vector2 StartPos, Vector2 TargetPos)
+    public void FindPath(Vector2 StartPos, Vector2 TargetPos)
     {
         Node startNode = grid.NodeFromWorldPoint(StartPos);
         Node targetNode = grid.NodeFromWorldPoint(TargetPos);
