@@ -5,34 +5,36 @@ using UnityEngine.InputSystem;
 
 public class TestWeapon : Weapon
 {
-	[SerializeField] GameObject bullet;
-	private float ShootTimer = 0f;
-	private ParticleSystem particles;
-	public override void OnShoot()
-	{
-		if (ShootTimer >= BaseShotsPerSecond)
-		{
-			Vector3 mousePos = Mouse.current.position.ReadValue();
-			mousePos.z = 5.23f;
-			Vector3 objectPos = Camera.main.WorldToScreenPoint(transform.position);
-			mousePos -= objectPos;
+    [SerializeField] GameObject bullet;
+    private float ShootTimer = 0f;
+    private ParticleSystem particles;
+    public override void OnShoot(Vector2 targetPosition)
+    {
+        if (ShootTimer >= BaseShotsPerSecond)
+        {
+            Vector2 objectPos = Camera.main.WorldToScreenPoint(transform.position);
+            targetPosition = Camera.main.WorldToScreenPoint(targetPosition);
+            targetPosition -= objectPos;
 
-			GameObject newbullet = Instantiate(bullet);
-			newbullet.transform.position = transform.position;
-			newbullet.GetComponent<Bullet>().TARGET = mousePos;
+            GameObject newbullet = Instantiate(bullet);
+            newbullet.transform.position = transform.position;
+            Bullet bulletComponent = newbullet.GetComponent<Bullet>();
+            bulletComponent.TARGET = targetPosition;
+            bulletComponent.damage = 50;
+            bulletComponent.origin = gameObject.transform.parent.parent.gameObject;
 
-			ShootTimer = 0f;
-			particles.Play();
-			StartCoroutine(ShootAnim());
-		}
-	}
-	public void Update()
-	{
-		ShootTimer += Time.deltaTime;
-		Mathf.Clamp(ShootTimer, 0, BaseShotsPerSecond);
-	}
-	private void Awake()
-	{
-		particles = GetComponentInChildren<ParticleSystem>();
-	}
+            ShootTimer = 0f;
+            particles.Play();
+            StartCoroutine(ShootAnim());
+        }
+    }
+    public void Update()
+    {
+        ShootTimer += Time.deltaTime;
+        Mathf.Clamp(ShootTimer, 0, BaseShotsPerSecond);
+    }
+    private void Awake()
+    {
+        particles = GetComponentInChildren<ParticleSystem>();
+    }
 }

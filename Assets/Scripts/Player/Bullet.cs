@@ -1,36 +1,55 @@
 using UnityEngine;
-[RequireComponent(typeof(Rigidbody))]
+/// <summary>
+/// todo: clean up this code.<para/>also completely redo this its so messy oh god why did i do this
+/// </summary>
 public class Bullet : MonoBehaviour
 {
-	public Vector3 TARGET;
-	public Rigidbody rb;
-	public float Speed;
-	Vector3 direction = Vector3.zero;
-	private bool setup;
-	private float t;
-	private void Awake()
-	{
-		rb = GetComponent<Rigidbody>();
-	}
-	private void Update()
-	{
-		if (!setup)
-		{
-			direction = TARGET - transform.position;
-			setup = true;
-		}
+    public GameObject origin;
+    public Vector3 TARGET;
+    public float Speed;
+    Vector3 direction = Vector3.zero;
+    private bool setup;
+    private float t;
+    public float damage;
+    private void Update()
+    {
+        if (!setup)
+        {
+            direction = TARGET - transform.position;
+            setup = true;
+        }
 
-		transform.position += 10 * Speed * Time.deltaTime * direction.normalized;
-		t += Time.deltaTime;
-		// Remove bullet after 4 seconds for performance.
-		if (t > 4) Destroy(gameObject);
-	}
-	private void OnTriggerEnter(Collider other)
-	{
-		if (other.transform.CompareTag("ColliderProvider"))
-		{
-			// destroy game object when hitting a collider.
-			Destroy(gameObject);
-		}
-	}
+        transform.position += 10 * Speed * Time.deltaTime * direction.normalized;
+        t += Time.deltaTime;
+        // Remove bullet after 4 seconds for performance.
+        if (t > 4) Destroy(gameObject);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        switch (collision.gameObject.layer)
+        {
+            case 10: // collision is with enemy
+                Physics2D.IgnoreCollision(collision.collider, collision.otherCollider, true);
+                if (origin.CompareTag("Player"))
+                    collision.otherCollider.transform.GetComponent<Entity>().ChangeEnergy(-damage);
+                break;
+            case 11: // collision is with player
+                Physics2D.IgnoreCollision(collision.collider, collision.otherCollider, true);
+                if (origin.CompareTag("Enemy"))
+                {
+                    Debug.Log(collision.collider.name);
+                    collision.collider.transform.GetComponent<Entity>().ChangeEnergy(-damage);
+                }
+                break;
+            case 12: // Collision is with environment
+                Debug.Log("Collided with environment collider. Destroying bullet.");
+                Destroy(gameObject);
+                break;
+            default:
+                Debug.LogWarning($"{gameObject.name} collided with something it has no logic for. Ignoring collision.");
+                Physics2D.IgnoreCollision(collision.collider, collision.otherCollider, true);
+                return;
+        }
+    }
 }

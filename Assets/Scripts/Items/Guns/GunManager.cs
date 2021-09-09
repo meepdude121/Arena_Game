@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class GunManager : MonoBehaviour
 {
-	Object WeaponClass = null;
+    Object WeaponClass = null;
 
-	private void Start()
-	{
-		OnChangeGun();
-	}
-	public void Shoot()
-	{
-		(WeaponClass as Weapon).OnShoot();
-	}
+    private void Start()
+    {
+        OnChangeGun();
+    }
+    public void Shoot(Vector2 targetPosition)
+    {
+        (WeaponClass as Weapon).OnShoot(targetPosition);
+    }
 
-	public void OnChangeGun()
-	{
-		WeaponClass = GetComponentInChildren<Weapon>();
-	}
+    public void OnChangeGun()
+    {
+        WeaponClass = GetComponentInChildren<Weapon>();
+    }
 }

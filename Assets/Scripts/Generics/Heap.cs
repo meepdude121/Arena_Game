@@ -28,7 +28,7 @@ public class Heap<T> where T : IHeapItem<T>
         SortDown(items[0]);
         return firstItem;
     }
-    public void UpdateItem(T item) 
+    public void UpdateItem(T item)
     {
         SortUp(item);
     }
