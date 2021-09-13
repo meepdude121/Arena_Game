@@ -32,22 +32,26 @@ public class Bullet : MonoBehaviour
             case 10: // collision is with enemy
                 Physics2D.IgnoreCollision(collision.collider, collision.otherCollider, true);
                 if (origin.CompareTag("Player"))
-                    collision.otherCollider.transform.GetComponent<Entity>().ChangeEnergy(-damage);
+				{
+                    collision.collider.transform.GetComponent<Entity>().ChangeEnergy(-damage);
+                    Destroy(gameObject); 
+                }
                 break;
+
             case 11: // collision is with player
                 Physics2D.IgnoreCollision(collision.collider, collision.otherCollider, true);
                 if (origin.CompareTag("Enemy"))
                 {
-                    Debug.Log(collision.collider.name);
                     collision.collider.transform.GetComponent<Entity>().ChangeEnergy(-damage);
+                    Destroy(gameObject);
                 }
                 break;
+
             case 12: // Collision is with environment
-                Debug.Log("Collided with environment collider. Destroying bullet.");
                 Destroy(gameObject);
                 break;
+
             default:
-                Debug.LogWarning($"{gameObject.name} collided with something it has no logic for. Ignoring collision.");
                 Physics2D.IgnoreCollision(collision.collider, collision.otherCollider, true);
                 return;
         }

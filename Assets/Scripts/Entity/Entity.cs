@@ -9,7 +9,6 @@ public abstract class Entity : MonoBehaviour
     public virtual void CalculateMaxEnergy()
     {
         // when items exist do math here and run when items change (for players only)
-        maxEnergy = 100;
     }
     public virtual void ChangeEnergy(float Change)
     {
@@ -20,6 +19,9 @@ public abstract class Entity : MonoBehaviour
     public virtual void OnEntityDeath()
     {
         Destroy(gameObject);
+        return;
     }
-    public abstract void OnEnergyChange(float Change);
+    public virtual void OnEnergyChange(float Change) {
+        return;
+    }
 }

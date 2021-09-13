@@ -12,6 +12,7 @@ public class Pathfinding_Unit : MonoBehaviour
 
     void Start()
     {
+        target = transform.position;
         StartCoroutine(RefreshPath());
     }
 
@@ -24,7 +25,6 @@ public class Pathfinding_Unit : MonoBehaviour
             if (targetPositionOld != target)
             {
                 targetPositionOld = target;
-
                 path = Pathfinding_Manager.RequestPath(transform.position, target);
                 StopCoroutine("FollowPath");
                 StartCoroutine("FollowPath");

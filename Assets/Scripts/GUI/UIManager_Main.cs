@@ -45,6 +45,19 @@ public class UIManager_Main : MonoBehaviour
         if (!EnergyDisplayBar.value.IsWithinBoundsOf(EnergyPercent, 0.005f))
         {
             EnergyDisplayBar.value = Mathf.SmoothDamp(EnergyDisplayBar.value, EnergyPercent, ref EnergySmoothDampRefValue, EnergyDisplay_SmoothTime);
+            EnergyDisplay.text = $"{Mathf.Round(EnergyDisplayBar.value * 100f)}%";
+            if (EnergyDisplayBar.value < 0.5f)
+			{
+                EnergyDisplay.color = Color.yellow;
+                if (EnergyDisplayBar.value < 0.33f)
+                {
+                    EnergyDisplay.color = Color.red;
+                }
+            } else
+			{
+                EnergyDisplay.color = Color.white;
+            }
+
         }
         if (!AmmoDisplayBar.value.IsWithinBoundsOf(AmmoPercent, 0.005f))
         {

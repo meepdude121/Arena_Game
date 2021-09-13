@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Entity_DefaultBehaviour : Entity
 {
-    // do nothing
-    public override void OnEnergyChange(float Change)
-    {
-        return;
-    }
+	public override void OnEntityDeath()
+	{
+		GetComponent<EntityLoot>().DropItem(gameObject);
+		base.OnEntityDeath();
+	}
+
 }

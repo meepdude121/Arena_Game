@@ -10,6 +10,7 @@ public class Enemy_TestAI : MonoBehaviour
     GunManager gunManager;
     public LayerMask LineOfSightLayerMask;
     RaycastHit2D hit2;
+    bool hasReachedEndPoint = false;
 
     Pathfinding_Grid grid;
 
@@ -40,15 +41,18 @@ public class Enemy_TestAI : MonoBehaviour
                 }
                 AimTowards(player.position);
                 gunManager.Shoot(player.position);
+                hasReachedEndPoint = false;
             } 
             // if cannot see the player
             else
             {
-                // and has reached last seen point of the player
-                if (grid.NodeFromWorldPoint(transform.position) == grid.NodeFromWorldPoint(unit.target))
-                {
-                    gun.transform.Rotate(new Vector3(0, 0, Time.deltaTime * 60));
+                // and has reached end point of the player
+                if (!hasReachedEndPoint) { 
+                    unit.target += new Vector2(Random.Range(-4f, 4f), Random.Range(-4f, 4f)); 
+                    hasReachedEndPoint = true;
+
                 }
+                gun.transform.Rotate(new Vector3(0, 0, Time.deltaTime * 90));
             }
         }
         hit2 = hit;

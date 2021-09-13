@@ -20,7 +20,7 @@ public class TestWeapon : Weapon
             newbullet.transform.position = transform.position;
             Bullet bulletComponent = newbullet.GetComponent<Bullet>();
             bulletComponent.TARGET = targetPosition;
-            bulletComponent.damage = 50;
+            bulletComponent.damage = 5;
             bulletComponent.origin = gameObject.transform.parent.parent.gameObject;
 
             ShootTimer = 0f;
