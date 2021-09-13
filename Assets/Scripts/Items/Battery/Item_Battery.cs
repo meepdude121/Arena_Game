@@ -5,8 +5,9 @@ using UnityEngine;
 public class Item_Battery : Item
 {
 	public float Capacity;
-	public override void OnPickup(Collision2D collision)
+	public override void OnPickup(Collider2D collision)
 	{
-		collision.collider.gameObject.GetComponent<Entity>().ChangeEnergy(Capacity);
+		collision.gameObject.GetComponent<Entity>().ChangeEnergy(Capacity);
+		Destroy(gameObject);
 	}
 }

@@ -25,35 +25,35 @@ public class Bullet : MonoBehaviour
         if (t > 4) Destroy(gameObject);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        switch (collision.gameObject.layer)
-        {
-            case 10: // collision is with enemy
-                Physics2D.IgnoreCollision(collision.collider, collision.otherCollider, true);
-                if (origin.CompareTag("Player"))
-				{
-                    collision.collider.transform.GetComponent<Entity>().ChangeEnergy(-damage);
-                    Destroy(gameObject); 
-                }
-                break;
+        if (collision.gameObject)
+		{
+            switch (collision.gameObject.layer)
+            {
+                case 10: // collision is with enemy
+                    if (origin.CompareTag("Player"))
+                    {
+                        collision.transform.GetComponent<Entity>().ChangeEnergy(-damage);
+                        Destroy(gameObject);
+                    }
+                    break;
 
-            case 11: // collision is with player
-                Physics2D.IgnoreCollision(collision.collider, collision.otherCollider, true);
-                if (origin.CompareTag("Enemy"))
-                {
-                    collision.collider.transform.GetComponent<Entity>().ChangeEnergy(-damage);
+                case 11: // collision is with player
+                    if (origin.CompareTag("Enemy"))
+                    {
+                        collision.transform.GetComponent<Entity>().ChangeEnergy(-damage);
+                        Destroy(gameObject);
+                    }
+                    break;
+
+                case 12: // Collision is with environment
                     Destroy(gameObject);
-                }
-                break;
+                    break;
 
-            case 12: // Collision is with environment
-                Destroy(gameObject);
-                break;
-
-            default:
-                Physics2D.IgnoreCollision(collision.collider, collision.otherCollider, true);
-                return;
+                default:
+                    return;
+            }
         }
     }
 }

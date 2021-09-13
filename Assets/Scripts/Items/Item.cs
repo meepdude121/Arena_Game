@@ -6,10 +6,9 @@ public abstract class Item : MonoBehaviour
 {
 	public Layer AcceptableLayer;
 	
-    public abstract void OnPickup(Collision2D collision);
-	private void OnCollisionEnter2D(Collision2D collision) {
-		Debug.Log("OnCollisionEnter2D called on item");
-		if (collision.collider.gameObject.CompareLayer((int)AcceptableLayer))
+    public abstract void OnPickup(Collider2D collision);
+	private void OnTriggerEnter2D(Collider2D collision) {
+		if (collision.gameObject.layer == (int)AcceptableLayer)
 			OnPickup(collision); 
 	}
 
@@ -22,6 +21,9 @@ public abstract class Item : MonoBehaviour
 		UI,
 		PostProcessing,
 		NotInReflection,
+		Empty0,
+		Empty1,
+		Empty2,
 		Enemy,
 		Player,
 		NotInPathfind
