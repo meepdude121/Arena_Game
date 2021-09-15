@@ -147,5 +147,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   origin: {fileID: 0}
   TARGET: {x: 0, y: 0, z: 0}
-  Speed: 1
+  Speed: 5
   damage: 0
