@@ -5,9 +5,10 @@ namespace Game
 {
 	namespace Item
 	{
+		[System.Serializable]
 		public class ItemData
 		{
-			public Color GetRarityColor(Rarity rarity)
+			public static Color GetRarityColor(Rarity rarity)
 			{
 				switch (rarity)
 				{

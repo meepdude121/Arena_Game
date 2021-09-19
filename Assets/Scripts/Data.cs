@@ -8,20 +8,21 @@ namespace Game.File
 {
 	public class Manager
 	{
-		public Save CreateSaveFile(List<Item> inventoryData = null)
+		// List<Item.ItemData> inventoryData = null
+		public Save CreateSaveFile(string a = " ASDFSDFSD fsDF ")
 		{
 			// create new save class
 			Save save = new Save();
-
-			
-
-			Debug.LogError($"Failed to create save file! Output: \n{save}");
+			save.A = a;
+			return save;
+			Debug.LogError($"Failed to create save file! Output: \n{save}"); // yes i know visual studio
 			return null;
 		}
-		void SaveGame()
+		public void SaveGame()
 		{
+			Debug.Log(Application.persistentDataPath);
 			BinaryFormatter bf = new BinaryFormatter();
-			FileStream file = System.IO.File.Create(Application.persistentDataPath + "/gamesave.save");
+			FileStream file = System.IO.File.Create(Application.persistentDataPath + "/.persistant");
 			bf.Serialize(file, CreateSaveFile());
 			file.Close();
 		}
@@ -35,10 +36,11 @@ namespace Game.File
 	public class Save
 	{
 		public Version version;
-		public List<Item> InventoryData = new List<Item>();
-		public Item Cannon;
-		public Item Shell;
-		public Item Locomotive;
+		public List<Item.ItemData> InventoryData = new List<Item.ItemData>();
+		public Item.ItemData Cannon;
+		public Item.ItemData Shell;
+		public Item.ItemData Locomotive;
+		public string A;
 	}
 	public enum Version
 	{

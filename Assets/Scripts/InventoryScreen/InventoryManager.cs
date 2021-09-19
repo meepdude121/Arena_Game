@@ -17,7 +17,7 @@ public class InventoryManager : MonoBehaviour
 	{
 		foreach (Item item in Inventory)
 		{
-			Instantiate();
+			//Instantiate();
 		}
 	}
 }

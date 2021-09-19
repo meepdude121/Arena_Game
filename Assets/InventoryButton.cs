@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class InventoryButton : MonoBehaviour
 {
 
-	public Item item;
+	public PlayerItem item;
 
 	Button Object_Button;
 	TextMeshProUGUI Object_Title;
