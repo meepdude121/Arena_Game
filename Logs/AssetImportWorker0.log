@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.1/staging' branch; Version is '2021.1.15f1 (e767a7370072) revision 15165351'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19043.1165; Version 2009; 64bit' Language: 'en' Physical Memory: 32711 MB
+OS: 'Windows 10 Home; OS build 19043.1237; Version 2009; 64bit' Language: 'en' Physical Memory: 15808 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -11,19 +11,19 @@ C:\Program Files\Unity\Hub\Editor\2021.1.15f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/minec/Documents/GitHub/Arena_Game
+C:/Users/minec/Documents/GitHub/ArenaGame
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49560
-Successfully changed project path to: C:/Users/minec/Documents/GitHub/Arena_Game
-C:/Users/minec/Documents/GitHub/Arena_Game
+58478
+Successfully changed project path to: C:/Users/minec/Documents/GitHub/ArenaGame
+C:/Users/minec/Documents/GitHub/ArenaGame
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 115.73 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 115.20 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.15f1 (e767a7370072)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.15f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/minec/Documents/GitHub/Arena_Game/Assets
+[Subsystems] Discovering subsystems at path C:/Users/minec/Documents/GitHub/ArenaGame/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 [vulkan] LoadVulkanLibrary vulkan-1.dll[vulkan] Loaded instance function vkGetInstanceProcAddr
 [vulkan] Loaded instance function vkGetInstanceProcAddr
@@ -50,446 +50,101 @@ GfxDevice: creating device client; threaded=0; jobified=0
 [vulkan] Loaded instance function vkDestroyInstance
 [vulkan] Loaded instance function vkGetPhysicalDeviceProperties
 [vulkan] Loaded instance function vkEnumeratePhysicalDevices
-Vulkan detection: 2
-[Vulkan init] extensions: count=15
-[Vulkan init] extensions: name=VK_KHR_device_group_creation, enabled=0
-[Vulkan init] extensions: name=VK_KHR_display, enabled=1
-[Vulkan init] extensions: name=VK_KHR_external_fence_capabilities, enabled=0
-[Vulkan init] extensions: name=VK_KHR_external_memory_capabilities, enabled=0
-[Vulkan init] extensions: name=VK_KHR_external_semaphore_capabilities, enabled=0
-[Vulkan init] extensions: name=VK_KHR_get_display_properties2, enabled=0
-[Vulkan init] extensions: name=VK_KHR_get_physical_device_properties2, enabled=1
-[Vulkan init] extensions: name=VK_KHR_get_surface_capabilities2, enabled=0
-[Vulkan init] extensions: name=VK_KHR_surface, enabled=1
-[Vulkan init] extensions: name=VK_KHR_surface_protected_capabilities, enabled=0
-[Vulkan init] extensions: name=VK_KHR_win32_surface, enabled=1
-[Vulkan init] extensions: name=VK_EXT_debug_report, enabled=1
-[Vulkan init] extensions: name=VK_EXT_debug_utils, enabled=0
-[Vulkan init] extensions: name=VK_EXT_swapchain_colorspace, enabled=1
-[Vulkan init] extensions: name=VK_NV_external_memory_capabilities, enabled=0
-[vulkan] Loaded instance function vkDestroyInstance
-[vulkan] Loaded instance function vkGetPhysicalDeviceProperties
-[vulkan] Loaded instance function vkEnumeratePhysicalDevices
-[vulkan] Loaded instance function vkGetDeviceProcAddr
-[vulkan] Loaded instance function vkGetPhysicalDeviceFeatures
-[vulkan] Loaded instance function vkGetPhysicalDeviceFormatProperties
-[vulkan] Loaded instance function vkGetPhysicalDeviceImageFormatProperties
-[vulkan] Loaded instance function vkGetPhysicalDeviceQueueFamilyProperties
-[vulkan] Loaded instance function vkGetPhysicalDeviceMemoryProperties
-[vulkan] Loaded instance function vkCreateDevice
-[vulkan] Loaded instance function vkEnumerateDeviceExtensionProperties
-[vulkan] Loaded instance function vkEnumerateDeviceLayerProperties
-[vulkan] Loaded instance function vkGetPhysicalDeviceSparseImageFormatProperties
-[vulkan] Loaded instance function vkDestroySurfaceKHR
-[vulkan] Loaded instance function vkGetPhysicalDeviceSurfaceSupportKHR
-[vulkan] Loaded instance function vkGetPhysicalDeviceSurfaceCapabilitiesKHR
-[vulkan] Loaded instance function vkGetPhysicalDeviceSurfaceFormatsKHR
-[vulkan] Loaded instance function vkGetPhysicalDeviceSurfacePresentModesKHR
-[vulkan] Loaded instance function vkCreateSwapchainKHR
-[vulkan] Loaded instance function vkDestroySwapchainKHR
-[vulkan] Loaded instance function vkGetSwapchainImagesKHR
-[vulkan] Loaded instance function vkAcquireNextImageKHR
-[vulkan] Loaded instance function vkQueuePresentKHR
-[vulkan] Loaded instance function vkGetPhysicalDeviceDisplayPropertiesKHR
-[vulkan] Loaded instance function vkGetPhysicalDeviceDisplayPlanePropertiesKHR
-[vulkan] Loaded instance function vkGetDisplayPlaneSupportedDisplaysKHR
-[vulkan] Loaded instance function vkGetDisplayModePropertiesKHR
-[vulkan] Loaded instance function vkCreateDisplayModeKHR
-[vulkan] Loaded instance function vkGetDisplayPlaneCapabilitiesKHR
-[vulkan] Loaded instance function vkCreateDisplayPlaneSurfaceKHR
-[vulkan] Loaded instance function vkCreateSharedSwapchainsKHR
-[vulkan] Loaded instance function vkCreateWin32SurfaceKHR
-[vulkan] Loaded instance function vkGetPhysicalDeviceWin32PresentationSupportKHR
-[vulkan] Loaded instance function vkSetHdrMetadataEXT
-[vulkan] Loaded instance function vkGetPhysicalDeviceFeatures2KHR
-[vulkan] Loaded instance function vkGetPhysicalDeviceProperties2KHR
-[vulkan] Loaded instance function vkGetPhysicalDeviceFormatProperties2KHR
-[vulkan] Loaded instance function vkGetPhysicalDeviceImageFormatProperties2KHR
-[vulkan] Loaded instance function vkGetPhysicalDeviceQueueFamilyProperties2KHR
-[vulkan] Loaded instance function vkGetPhysicalDeviceMemoryProperties2KHR
-[vulkan] Loaded instance function vkGetPhysicalDeviceSparseImageFormatProperties2KHR
-[Vulkan init] SelectPhysicalDevice requestedDeviceIndex=-1 xrDevice=0000000000000000
-[Vulkan init] Physical Device 00000179CED5A8D0 [0]: "NVIDIA GeForce RTX 3070" deviceType=2 vendorID=10de deviceID=2484
-[Vulkan init] Selected physical device 00000179CED5A8D0
-[Vulkan init] Graphics queue count=1
-[Vulkan init] extensions: count=144
-[Vulkan init] extensions: name=VK_KHR_16bit_storage, enabled=1
-[Vulkan init] extensions: name=VK_KHR_8bit_storage, enabled=0
-[Vulkan init] extensions: name=VK_KHR_acceleration_structure, enabled=0
-[Vulkan init] extensions: name=VK_KHR_bind_memory2, enabled=0
-[Vulkan init] extensions: name=VK_KHR_buffer_device_address, enabled=0
-[Vulkan init] extensions: name=VK_KHR_copy_commands2, enabled=0
-[Vulkan init] extensions: name=VK_KHR_create_renderpass2, enabled=1
-[Vulkan init] extensions: name=VK_KHR_dedicated_allocation, enabled=1
-[Vulkan init] extensions: name=VK_KHR_deferred_host_operations, enabled=0
-[Vulkan init] extensions: name=VK_KHR_depth_stencil_resolve, enabled=1
-[Vulkan init] extensions: name=VK_KHR_descriptor_update_template, enabled=1
-[Vulkan init] extensions: name=VK_KHR_device_group, enabled=0
-[Vulkan init] extensions: name=VK_KHR_draw_indirect_count, enabled=0
-[Vulkan init] extensions: name=VK_KHR_driver_properties, enabled=0
-[Vulkan init] extensions: name=VK_KHR_external_fence, enabled=0
-[Vulkan init] extensions: name=VK_KHR_external_fence_win32, enabled=0
-[Vulkan init] extensions: name=VK_KHR_external_memory, enabled=0
-[Vulkan init] extensions: name=VK_KHR_external_memory_win32, enabled=0
-[Vulkan init] extensions: name=VK_KHR_external_semaphore, enabled=0
-[Vulkan init] extensions: name=VK_KHR_external_semaphore_win32, enabled=0
-[Vulkan init] extensions: name=VK_KHR_fragment_shading_rate, enabled=0
-[Vulkan init] extensions: name=VK_KHR_get_memory_requirements2, enabled=1
-[Vulkan init] extensions: name=VK_KHR_image_format_list, enabled=1
-[Vulkan init] extensions: name=VK_KHR_imageless_framebuffer, enabled=0
-[Vulkan init] extensions: name=VK_KHR_maintenance1, enabled=1
-[Vulkan init] extensions: name=VK_KHR_maintenance2, enabled=1
-[Vulkan init] extensions: name=VK_KHR_maintenance3, enabled=0
-[Vulkan init] extensions: name=VK_KHR_multiview, enabled=1
-[Vulkan init] extensions: name=VK_KHR_pipeline_executable_properties, enabled=0
-[Vulkan init] extensions: name=VK_KHR_pipeline_library, enabled=0
-[Vulkan init] extensions: name=VK_KHR_push_descriptor, enabled=0
-[Vulkan init] extensions: name=VK_KHR_ray_query, enabled=0
-[Vulkan init] extensions: name=VK_KHR_ray_tracing_pipeline, enabled=0
-[Vulkan init] extensions: name=VK_KHR_relaxed_block_layout, enabled=0
-[Vulkan init] extensions: name=VK_KHR_sampler_mirror_clamp_to_edge, enabled=1
-[Vulkan init] extensions: name=VK_KHR_sampler_ycbcr_conversion, enabled=0
-[Vulkan init] extensions: name=VK_KHR_separate_depth_stencil_layouts, enabled=0
-[Vulkan init] extensions: name=VK_KHR_shader_atomic_int64, enabled=0
-[Vulkan init] extensions: name=VK_KHR_shader_clock, enabled=0
-[Vulkan init] extensions: name=VK_KHR_shader_draw_parameters, enabled=0
-[Vulkan init] extensions: name=VK_KHR_shader_float16_int8, enabled=1
-[Vulkan init] extensions: name=VK_KHR_shader_float_controls, enabled=0
-[Vulkan init] extensions: name=VK_KHR_shader_non_semantic_info, enabled=0
-[Vulkan init] extensions: name=VK_KHR_shader_subgroup_extended_types, enabled=0
-[Vulkan init] extensions: name=VK_KHR_shader_terminate_invocation, enabled=0
-[Vulkan init] extensions: name=VK_KHR_spirv_1_4, enabled=0
-[Vulkan init] extensions: name=VK_KHR_storage_buffer_storage_class, enabled=0
-[Vulkan init] extensions: name=VK_KHR_swapchain, enabled=1
-[Vulkan init] extensions: name=VK_KHR_swapchain_mutable_format, enabled=0
-[Vulkan init] extensions: name=VK_KHR_synchronization2, enabled=0
-[Vulkan init] extensions: name=VK_KHR_timeline_semaphore, enabled=0
-[Vulkan init] extensions: name=VK_KHR_uniform_buffer_standard_layout, enabled=0
-[Vulkan init] extensions: name=VK_KHR_variable_pointers, enabled=0
-[Vulkan init] extensions: name=VK_KHR_vulkan_memory_model, enabled=0
-[Vulkan init] extensions: name=VK_KHR_win32_keyed_mutex, enabled=0
-[Vulkan init] extensions: name=VK_KHR_workgroup_memory_explicit_layout, enabled=0
-[Vulkan init] extensions: name=VK_KHR_zero_initialize_workgroup_memory, enabled=0
-[Vulkan init] extensions: name=VK_EXT_4444_formats, enabled=0
-[Vulkan init] extensions: name=VK_EXT_blend_operation_advanced, enabled=0
-[Vulkan init] extensions: name=VK_EXT_buffer_device_address, enabled=0
-[Vulkan init] extensions: name=VK_EXT_calibrated_timestamps, enabled=0
-[Vulkan init] extensions: name=VK_EXT_color_write_enable, enabled=0
-[Vulkan init] extensions: name=VK_EXT_conditional_rendering, enabled=0
-[Vulkan init] extensions: name=VK_EXT_conservative_rasterization, enabled=1
-[Vulkan init] extensions: name=VK_EXT_custom_border_color, enabled=0
-[Vulkan init] extensions: name=VK_EXT_depth_clip_enable, enabled=0
-[Vulkan init] extensions: name=VK_EXT_depth_range_unrestricted, enabled=0
-[Vulkan init] extensions: name=VK_EXT_descriptor_indexing, enabled=0
-[Vulkan init] extensions: name=VK_EXT_discard_rectangles, enabled=0
-[Vulkan init] extensions: name=VK_EXT_extended_dynamic_state, enabled=0
-[Vulkan init] extensions: name=VK_EXT_extended_dynamic_state2, enabled=0
-[Vulkan init] extensions: name=VK_EXT_external_memory_host, enabled=0
-[Vulkan init] extensions: name=VK_EXT_fragment_shader_interlock, enabled=0
-[Vulkan init] extensions: name=VK_EXT_full_screen_exclusive, enabled=0
-[Vulkan init] extensions: name=VK_EXT_hdr_metadata, enabled=1
-[Vulkan init] extensions: name=VK_EXT_host_query_reset, enabled=0
-[Vulkan init] extensions: name=VK_EXT_image_robustness, enabled=0
-[Vulkan init] extensions: name=VK_EXT_index_type_uint8, enabled=0
-[Vulkan init] extensions: name=VK_EXT_inline_uniform_block, enabled=0
-[Vulkan init] extensions: name=VK_EXT_line_rasterization, enabled=0
-[Vulkan init] extensions: name=VK_EXT_memory_budget, enabled=0
-[Vulkan init] extensions: name=VK_EXT_memory_priority, enabled=0
-[Vulkan init] extensions: name=VK_EXT_pci_bus_info, enabled=0
-[Vulkan init] extensions: name=VK_EXT_pipeline_creation_cache_control, enabled=0
-[Vulkan init] extensions: name=VK_EXT_pipeline_creation_feedback, enabled=0
-[Vulkan init] extensions: name=VK_EXT_post_depth_coverage, enabled=0
-[Vulkan init] extensions: name=VK_EXT_private_data, enabled=0
-[Vulkan init] extensions: name=VK_EXT_provoking_vertex, enabled=0
-[Vulkan init] extensions: name=VK_EXT_queue_family_foreign, enabled=0
-[Vulkan init] extensions: name=VK_EXT_robustness2, enabled=0
-[Vulkan init] extensions: name=VK_EXT_sample_locations, enabled=0
-[Vulkan init] extensions: name=VK_EXT_sampler_filter_minmax, enabled=0
-[Vulkan init] extensions: name=VK_EXT_scalar_block_layout, enabled=1
-[Vulkan init] extensions: name=VK_EXT_separate_stencil_usage, enabled=0
-[Vulkan init] extensions: name=VK_EXT_shader_atomic_float, enabled=0
-[Vulkan init] extensions: name=VK_EXT_shader_demote_to_helper_invocation, enabled=0
-[Vulkan init] extensions: name=VK_EXT_shader_image_atomic_int64, enabled=0
-[Vulkan init] extensions: name=VK_EXT_shader_subgroup_ballot, enabled=0
-[Vulkan init] extensions: name=VK_EXT_shader_subgroup_vote, enabled=0
-[Vulkan init] extensions: name=VK_EXT_shader_viewport_index_layer, enabled=1
-[Vulkan init] extensions: name=VK_EXT_subgroup_size_control, enabled=0
-[Vulkan init] extensions: name=VK_EXT_texel_buffer_alignment, enabled=0
-[Vulkan init] extensions: name=VK_EXT_tooling_info, enabled=0
-[Vulkan init] extensions: name=VK_EXT_transform_feedback, enabled=0
-[Vulkan init] extensions: name=VK_EXT_vertex_attribute_divisor, enabled=0
-[Vulkan init] extensions: name=VK_EXT_vertex_input_dynamic_state, enabled=0
-[Vulkan init] extensions: name=VK_EXT_ycbcr_image_arrays, enabled=0
-[Vulkan init] extensions: name=VK_NV_acquire_winrt_display, enabled=0
-[Vulkan init] extensions: name=VK_NV_clip_space_w_scaling, enabled=0
-[Vulkan init] extensions: name=VK_NV_compute_shader_derivatives, enabled=0
-[Vulkan init] extensions: name=VK_NV_cooperative_matrix, enabled=0
-[Vulkan init] extensions: name=VK_NV_corner_sampled_image, enabled=0
-[Vulkan init] extensions: name=VK_NV_coverage_reduction_mode, enabled=0
-[Vulkan init] extensions: name=VK_NV_cuda_kernel_launch, enabled=0
-[Vulkan init] extensions: name=VK_NV_dedicated_allocation, enabled=0
-[Vulkan init] extensions: name=VK_NV_dedicated_allocation_image_aliasing, enabled=0
-[Vulkan init] extensions: name=VK_NV_device_diagnostic_checkpoints, enabled=0
-[Vulkan init] extensions: name=VK_NV_device_diagnostics_config, enabled=0
-[Vulkan init] extensions: name=VK_NV_device_generated_commands, enabled=0
-[Vulkan init] extensions: name=VK_NV_external_memory, enabled=0
-[Vulkan init] extensions: name=VK_NV_external_memory_win32, enabled=0
-[Vulkan init] extensions: name=VK_NV_fill_rectangle, enabled=0
-[Vulkan init] extensions: name=VK_NV_fragment_coverage_to_color, enabled=0
-[Vulkan init] extensions: name=VK_NV_fragment_shader_barycentric, enabled=0
-[Vulkan init] extensions: name=VK_NV_fragment_shading_rate_enums, enabled=0
-[Vulkan init] extensions: name=VK_NV_framebuffer_mixed_samples, enabled=0
-[Vulkan init] extensions: name=VK_NV_geometry_shader_passthrough, enabled=0
-[Vulkan init] extensions: name=VK_NV_inherited_viewport_scissor, enabled=0
-[Vulkan init] extensions: name=VK_NV_mesh_shader, enabled=0
-[Vulkan init] extensions: name=VK_NV_ray_tracing, enabled=0
-[Vulkan init] extensions: name=VK_NV_ray_tracing_motion_blur, enabled=0
-[Vulkan init] extensions: name=VK_NV_representative_fragment_test, enabled=0
-[Vulkan init] extensions: name=VK_NV_sample_mask_override_coverage, enabled=0
-[Vulkan init] extensions: name=VK_NV_scissor_exclusive, enabled=0
-[Vulkan init] extensions: name=VK_NV_shader_image_footprint, enabled=0
-[Vulkan init] extensions: name=VK_NV_shader_sm_builtins, enabled=0
-[Vulkan init] extensions: name=VK_NV_shader_subgroup_partitioned, enabled=0
-[Vulkan init] extensions: name=VK_NV_shading_rate_image, enabled=0
-[Vulkan init] extensions: name=VK_NV_viewport_array2, enabled=0
-[Vulkan init] extensions: name=VK_NV_viewport_swizzle, enabled=0
-[Vulkan init] extensions: name=VK_NV_win32_keyed_mutex, enabled=0
-[Vulkan init] extensions: name=VK_NVX_binary_import, enabled=0
-[Vulkan init] extensions: name=VK_NVX_image_view_handle, enabled=0
-[Vulkan init] extensions: name=VK_NVX_multiview_per_view_attributes, enabled=0
-[vulkan] Loaded device function vkDestroyDevice
-[vulkan] Loaded device function vkGetDeviceQueue
-[vulkan] Loaded device function vkQueueSubmit
-[vulkan] Loaded device function vkQueueWaitIdle
-[vulkan] Loaded device function vkDeviceWaitIdle
-[vulkan] Loaded device function vkAllocateMemory
-[vulkan] Loaded device function vkFreeMemory
-[vulkan] Loaded device function vkMapMemory
-[vulkan] Loaded device function vkUnmapMemory
-[vulkan] Loaded device function vkFlushMappedMemoryRanges
-[vulkan] Loaded device function vkInvalidateMappedMemoryRanges
-[vulkan] Loaded device function vkGetDeviceMemoryCommitment
-[vulkan] Loaded device function vkBindBufferMemory
-[vulkan] Loaded device function vkBindImageMemory
-[vulkan] Loaded device function vkGetBufferMemoryRequirements
-[vulkan] Loaded device function vkGetImageMemoryRequirements
-[vulkan] Loaded device function vkGetImageSparseMemoryRequirements
-[vulkan] Loaded device function vkQueueBindSparse
-[vulkan] Loaded device function vkCreateFence
-[vulkan] Loaded device function vkDestroyFence
-[vulkan] Loaded device function vkResetFences
-[vulkan] Loaded device function vkGetFenceStatus
-[vulkan] Loaded device function vkWaitForFences
-[vulkan] Loaded device function vkCreateSemaphore
-[vulkan] Loaded device function vkDestroySemaphore
-[vulkan] Loaded device function vkCreateEvent
-[vulkan] Loaded device function vkDestroyEvent
-[vulkan] Loaded device function vkGetEventStatus
-[vulkan] Loaded device function vkSetEvent
-[vulkan] Loaded device function vkResetEvent
-[vulkan] Loaded device function vkCreateQueryPool
-[vulkan] Loaded device function vkDestroyQueryPool
-[vulkan] Loaded device function vkGetQueryPoolResults
-[vulkan] Loaded device function vkCreateBuffer
-[vulkan] Loaded device function vkDestroyBuffer
-[vulkan] Loaded device function vkCreateBufferView
-[vulkan] Loaded device function vkDestroyBufferView
-[vulkan] Loaded device function vkCreateImage
-[vulkan] Loaded device function vkDestroyImage
-[vulkan] Loaded device function vkGetImageSubresourceLayout
-[vulkan] Loaded device function vkCreateImageView
-[vulkan] Loaded device function vkDestroyImageView
-[vulkan] Loaded device function vkCreateShaderModule
-[vulkan] Loaded device function vkDestroyShaderModule
-[vulkan] Loaded device function vkCreatePipelineCache
-[vulkan] Loaded device function vkDestroyPipelineCache
-[vulkan] Loaded device function vkGetPipelineCacheData
-[vulkan] Loaded device function vkMergePipelineCaches
-[vulkan] Loaded device function vkCreateGraphicsPipelines
-[vulkan] Loaded device function vkCreateComputePipelines
-[vulkan] Loaded device function vkDestroyPipeline
-[vulkan] Loaded device function vkCreatePipelineLayout
-[vulkan] Loaded device function vkDestroyPipelineLayout
-[vulkan] Loaded device function vkCreateSampler
-[vulkan] Loaded device function vkDestroySampler
-[vulkan] Loaded device function vkCreateDescriptorSetLayout
-[vulkan] Loaded device function vkDestroyDescriptorSetLayout
-[vulkan] Loaded device function vkCreateDescriptorPool
-[vulkan] Loaded device function vkDestroyDescriptorPool
-[vulkan] Loaded device function vkResetDescriptorPool
-[vulkan] Loaded device function vkAllocateDescriptorSets
-[vulkan] Loaded device function vkFreeDescriptorSets
-[vulkan] Loaded device function vkUpdateDescriptorSets
-[vulkan] Loaded device function vkCreateFramebuffer
-[vulkan] Loaded device function vkDestroyFramebuffer
-[vulkan] Loaded device function vkCreateRenderPass
-[vulkan] Loaded device function vkDestroyRenderPass
-[vulkan] Loaded device function vkGetRenderAreaGranularity
-[vulkan] Loaded device function vkCreateCommandPool
-[vulkan] Loaded device function vkDestroyCommandPool
-[vulkan] Loaded device function vkResetCommandPool
-[vulkan] Loaded device function vkAllocateCommandBuffers
-[vulkan] Loaded device function vkFreeCommandBuffers
-[vulkan] Loaded device function vkBeginCommandBuffer
-[vulkan] Loaded device function vkEndCommandBuffer
-[vulkan] Loaded device function vkResetCommandBuffer
-[vulkan] Loaded device function vkCmdBindPipeline
-[vulkan] Loaded device function vkCmdSetViewport
-[vulkan] Loaded device function vkCmdSetScissor
-[vulkan] Loaded device function vkCmdSetLineWidth
-[vulkan] Loaded device function vkCmdSetDepthBias
-[vulkan] Loaded device function vkCmdSetBlendConstants
-[vulkan] Loaded device function vkCmdSetDepthBounds
-[vulkan] Loaded device function vkCmdSetStencilCompareMask
-[vulkan] Loaded device function vkCmdSetStencilWriteMask
-[vulkan] Loaded device function vkCmdSetStencilReference
-[vulkan] Loaded device function vkCmdBindDescriptorSets
-[vulkan] Loaded device function vkCmdBindIndexBuffer
-[vulkan] Loaded device function vkCmdBindVertexBuffers
-[vulkan] Loaded device function vkCmdDraw
-[vulkan] Loaded device function vkCmdDrawIndexed
-[vulkan] Loaded device function vkCmdDrawIndirect
-[vulkan] Loaded device function vkCmdDrawIndexedIndirect
-[vulkan] Loaded device function vkCmdDispatch
-[vulkan] Loaded device function vkCmdDispatchIndirect
-[vulkan] Loaded device function vkCmdCopyBuffer
-[vulkan] Loaded device function vkCmdCopyImage
-[vulkan] Loaded device function vkCmdBlitImage
-[vulkan] Loaded device function vkCmdCopyBufferToImage
-[vulkan] Loaded device function vkCmdCopyImageToBuffer
-[vulkan] Loaded device function vkCmdUpdateBuffer
-[vulkan] Loaded device function vkCmdFillBuffer
-[vulkan] Loaded device function vkCmdClearColorImage
-[vulkan] Loaded device function vkCmdClearDepthStencilImage
-[vulkan] Loaded device function vkCmdClearAttachments
-[vulkan] Loaded device function vkCmdResolveImage
-[vulkan] Loaded device function vkCmdSetEvent
-[vulkan] Loaded device function vkCmdResetEvent
-[vulkan] Loaded device function vkCmdWaitEvents
-[vulkan] Loaded device function vkCmdPipelineBarrier
-[vulkan] Loaded device function vkCmdBeginQuery
-[vulkan] Loaded device function vkCmdEndQuery
-[vulkan] Loaded device function vkCmdResetQueryPool
-[vulkan] Loaded device function vkCmdWriteTimestamp
-[vulkan] Loaded device function vkCmdCopyQueryPoolResults
-[vulkan] Loaded device function vkCmdPushConstants
-[vulkan] Loaded device function vkCmdBeginRenderPass
-[vulkan] Loaded device function vkCmdNextSubpass
-[vulkan] Loaded device function vkCmdEndRenderPass
-[vulkan] Loaded device function vkCmdExecuteCommands
-[vulkan] Loaded device function vkGetImageMemoryRequirements2KHR
-[vulkan] Loaded device function vkGetBufferMemoryRequirements2KHR
-[vulkan] Loaded device function vkGetImageSparseMemoryRequirements2KHR
-[vulkan] Loaded device function vkCreateDescriptorUpdateTemplateKHR
-[vulkan] Loaded device function vkDestroyDescriptorUpdateTemplateKHR
-[vulkan] Loaded device function vkUpdateDescriptorSetWithTemplateKHR
-[vulkan] Loaded device function vkCmdBeginRenderPass2KHR
-[vulkan] Loaded device function vkCmdEndRenderPass2KHR
-[vulkan] Loaded device function vkCmdNextSubpass2KHR
-[vulkan] Loaded device function vkCreateRenderPass2KHR
-[vulkan] Failed to load device function vkDebugMarkerSetObjectTagEXT
-[vulkan] Loaded instance function vkDebugMarkerSetObjectTagEXT
-[vulkan] Failed to load device function vkDebugMarkerSetObjectNameEXT
-[vulkan] Loaded instance function vkDebugMarkerSetObjectNameEXT
-[vulkan] Failed to load device function vkCmdDebugMarkerBeginEXT
-[vulkan] Loaded instance function vkCmdDebugMarkerBeginEXT
-[vulkan] Failed to load device function vkCmdDebugMarkerEndEXT
-[vulkan] Loaded instance function vkCmdDebugMarkerEndEXT
-[vulkan] Failed to load device function vkCmdDebugMarkerInsertEXT
-[vulkan] Loaded instance function vkCmdDebugMarkerInsertEXT
-Vulkan API version 1.1.0 (1.2.175 supported by driver, 1.1.0 requested)
-Vulkan vendor=[NVIDIA] id=[10de]
-Vulkan renderer=[NVIDIA GeForce RTX 3070] id=[2484]
-Vulkan device type 2
-Vulkan driverversion=[0x76030000] uint=[1979908096]
-Vulkan PSO: Incompatible header found [Size=32] [Version=1] [Vendor=10de] [Device=2484]
+Vulkan detection: 0
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f91)
+    Vendor:   NVIDIA
+    VRAM:     3962 MB
+    Driver:   27.21.14.6611
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.15f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.15f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56556
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56776
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.093384 seconds.
+Registered in 0.003515 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 43.73 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 96.60 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  4.142 seconds
+- Completed reload, in  2.038 seconds
 Domain Reload Profiling:
-	ReloadAssembly (4142ms)
-		BeginReloadAssembly (1881ms)
+	ReloadAssembly (2039ms)
+		BeginReloadAssembly (162ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (519ms)
-			LoadAssemblies (1883ms)
+		EndReloadAssembly (665ms)
+			LoadAssemblies (156ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (313ms)
+			SetupTypeCache (251ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (20ms)
-			SetupLoadedEditorAssemblies (145ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (307ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (44ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (69ms)
-				ProcessInitializeOnLoadMethodAttributes (25ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (97ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (152ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.415903 seconds.
+Registered in 0.008363 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 43.40 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 106.48 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.154 seconds
+- Completed reload, in  2.083 seconds
 Domain Reload Profiling:
-	ReloadAssembly (3155ms)
-		BeginReloadAssembly (101ms)
+	ReloadAssembly (2084ms)
+		BeginReloadAssembly (243ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (2999ms)
-			LoadAssemblies (1798ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (1716ms)
+			LoadAssemblies (172ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (654ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (440ms)
+			SetupTypeCache (593ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (106ms)
+			SetupLoadedEditorAssemblies (681ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (43ms)
-				BeforeProcessingInitializeOnLoad (54ms)
-				ProcessInitializeOnLoadAttributes (327ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				RefreshPlugins (107ms)
+				BeforeProcessingInitializeOnLoad (117ms)
+				ProcessInitializeOnLoadAttributes (418ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (12ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.89 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3374 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 163.8 MB.
-System memory in use after: 164.0 MB.
+Unloading 3373 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.9 MB.
+System memory in use after: 151.9 MB.
 
-Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 3827.
-Total: 2.555300 ms (FindLiveObjects: 0.241500 ms CreateObjectMapping: 0.125000 ms MarkObjects: 2.140700 ms  DeleteObjects: 0.047400 ms)
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 3826.
+Total: 4.256300 ms (FindLiveObjects: 0.474600 ms CreateObjectMapping: 0.157600 ms MarkObjects: 3.418200 ms  DeleteObjects: 0.203200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -498,59 +153,66 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Resources/GUIAssets/Inventory/ItemButtons/Fallback.prefab
-  artifactKey: Guid(874f2954e9c585b41bfa143ec6cb24d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/GUIAssets/Inventory/ItemButtons/Fallback.prefab using Guid(874f2954e9c585b41bfa143ec6cb24d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13c9e546134988463bc70dd7eda39527') in 0.125326 seconds 
+  path: Assets/Graphics/Textures/Tilesets/Sand/Sand1.png
+  artifactKey: Guid(af431b233352c6d4b9735cf9ec40da7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Textures/Tilesets/Sand/Sand1.png using Guid(af431b233352c6d4b9735cf9ec40da7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '469280af0a65288ff6c1bbea418c7d5c') in 0.281575 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/Graphics/Textures/Tilesets/Sand/Sand1.prefab
+  artifactKey: Guid(43f92a9356e1b9a46b2faa49232807c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Textures/Tilesets/Sand/Sand1.prefab using Guid(43f92a9356e1b9a46b2faa49232807c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30288f6f154852cf1749aec94e833b54') in 0.234053 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003753 seconds.
+Registered in 0.006920 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.84 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.801 seconds
+- Completed reload, in  1.543 seconds
 Domain Reload Profiling:
-	ReloadAssembly (801ms)
-		BeginReloadAssembly (89ms)
+	ReloadAssembly (1543ms)
+		BeginReloadAssembly (181ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (10ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (30ms)
-		EndReloadAssembly (667ms)
-			LoadAssemblies (64ms)
+			CreateAndSetChildDomain (55ms)
+		EndReloadAssembly (1277ms)
+			LoadAssemblies (117ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (224ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (274ms)
+			SetupTypeCache (453ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (436ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (44ms)
-				ProcessInitializeOnLoadAttributes (213ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (6ms)
+				BeforeProcessingInitializeOnLoad (91ms)
+				ProcessInitializeOnLoadAttributes (316ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (10ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (21ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.85 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3244 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 156.2 MB.
-System memory in use after: 156.4 MB.
+Unloading 3249 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.4 MB.
+System memory in use after: 150.5 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3829.
-Total: 2.688300 ms (FindLiveObjects: 0.251500 ms CreateObjectMapping: 0.138800 ms MarkObjects: 2.283600 ms  DeleteObjects: 0.013800 ms)
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3894.
+Total: 4.944100 ms (FindLiveObjects: 0.393400 ms CreateObjectMapping: 0.125200 ms MarkObjects: 4.265400 ms  DeleteObjects: 0.158400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -559,54 +221,55 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003294 seconds.
+Registered in 0.006867 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.95 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.779 seconds
+- Completed reload, in  1.492 seconds
 Domain Reload Profiling:
-	ReloadAssembly (780ms)
-		BeginReloadAssembly (90ms)
+	ReloadAssembly (1492ms)
+		BeginReloadAssembly (159ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (11ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (30ms)
-		EndReloadAssembly (641ms)
-			LoadAssemblies (65ms)
+			CreateAndSetChildDomain (49ms)
+		EndReloadAssembly (1243ms)
+			LoadAssemblies (119ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (238ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (234ms)
+			SetupTypeCache (434ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (422ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (45ms)
-				ProcessInitializeOnLoadAttributes (173ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (310ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (10ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (22ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.02 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3244 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 157.5 MB.
-System memory in use after: 157.7 MB.
+Unloading 3248 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.5 MB.
+System memory in use after: 150.5 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3831.
-Total: 2.690700 ms (FindLiveObjects: 0.248900 ms CreateObjectMapping: 0.105100 ms MarkObjects: 2.321400 ms  DeleteObjects: 0.014400 ms)
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3896.
+Total: 4.944800 ms (FindLiveObjects: 0.404000 ms CreateObjectMapping: 0.126500 ms MarkObjects: 4.234300 ms  DeleteObjects: 0.177900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -615,54 +278,187 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+Received Import Request.
+  Time since last request: 1146.308530 seconds.
+  path: Assets/Graphics/GUI
+  artifactKey: Guid(5249497a0c4467d478377dc6a716235a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/GUI using Guid(5249497a0c4467d478377dc6a716235a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccc7ad23f2df512973a967f4c1bbef52') in 0.023993 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.354204 seconds.
+  path: Assets/Graphics/GUI/Inventory
+  artifactKey: Guid(0dbea8b58358f54469a5a94d788d6d66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/GUI/Inventory using Guid(0dbea8b58358f54469a5a94d788d6d66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5717d57e7940c0aac3fd50fefc91d597') in 0.013886 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.571149 seconds.
+  path: Assets/Graphics/GUI/Inventory/ButtonAssets
+  artifactKey: Guid(622eb15caafb66049b9d49009f2c7846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/GUI/Inventory/ButtonAssets using Guid(622eb15caafb66049b9d49009f2c7846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fb3bfc3c8239ff1ad4476139f74b41c') in 0.012592 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.041778 seconds.
+  path: Assets/Graphics/GUI/Inventory/ButtonAssets/button.png
+  artifactKey: Guid(ca8ab9d890802ce41935dbc3d8467c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/GUI/Inventory/ButtonAssets/button.png using Guid(ca8ab9d890802ce41935dbc3d8467c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc975b677a3fc48994fc76a68fa194f5') in 0.087224 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Graphics/GUI/Inventory/ButtonAssets/button_alt.png
+  artifactKey: Guid(100f3b41d1065b34b9083da0d30b8cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/GUI/Inventory/ButtonAssets/button_alt.png using Guid(100f3b41d1065b34b9083da0d30b8cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57f1d5ad22136124a8416e1c7125d6f1') in 0.020114 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.559770 seconds.
+  path: Assets/Graphics/GUI/Inventory/ButtonAssets/button_alt.png
+  artifactKey: Guid(100f3b41d1065b34b9083da0d30b8cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/GUI/Inventory/ButtonAssets/button_alt.png using Guid(100f3b41d1065b34b9083da0d30b8cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d58b39077a635db39d44fc4c3c68161') in 0.019119 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 106.858890 seconds.
+  path: Assets/Graphics/GUI/Inventory/ButtonAssets/button_alt.png
+  artifactKey: Guid(100f3b41d1065b34b9083da0d30b8cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/GUI/Inventory/ButtonAssets/button_alt.png using Guid(100f3b41d1065b34b9083da0d30b8cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '430c3b459df6b8d2c948926dd3d263db') in 0.016323 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 193.629171 seconds.
+  path: Assets/Graphics/GUI/Inventory/ButtonAssets/button_alt.png
+  artifactKey: Guid(100f3b41d1065b34b9083da0d30b8cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/GUI/Inventory/ButtonAssets/button_alt.png using Guid(100f3b41d1065b34b9083da0d30b8cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4957ec955d5872a492d20ea57060d72') in 0.017385 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.438151 seconds.
+  path: Assets/Graphics/GUI/Inventory/ButtonAssets/button_alt.png
+  artifactKey: Guid(100f3b41d1065b34b9083da0d30b8cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/GUI/Inventory/ButtonAssets/button_alt.png using Guid(100f3b41d1065b34b9083da0d30b8cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc76f58f1f145fb9462d91dcaa5376bf') in 0.013843 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.359998 seconds.
+  path: Assets/Graphics/GUI/Inventory/ButtonAssets/button_alt.png
+  artifactKey: Guid(100f3b41d1065b34b9083da0d30b8cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/GUI/Inventory/ButtonAssets/button_alt.png using Guid(100f3b41d1065b34b9083da0d30b8cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '252f7e7c35521617c5fce1a57ffd51d8') in 0.018723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.107268 seconds.
+  path: Assets/Graphics/GUI/Inventory/ButtonAssets/button_alt.png
+  artifactKey: Guid(100f3b41d1065b34b9083da0d30b8cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/GUI/Inventory/ButtonAssets/button_alt.png using Guid(100f3b41d1065b34b9083da0d30b8cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b8418eea834dfa6cdfa2394cf41d5ff') in 0.012891 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.481997 seconds.
+  path: Assets/Graphics/GUI/Inventory/ButtonAssets/button_alt.png
+  artifactKey: Guid(100f3b41d1065b34b9083da0d30b8cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/GUI/Inventory/ButtonAssets/button_alt.png using Guid(100f3b41d1065b34b9083da0d30b8cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80722ce6f0ec9ebfbaaad5000324b4ed') in 0.020769 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 159.718041 seconds.
+  path: Assets/Graphics/GUI/Inventory/ButtonAssets/button_5x5.png
+  artifactKey: Guid(e9fb53bdfc893d0408f9dd481af66588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/GUI/Inventory/ButtonAssets/button_5x5.png using Guid(e9fb53bdfc893d0408f9dd481af66588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ebe18fbd75d60a2c7320931042d773f') in 0.021031 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.605845 seconds.
+  path: Assets/Graphics/GUI/Inventory/ButtonAssets/button_5x5.png
+  artifactKey: Guid(e9fb53bdfc893d0408f9dd481af66588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/GUI/Inventory/ButtonAssets/button_5x5.png using Guid(e9fb53bdfc893d0408f9dd481af66588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '952556a9646ed729b0abd5d05fd68cf3') in 0.020323 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.435046 seconds.
+  path: Assets/Graphics/GUI/Inventory/ButtonAssets/button_5x5.png
+  artifactKey: Guid(e9fb53bdfc893d0408f9dd481af66588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/GUI/Inventory/ButtonAssets/button_5x5.png using Guid(e9fb53bdfc893d0408f9dd481af66588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cacee33f09c3042f62aa8b5be9496bad') in 0.012886 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.365992 seconds.
+  path: Assets/Graphics/GUI/Inventory/ButtonAssets/button_5x5.png
+  artifactKey: Guid(e9fb53bdfc893d0408f9dd481af66588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/GUI/Inventory/ButtonAssets/button_5x5.png using Guid(e9fb53bdfc893d0408f9dd481af66588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d567697e41843273aedd2eb17446c6d') in 0.014548 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 188.568409 seconds.
+  path: Assets/Graphics/GUI/Inventory/ButtonAssets/button_8x8.png
+  artifactKey: Guid(1bb21194fc26069469fbe3091b83424e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/GUI/Inventory/ButtonAssets/button_8x8.png using Guid(1bb21194fc26069469fbe3091b83424e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a45eebe284ef4851947c6480dcfc8b2') in 0.014952 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.312419 seconds.
+  path: Assets/Graphics/GUI/Inventory/ButtonAssets/button_8x8.png
+  artifactKey: Guid(1bb21194fc26069469fbe3091b83424e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/GUI/Inventory/ButtonAssets/button_8x8.png using Guid(1bb21194fc26069469fbe3091b83424e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee11df7beb722564c5fc7d7b999bf39d') in 0.015004 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.324512 seconds.
+  path: Assets/Graphics/GUI/Inventory/ButtonAssets/button_8x8.png
+  artifactKey: Guid(1bb21194fc26069469fbe3091b83424e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/GUI/Inventory/ButtonAssets/button_8x8.png using Guid(1bb21194fc26069469fbe3091b83424e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9eb99847010e3149ea46a4dae9d5d21c') in 0.017914 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.146573 seconds.
+  path: Assets/Graphics/GUI/Inventory/ButtonAssets/button_8x8.png
+  artifactKey: Guid(1bb21194fc26069469fbe3091b83424e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/GUI/Inventory/ButtonAssets/button_8x8.png using Guid(1bb21194fc26069469fbe3091b83424e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5df9df10d8e6458d6ce34a568e2348b8') in 0.012124 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.444276 seconds.
+  path: Assets/Graphics/GUI/Inventory/ButtonAssets/button_8x8.png
+  artifactKey: Guid(1bb21194fc26069469fbe3091b83424e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/GUI/Inventory/ButtonAssets/button_8x8.png using Guid(1bb21194fc26069469fbe3091b83424e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8b00d1475a6731e21c43f4ee22874ce') in 0.012614 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 591.390144 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c32d4423b2f4f4a3816864726a15d398') in 0.253053 seconds 
+========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003648 seconds.
+Registered in 0.120371 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.89 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.761 seconds
+- Completed reload, in  1.647 seconds
 Domain Reload Profiling:
-	ReloadAssembly (762ms)
-		BeginReloadAssembly (89ms)
+	ReloadAssembly (1647ms)
+		BeginReloadAssembly (162ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (11ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (625ms)
-			LoadAssemblies (66ms)
+			CreateAndSetChildDomain (63ms)
+		EndReloadAssembly (1398ms)
+			LoadAssemblies (122ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (225ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (229ms)
+			SetupTypeCache (442ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (61ms)
+			SetupLoadedEditorAssemblies (522ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (45ms)
-				ProcessInitializeOnLoadAttributes (169ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				BeforeProcessingInitializeOnLoad (79ms)
+				ProcessInitializeOnLoadAttributes (412ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (10ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (27ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3244 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 158.7 MB.
-System memory in use after: 159.0 MB.
+Unloading 3253 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 158.8 MB.
+System memory in use after: 158.8 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3833.
-Total: 2.787800 ms (FindLiveObjects: 0.317600 ms CreateObjectMapping: 0.144900 ms MarkObjects: 2.310400 ms  DeleteObjects: 0.014000 ms)
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4249.
+Total: 5.306500 ms (FindLiveObjects: 0.486100 ms CreateObjectMapping: 0.138700 ms MarkObjects: 4.411500 ms  DeleteObjects: 0.268400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -671,6 +467,100 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 208.293505 seconds.
+  path: Assets/Graphics/GUI/Symbols/left.png
+  artifactKey: Guid(f510be273fe64414eb191058b2bb278b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/GUI/Symbols/left.png using Guid(f510be273fe64414eb191058b2bb278b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64bded6b08eccb76e4446cc8b1417299') in 0.059149 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Graphics/GUI/Symbols/right.png
+  artifactKey: Guid(64133a219043f8342885b49e90a64bc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/GUI/Symbols/right.png using Guid(64133a219043f8342885b49e90a64bc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a862cc3f8916514b2565d0860307a345') in 0.017631 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.774070 seconds.
+  path: Assets/Graphics/GUI/Symbols/left.png
+  artifactKey: Guid(f510be273fe64414eb191058b2bb278b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/GUI/Symbols/left.png using Guid(f510be273fe64414eb191058b2bb278b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c432371b5e107963a922f1ee047a6f5f') in 0.037018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.873703 seconds.
+  path: Assets/Graphics/GUI/Symbols/left.png
+  artifactKey: Guid(f510be273fe64414eb191058b2bb278b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/GUI/Symbols/left.png using Guid(f510be273fe64414eb191058b2bb278b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a746fff5af997bf4c1a9bf2e8f8a3a8') in 0.016093 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.797269 seconds.
+  path: Assets/Graphics/GUI/Symbols/right.png
+  artifactKey: Guid(64133a219043f8342885b49e90a64bc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/GUI/Symbols/right.png using Guid(64133a219043f8342885b49e90a64bc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '089ed5903d771f6f2c2cf6971405da0e') in 0.016417 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.449960 seconds.
+  path: Assets/Graphics/GUI/Symbols/right.png
+  artifactKey: Guid(64133a219043f8342885b49e90a64bc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/GUI/Symbols/right.png using Guid(64133a219043f8342885b49e90a64bc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd48680d87f585443dd322388538debe3') in 0.017608 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007804 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.557 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1558ms)
+		BeginReloadAssembly (181ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (61ms)
+		EndReloadAssembly (1287ms)
+			LoadAssemblies (133ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (443ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (61ms)
+			SetupLoadedEditorAssemblies (427ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (315ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (31ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3250 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 161.0 MB.
+System memory in use after: 161.0 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4338.
+Total: 4.441800 ms (FindLiveObjects: 0.394100 ms CreateObjectMapping: 0.095800 ms MarkObjects: 3.796600 ms  DeleteObjects: 0.153500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
