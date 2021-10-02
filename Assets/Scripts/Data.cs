@@ -14,6 +14,7 @@ namespace Game.File
 			// create new save class
 			Save save = new Save();
 			save.A = a;
+			
 			return save;
 			Debug.LogError($"Failed to create save file! Output: \n{save}"); // yes i know visual studio
 			return null;
