@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 public class UIManager_Main : MonoBehaviour
 {
+    public static UIManager_Main Instance { get; private set; }
 
     private float EnergySmoothDampRefValue;
     private float EnergyPercent = 1f;
@@ -30,7 +31,7 @@ public class UIManager_Main : MonoBehaviour
         EnergyDisplay.text = $"{Mathf.Clamp(Mathf.Round(Energy / EnergyLimit * 100f), 0f, 100f)}%";
         EnergyPercent = Energy / EnergyLimit;
     }
-    public void UpdateAmmoCount(float Percent)
+    public void OnAmmoChange(float Percent)
     {
         // do i need this? Todo: test
         AmmoPercent = Percent;
@@ -39,7 +40,8 @@ public class UIManager_Main : MonoBehaviour
     {
 
     }
-
+    private void Awake() => Instance = this;
+    // TODO: this sucks
     void Update()
     {
         if (!EnergyDisplayBar.value.IsWithinBoundsOf(EnergyPercent, 0.005f))

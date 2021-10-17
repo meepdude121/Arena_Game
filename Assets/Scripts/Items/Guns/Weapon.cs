@@ -8,7 +8,6 @@ public abstract class Weapon : MonoBehaviour
     public int BaseAmmoCount;
     public float BaseReloadTime;
     public float BaseShotsPerSecond;
-    public UIManager_Main UIManager;
     private Color FlashColor = new Color(1, 0.64705882352f, 0, 0);
     public Light2D FlashLight;
     /// <summary>
@@ -37,6 +36,7 @@ public abstract class Weapon : MonoBehaviour
 
         yield return null;
     }
+    // TODO: this sucks
     public IEnumerator ShootAnim()
     {
         float t = 0;
@@ -56,5 +56,5 @@ public abstract class Weapon : MonoBehaviour
         FlashColor.a = 0;
         yield return null;
     }
-    public void UpdateReloadProgress(float Progress) => UIManager.UpdateAmmoCount(Mathf.Clamp(Progress, 0, 1));
+    public void UpdateReloadProgress(float Progress) => UIManager_Main.Instance.OnAmmoChange(Mathf.Clamp(Progress, 0, 1));
 }

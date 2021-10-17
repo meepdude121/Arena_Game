@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -9,15 +10,15 @@ namespace Game.File
 	public class Manager
 	{
 		// List<Item.ItemData> inventoryData = null
-		public Save CreateSaveFile(string a = " ASDFSDFSD fsDF ")
+		public Save CreateSaveFile(string a = "")
 		{
 			// create new save class
 			Save save = new Save();
 			save.A = a;
+			save.version = Application.version;
+			Debug.Log(save.version);
 			
 			return save;
-			Debug.LogError($"Failed to create save file! Output: \n{save}"); // yes i know visual studio
-			return null;
 		}
 		public void SaveGame()
 		{
@@ -36,16 +37,12 @@ namespace Game.File
 	[System.Serializable]
 	public class Save
 	{
-		public Version version;
+		public string version;
 		public List<Item.ItemData> InventoryData = new List<Item.ItemData>();
 		public Item.ItemData Cannon;
 		public Item.ItemData Shell;
-		public Item.ItemData Locomotive;
+		public Item.ItemData ModeOfTransport;
 		public string A;
-	}
-	public enum Version
-	{
-		prealpha
 	}
 }
 

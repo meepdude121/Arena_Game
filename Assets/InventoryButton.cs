@@ -1,37 +1,55 @@
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class InventoryButton : MonoBehaviour
+public class InventoryButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
-	InventoryButton_Data data;
+    #region References
+    private Canvas canvas;
 
-	Button Object_Button;
-	TextMeshProUGUI Object_Title;
-	public GameObject hoverParent;
-	public void OnCreateButton(InventoryButton_Data data) // required to set up new button. Call when instantiating a new prefab
-	{
-		this.data = data;
-		Object_Button.image.color = data.color;
-        
-		
-	}
-
-    public void OnPointerEnter()
+    // Button elements
+    private CanvasGroup buttonGroup;
+    public IItem Contents;
+    #endregion
+    public void Awake()
     {
-		hoverParent.SetActive(true);
+        canvas = GetComponentInParent<Canvas>();
+        Debug.Log(canvas);
+        buttonGroup = GetComponent<CanvasGroup>();
     }
-	public void OnPointerExit()
-	{
-		hoverParent.SetActive(false);
-	}
-}
+    // todo:
+    // allow all stats to be shown on item
+    // allow switching between weapons
+    // apply this to modes of transport and chassis
+    public void OnCreateButton(IItem item) // required to set up new button. Call when instantiating a new prefab
+    {
+        Contents = ItemFactory.GetItem(item.ItemID);
+    }
 
-public struct InventoryButton_Data
-{
-	public PlayerItem item;
-	public Color color => Game.Item.ItemData.GetRarityColor(item.rarity);
+    #region On Pointer Hover
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        
+    }
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        
+    }
+    #endregion
+    #region On Click + Hold
+
+    public void OnBeginDrag(PointerEventData eventData)
+    {
+        buttonGroup.blocksRaycasts = false;
+    }
+    public void OnEndDrag(PointerEventData eventData)
+    {
+        buttonGroup.blocksRaycasts = true;
+    }
+    public void OnDrag(PointerEventData eventData)
+    {
+        (transform as RectTransform).anchoredPosition += eventData.delta / canvas.scaleFactor;
+    }
+    #endregion
 }

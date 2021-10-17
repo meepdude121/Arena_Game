@@ -8,6 +8,7 @@ namespace Game
 		[System.Serializable]
 		public class ItemData
 		{
+			/* Unused; replacing with better system with more features with less complexity.
 			public static Color GetRarityColor(Rarity rarity)
 			{
 				switch (rarity)
@@ -31,7 +32,7 @@ namespace Game
 				}
 				// if text is transparent something bad happened
 				return new Color32(255, 255, 255, 125);
-			}
+			}*/ 
 			public enum Rarity
 			{
 				common,

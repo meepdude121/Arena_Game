@@ -31,8 +31,11 @@ public class Player : MonoBehaviour
     Camera mainCamera;
 
     Entity playerEntityComponent;
+
+    public static Player instance;
     private void Awake()
     {
+        instance = this;
         Player_Input = new PlayerInput();
 
         Player_Input.Player.Move.started += context => Input_Move = context.ReadValue<Vector2>();
@@ -50,11 +53,15 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if (UIManager.AcceptInput) Player_Rigidbody.AddForce(new Vector3(Input_Move.x, Input_Move.y, 0f) * Player_Speed * 100 * Time.deltaTime, ForceMode2D.Impulse);
-        if (UIManager.AcceptInput && Input_Fire) gunManager.Shoot(mainCamera.ScreenToWorldPoint(Mouse.current.position.ReadValue()));
+        if (UIManager.AcceptInput) 
+            Player_Rigidbody.AddForce(new Vector3(Input_Move.x, Input_Move.y, 0f) * Player_Speed * 100 * Time.deltaTime, ForceMode2D.Impulse);
+        if (UIManager.AcceptInput && Input_Fire) 
+            gunManager.Shoot(mainCamera.ScreenToWorldPoint(Mouse.current.position.ReadValue()));
 
-        if (playerEntityComponent.Energy > playerEntityComponent.maxEnergy) playerEntityComponent.Energy = playerEntityComponent.maxEnergy;
-        if (Player_Energy_LastFrame != playerEntityComponent.Energy) UIManager.OnEnergyChange(playerEntityComponent.Energy, playerEntityComponent.maxEnergy);
+        if (playerEntityComponent.Energy > playerEntityComponent.maxEnergy) 
+            playerEntityComponent.Energy = playerEntityComponent.maxEnergy;
+        if (Player_Energy_LastFrame != playerEntityComponent.Energy) 
+            UIManager.OnEnergyChange(playerEntityComponent.Energy, playerEntityComponent.maxEnergy);
 
         Player_Energy_LastFrame = playerEntityComponent.Energy;
     }

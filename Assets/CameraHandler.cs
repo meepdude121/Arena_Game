@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class CameraHandler : MonoBehaviour
 {
-    GameObject Player;
+    GameObject PlayerObject;
     public bool FollowPlayer = true;
     void Start()
     {
-        Player = GameObject.Find("Player");
+        PlayerObject = Player.instance.gameObject;
     }
 
     void LateUpdate()
@@ -18,7 +18,7 @@ public class CameraHandler : MonoBehaviour
             // Get current camera position
             Vector3 oldPos = transform.position;
             // Get target camera position
-            Vector3 newPos = Player.transform.position;
+            Vector3 newPos = PlayerObject.transform.position;
             // set target camera position's z (depth) value = old depth value
             newPos.z = oldPos.z;
             // apply position change

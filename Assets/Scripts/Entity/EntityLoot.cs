@@ -11,7 +11,6 @@ public class EntityLoot : MonoBehaviour
 	{
 		// pick a number between -EmptyDrops and length of dropList
 		int randomNumber = Random.Range(-EmptyDrops, dropList.Length);
-		Debug.Log($"{{Result={randomNumber},Bounds={{{-EmptyDrops},{dropList.Length}}}");
 		if (randomNumber < 0) // Landed on empty drop
 			return;
 

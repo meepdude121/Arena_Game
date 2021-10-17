@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item_Battery : Item
-{
+public class Item_Battery : Pickup 
+{ 
 	public float Capacity;
 	public override void OnPickup(Collider2D collision)
 	{
