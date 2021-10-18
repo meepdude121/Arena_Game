@@ -2,7 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
-
+using Game.Item;
 public class InventoryButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     #region References
@@ -17,6 +17,7 @@ public class InventoryButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
         canvas = GetComponentInParent<Canvas>();
         Debug.Log(canvas);
         buttonGroup = GetComponent<CanvasGroup>();
+        Contents = ItemFactory.GetItem(new ObjectID().StringToItemID("game:testweapon"));
     }
     // todo:
     // allow all stats to be shown on item
@@ -30,11 +31,11 @@ public class InventoryButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
     #region On Pointer Hover
     public void OnPointerEnter(PointerEventData eventData)
     {
-        
+        Tooltip.instance.Enable($"<color=#ffffffff>{Contents.Name}</color>\n{Contents.Damage} damage\n{Contents.Weight}g\n{Contents.rarity} {Contents.Type}");
     }
     public void OnPointerExit(PointerEventData eventData)
     {
-        
+        Tooltip.instance.Disable();
     }
     #endregion
     #region On Click + Hold
