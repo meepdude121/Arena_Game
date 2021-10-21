@@ -5,9 +5,14 @@ using UnityEngine.InputSystem;
 
 public class TestWeapon : Weapon
 {
+    // replace with Resources.Load()
+    // actually maybe replace literally everything god this system sucks
     [SerializeField] GameObject bullet;
+
     private float ShootTimer = 0f;
+
     private ParticleSystem particles;
+
     public override void OnShoot(Vector2 targetPosition)
     {
         if (ShootTimer >= BaseShotsPerSecond)
