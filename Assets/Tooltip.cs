@@ -4,11 +4,14 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
+
 public class Tooltip : MonoBehaviour
 {
     // There should always only be one tooltip instance.
     public static Tooltip instance;
     public string Text;
+    public CanvasGroup canvasGroup;
 
     private TextMeshProUGUI Text_Component;
     private void Awake() {
@@ -16,20 +19,20 @@ public class Tooltip : MonoBehaviour
         Text_Component = GetComponentInChildren<TextMeshProUGUI>();
     }
     public void Update() {
-        (transform as RectTransform).anchoredPosition = Mouse.current.position.ReadValue() + new Vector2(Text_Component.preferredWidth / 2f, -Text_Component.preferredHeight / 2f);
+        (transform as RectTransform).anchoredPosition = Mouse.current.position.ReadValue() + new Vector2((Text_Component.preferredWidth / 2f) + 15f, (-Text_Component.preferredHeight / 2f) - 15f);
     }
     public void Enable(string Text = "No text specified") {
         Text_Component.text = Text;
-        (transform as RectTransform).anchoredPosition = Mouse.current.position.ReadValue() + new Vector2(Text_Component.preferredWidth / 2f, -Text_Component.preferredHeight / 2f);
+        Debug.Log(Text_Component.text);
+        (Text_Component.transform as RectTransform).sizeDelta = Text_Component.GetPreferredValues();
+        (transform as RectTransform).anchoredPosition = Mouse.current.position.ReadValue() + new Vector2((Text_Component.preferredWidth / 2f) + 15f, (-Text_Component.preferredHeight / 2f) + 15f);
 
-        gameObject.SetActive(true);
+        canvasGroup.alpha = 1;
     }
     public void Disable() {
-        if (gameObject.activeInHierarchy){
+        if (canvasGroup.alpha != 0) {
             Text_Component.text = "";
-            (transform as RectTransform).anchoredPosition = Mouse.current.position.ReadValue() + new Vector2(Text_Component.preferredWidth / 2f, -Text_Component.preferredHeight / 2f);
-
-            gameObject.SetActive(false);
+            canvasGroup.alpha = 0;
         }
     }
 }

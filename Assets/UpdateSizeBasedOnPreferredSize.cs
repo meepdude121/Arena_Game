@@ -10,11 +10,7 @@ public class UpdateSizeBasedOnPreferredSize : MonoBehaviour
     private void Awake() {
         TextComponent = GetComponent<TextMeshProUGUI>();
     }
-    private void OnGUI() {
-        (transform as RectTransform).sizeDelta = TextComponent.GetPreferredValues(); 
-    }
-    // nifty little hack to get code to run in scene view
-    private void OnDrawGizmos() {
+    public void WhenTextChanged() {
         (transform as RectTransform).sizeDelta = TextComponent.GetPreferredValues(); 
     }
 }

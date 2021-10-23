@@ -12,7 +12,7 @@ public class GunManager : MonoBehaviour
     }
     public void Shoot(Vector2 targetPosition)
     {
-        (WeaponClass as Weapon).OnShoot(targetPosition);
+        (WeaponClass as Weapon).OnAttemptShoot(targetPosition);
     }
 
     public void OnChangeGun()

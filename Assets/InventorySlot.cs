@@ -11,7 +11,7 @@ public class InventorySlot : MonoBehaviour, IDropHandler
         if (eventData.pointerDrag)
         {
             GameObject objectDropped = eventData.pointerDrag;
-            (objectDropped.transform as RectTransform).anchoredPosition = (transform as RectTransform).anchoredPosition;
+            (objectDropped.transform as RectTransform).position = (transform as RectTransform).position;
             currentItem = eventData.pointerDrag.GetComponent<InventoryButton>().Contents;
             Debug.Log(currentItem);
         }

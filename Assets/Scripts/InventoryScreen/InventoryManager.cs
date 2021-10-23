@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.InputSystem;
 public class InventoryManager : MonoBehaviour
 {
 	Inventory inventory;
@@ -13,7 +13,11 @@ public class InventoryManager : MonoBehaviour
 		Instance = this;
 		InventoryCanvas = GetComponent<Canvas>();
     }
-
+	private void Update() {
+		if (Keyboard.current.eKey.wasPressedThisFrame){
+			InventoryCanvas.enabled = !InventoryCanvas.enabled;
+		}
+	}
 
 }
 

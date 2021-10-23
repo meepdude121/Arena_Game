@@ -5,41 +5,32 @@ using UnityEngine.InputSystem;
 
 public class TestWeapon : Weapon
 {
-    // replace with Resources.Load()
-    // actually maybe replace literally everything god this system sucks
-    [SerializeField] GameObject bullet;
+    [SerializeField] private GameObject bullet;
 
-    private float ShootTimer = 0f;
+    [SerializeField] private ParticleSystem particles;
 
-    private ParticleSystem particles;
-
+    // OnShoot should only be called if the weapo is able to be shot, not if the player is holding down the button
     public override void OnShoot(Vector2 targetPosition)
     {
-        if (ShootTimer >= BaseShotsPerSecond)
-        {
-            Vector2 objectPos = Camera.main.WorldToScreenPoint(transform.position);
-            targetPosition = Camera.main.WorldToScreenPoint(targetPosition);
-            targetPosition -= objectPos;
+        // Get object position on screen point
+        // Ok rewrite this so it gets world space so theres less expensive calls
+        Vector2 objectPos = Camera.main.WorldToScreenPoint(transform.position);
+        targetPosition = Camera.main.WorldToScreenPoint(targetPosition);
+        targetPosition -= objectPos;
 
-            GameObject newbullet = Instantiate(bullet);
-            newbullet.transform.position = transform.position;
-            Bullet bulletComponent = newbullet.GetComponent<Bullet>();
-            bulletComponent.TARGET = targetPosition;
-            bulletComponent.damage = BaseDamage;
-            bulletComponent.origin = gameObject.transform.parent.parent.gameObject;
+        // set up a system for pooling bullets
+        GameObject newbullet = Instantiate(bullet);
 
-            ShootTimer = 0f;
-            particles.Play();
-            StartCoroutine(ShootAnim());
-        }
-    }
-    public void Update()
-    {
-        ShootTimer += Time.deltaTime;
-        Mathf.Clamp(ShootTimer, 0, BaseShotsPerSecond);
-    }
-    private void Awake()
-    {
-        particles = GetComponentInChildren<ParticleSystem>();
+        // this is terrible
+        // have a function where all of this is set
+
+        newbullet.transform.position = transform.position;
+        Bullet bulletComponent = newbullet.GetComponent<Bullet>();
+        bulletComponent.TargetPosition = targetPosition;
+        bulletComponent.Damage = BaseDamage;
+        bulletComponent.IsOwnedByPlayer = transform.parent.CompareTag("Player");
+        bulletComponent.OnInstantiate();
+        particles.Play();
+        StartCoroutine(ShootAnimation(0.3f));
     }
 }

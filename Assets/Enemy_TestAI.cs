@@ -24,17 +24,17 @@ public class Enemy_TestAI : MonoBehaviour
     }
     void Update()
     {
-        // check whether line of sight (los) includes player
+        // The result of the raycast
         RaycastHit2D hit;
 
-        // Do a raycast from the enemy to the player, including 
+        // Do a raycast from the enemy to the player. store the results in a RaycastHit2D
         hit = Physics2D.Raycast(transform.position, player.position - transform.position, 100, LineOfSightLayerMask);
         if (hit.collider != null)
         {
             // if can see the player 
             if (hit.transform == player)
             {
-                // assign target position if player.position != target position
+                // assign target position if player.position is not target position
                 if (unit.target != (Vector2)player.position)
                 {
                     unit.target = player.position;
@@ -56,18 +56,6 @@ public class Enemy_TestAI : MonoBehaviour
             }
         }
         hit2 = hit;
-    }
-    private void OnDrawGizmos()
-    {
-        if (hit2.collider != null)
-        {
-            
-            Gizmos.DrawLine(transform.position, hit2.point);
-            Gizmos.color = new Color(1, 1, 1, 0.252f);
-            Gizmos.DrawLine(transform.position, player.position);
-
-        }
-
     }
     
     void AimTowards(Vector2 target)
