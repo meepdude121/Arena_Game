@@ -25,7 +25,6 @@ public class Player : MonoBehaviour
     private Vector2 Input_Move = Vector2.zero;
     private bool Input_Fire = false;
 
-    [SerializeField] private UIManager_Main UIManager;
     [SerializeField] private GunManager gunManager;
 
     Camera mainCamera;
@@ -33,10 +32,8 @@ public class Player : MonoBehaviour
     Entity playerEntityComponent;
 
     public static Player instance;
-    private void Awake()
-    {
-        instance = this;
-        Player_Input = new PlayerInput();
+    private UIManager_Main UIManager;
+    private void Start(){
 
         Player_Input.Player.Move.started += context => Input_Move = context.ReadValue<Vector2>();
         Player_Input.Player.Move.performed += context => Input_Move = context.ReadValue<Vector2>();
@@ -48,7 +45,14 @@ public class Player : MonoBehaviour
 
         playerEntityComponent = GetComponent<Entity>();
         Player_Rigidbody = GetComponent<Rigidbody2D>();
+
         mainCamera = Camera.main;
+        UIManager = UIManager_Main.Instance;
+    }
+    private void Awake() {
+
+        instance = this;
+        Player_Input = new PlayerInput();
     }
 
     private void Update()

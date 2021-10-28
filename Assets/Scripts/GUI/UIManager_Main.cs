@@ -5,8 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 public class UIManager_Main : MonoBehaviour
 {
-    public static UIManager_Main Instance { get; private set; }
-
+    public static UIManager_Main Instance;
     private float EnergySmoothDampRefValue;
     private float EnergyPercent = 1f;
 
@@ -14,14 +13,12 @@ public class UIManager_Main : MonoBehaviour
     [SerializeField] private Slider EnergyDisplayBar;
     [SerializeField] private TextMeshProUGUI EnergyDisplay;
     [SerializeField] private float EnergyDisplay_SmoothTime = 0.1f;
+    private float XPSmoothDampRefValue;
+    private float XPPercent = 0f;
 
-
-    private float AmmoSmoothDampRefValue;
-    private float AmmoPercent = 1f;
-
-    [Header("Ammo Attributes")]
-    [SerializeField] private Slider AmmoDisplayBar;
-    [SerializeField] private float AmmoDisplay_SmoothTime = 0.05f;
+    [Header("XP Attributes")]
+    [SerializeField] private Slider XPDisplayBar;
+    [SerializeField] private float XPDisplay_SmoothTime = 0.05f;
 
     [HideInInspector]
     public bool AcceptInput = true;
@@ -31,16 +28,12 @@ public class UIManager_Main : MonoBehaviour
         EnergyDisplay.text = $"{Mathf.Clamp(Mathf.Round(Energy / EnergyLimit * 100f), 0f, 100f)}%";
         EnergyPercent = Energy / EnergyLimit;
     }
-    public void OnAmmoChange(float Percent)
+    public void OnXPChange(float Percent)
     {
-        // do i need this? Todo: test
-        AmmoPercent = Percent;
-    }
-    public void OnAmmoTypeChange()
-    {
-
+        XPPercent = Percent;
     }
     private void Awake() => Instance = this;
+    
     // TODO: this sucks
     void Update()
     {
@@ -61,9 +54,9 @@ public class UIManager_Main : MonoBehaviour
             }
 
         }
-        if (!AmmoDisplayBar.value.IsWithinBoundsOf(AmmoPercent, 0.005f))
+        if (!XPDisplayBar.value.IsWithinBoundsOf(XPPercent, 0.005f))
         {
-            AmmoDisplayBar.value = Mathf.SmoothDamp(AmmoDisplayBar.value, AmmoPercent, ref AmmoSmoothDampRefValue, AmmoDisplay_SmoothTime);
+            XPDisplayBar.value = Mathf.SmoothDamp(XPDisplayBar.value, XPPercent, ref XPSmoothDampRefValue, XPDisplay_SmoothTime);
         }
     }
 }

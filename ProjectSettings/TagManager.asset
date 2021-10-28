@@ -9,6 +9,9 @@ TagManager:
   - PlayerProjectile
   - Room
   - ColliderProvider
+  - InventoryItem
+  - InventorySlot
+  - InventoryCanvas
   layers:
   - Default
   - TransparentFX

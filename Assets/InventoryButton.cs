@@ -7,6 +7,7 @@ public class InventoryButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
 {
     #region References
     private Canvas canvas;
+    private Canvas mainCanvas;
 
     // Button elements
     private CanvasGroup buttonGroup;
@@ -18,6 +19,7 @@ public class InventoryButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
         Debug.Log(canvas);
         buttonGroup = GetComponent<CanvasGroup>();
         Contents = ItemFactory.GetItem(new ObjectID().StringToItemID("game:testweapon"));
+        mainCanvas = InventoryManager.InventoryCanvas;
     }
     // todo:
     // allow all stats to be shown on item
@@ -43,6 +45,7 @@ public class InventoryButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
     public void OnBeginDrag(PointerEventData eventData)
     {
         buttonGroup.blocksRaycasts = false;
+        transform.SetParent(mainCanvas.transform);
     }
     public void OnEndDrag(PointerEventData eventData)
     {
