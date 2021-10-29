@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 /// <summary> redo all of this in a system similar to IItem. </summary>
 public class Bullet : MonoBehaviour
@@ -55,5 +56,10 @@ public class Bullet : MonoBehaviour
                     return;
             }
         }
+    }
+
+    IEnumerator afterXTime() {
+        yield return new WaitForSeconds(5);
+        Destroy(gameObject);
     }
 }

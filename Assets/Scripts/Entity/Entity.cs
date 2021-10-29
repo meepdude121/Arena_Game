@@ -18,7 +18,8 @@ public abstract class Entity : MonoBehaviour
     }
     public virtual void OnEntityDeath()
     {
-        Destroy(gameObject);
+        if (!gameObject.CompareTag("Player"))
+            Destroy(gameObject);
         return;
     }
     public virtual void OnEnergyChange(float Change) {

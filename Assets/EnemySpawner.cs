@@ -4,39 +4,36 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    List<GameObject> enemyPrefabs = new List<GameObject>();
-    List<WaveObject> waveObjects = new List<WaveObject>();
-    Dictionary<float, WaveObject> waves = new Dictionary<float, WaveObject>();
     EnemyManager enemyManager;
     private void Awake() {
-        enemyPrefabs.AddRange(Resources.LoadAll<GameObject>("Enemies"));
-        waveObjects.AddRange(Resources.LoadAll<WaveObject>("Waves"));
-
-        foreach(WaveObject wave in waveObjects){
-            waves.Add(wave.difficultyThreshold, wave);
-        }
-
         enemyManager = EnemyManager.instance;
     }
-    private void Update() {
+    private void Start() {
         StartCoroutine(loopOnSecond());
     }
 
-    IEnumerator loopOnSecond() {
-        WaveObject currentWave = waves[0];
-        int currentWaveIndex = 0;
+    public IEnumerator loopOnSecond() {
         while (true){
-            if (enemyManager.AliveEnemies > enemyManager.MaxEnemies){
-                if (enemyManager.LocalDifficulty > waves[currentWaveIndex + 1].difficultyThreshold) {
-                    currentWaveIndex++;
-                    currentWave = waves[currentWaveIndex];
-                }
+            var Enemy = enemyManager.GetNewEnemy();
+
+            // if reference to enemy exists
+            if (Enemy) {
+                // create a new one
+                Enemy = Instantiate(Enemy);
+                // teleport it to the spawner
+                Enemy.transform.position = transform.position;
+
+                Entity EnemyEntityComponent = Enemy.GetComponent<Entity>();
+
+                // scale health
+                EnemyEntityComponent.Energy = EnemyEntityComponent.maxEnergy *= enemyManager.LocalDifficulty * 0.25f;
+
+                // scale gun damage
+                Enemy.transform.GetChild(0).GetChild(0).GetComponent<Weapon>().BaseDamage *= enemyManager.LocalDifficulty * 0.1f;
+
+                // increment alive enemies counter
+                enemyManager.AliveEnemies++;
             }
-
-            int randomFromRange = Random.Range(0, currentWave.enemyPrefabs.Length);
-            var instantiatedEnemy = Instantiate(enemyPrefabs[randomFromRange]);
-            instantiatedEnemy.transform.position = transform.position;
-
             yield return new WaitForSeconds(1);
         }
         

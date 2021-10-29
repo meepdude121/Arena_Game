@@ -8,6 +8,10 @@ public class Entity_DefaultBehaviour : Entity
 	{
 		GetComponent<EntityLoot>().DropItem(gameObject);
 		base.OnEntityDeath();
+
+		if (transform.CompareTag("Enemy")) {
+			EnemyManager.instance.OnEnemyDeath();
+		}
 	}
 
 }
