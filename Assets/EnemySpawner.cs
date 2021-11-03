@@ -26,10 +26,10 @@ public class EnemySpawner : MonoBehaviour
                 Entity EnemyEntityComponent = Enemy.GetComponent<Entity>();
 
                 // scale health
-                EnemyEntityComponent.Energy = EnemyEntityComponent.maxEnergy *= enemyManager.LocalDifficulty * 0.25f;
+                EnemyEntityComponent.Energy = EnemyEntityComponent.maxEnergy *= enemyManager.waveObjects[enemyManager.Wave].healthMultiplier;
 
                 // scale gun damage
-                Enemy.transform.GetChild(0).GetChild(0).GetComponent<Weapon>().BaseDamage *= enemyManager.LocalDifficulty * 0.1f;
+                Enemy.transform.GetChild(0).GetChild(0).GetComponent<Weapon>().BaseDamage *= enemyManager.waveObjects[enemyManager.Wave].damageMultiplier;
 
                 // increment alive enemies counter
                 enemyManager.AliveEnemies++;

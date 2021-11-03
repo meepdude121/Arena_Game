@@ -17,6 +17,7 @@ public class Bullet : MonoBehaviour
         // Normalize to have a magnitude within bounds of -1 and 1.
         // This removes an issue where if the mouse is in a certain position the bullet will move faster.
         Direction = Vector3.Normalize(TargetPosition - transform.position);
+        StartCoroutine(afterXTime(4f));
     }
     private void Update() {
 
@@ -58,8 +59,8 @@ public class Bullet : MonoBehaviour
         }
     }
 
-    IEnumerator afterXTime() {
-        yield return new WaitForSeconds(5);
+    IEnumerator afterXTime(float Time) {
+        yield return new WaitForSeconds(Time);
         Destroy(gameObject);
     }
 }

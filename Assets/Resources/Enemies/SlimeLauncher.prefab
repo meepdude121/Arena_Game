@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2533865546496387588}
   - component: {fileID: 3981136055477028875}
   - component: {fileID: 3902063063058653668}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: ShotParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,6 +28,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0.17364825, w: 0.9848078}
   m_LocalPosition: {x: 0.368, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4039895486234109466}
   m_RootOrder: 0
@@ -4840,6 +4841,7 @@ ParticleSystemRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_RenderMode: 0
+  m_MeshDistribution: 0
   m_SortMode: 0
   m_MinParticleSize: 0
   m_MaxParticleSize: 0.5
@@ -4863,6 +4865,10 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
+  m_MeshWeighting: 1
+  m_MeshWeighting1: 1
+  m_MeshWeighting2: 1
+  m_MeshWeighting3: 1
   m_MaskInteraction: 0
 --- !u!1 &2692285636661259242
 GameObject:
@@ -4891,6 +4897,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4039895486234109466}
   m_Father: {fileID: 2692285637037843657}
@@ -4940,6 +4947,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2692285636661259243}
   m_Father: {fileID: 0}
@@ -5066,6 +5074,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Energy: 6
   maxEnergy: 6
+  difficultyWeight: 0.5
 --- !u!114 &2692285637037843662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5091,7 +5100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3134314448185000296}
   - component: {fileID: 6413398184767966225}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: Flash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5108,6 +5117,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4039895486234109466}
   m_RootOrder: 1
@@ -5361,9 +5371,9 @@ GameObject:
   - component: {fileID: 4039895486234109466}
   - component: {fileID: 3138765594576641965}
   - component: {fileID: 1541675686123423134}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: Gun
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5378,6 +5388,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.275, y: 0, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2533865546496387588}
   - {fileID: 3134314448185000296}

@@ -6,6 +6,7 @@ public abstract class Entity : MonoBehaviour
 {
     public float Energy = 0;
     public float maxEnergy = 0;
+    public float difficultyWeight;
     public virtual void CalculateMaxEnergy()
     {
         // when items exist do math here and run when items change (for players only)

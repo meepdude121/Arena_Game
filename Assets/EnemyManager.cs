@@ -10,10 +10,10 @@ public class EnemyManager : MonoBehaviour
     public int Wave = 0;
     public static EnemyManager instance;
     public int AliveEnemies = 0;
-    public int MaxEnemies => Mathf.Clamp(Mathf.FloorToInt(LocalDifficulty), 1, int.MaxValue);
+    public int MaxEnemies => waveObjects[Wave].maxEnemies;
     public float GlobalDifficulty = 1f;
     public float LocalDifficulty = 0f;
-
+    Coroutine smoothToPointInstance;
     public Slider waveSlider;
     public TextMeshProUGUI waveText;
     private void Awake() {
@@ -22,30 +22,29 @@ public class EnemyManager : MonoBehaviour
         waveObjects.AddRange(Resources.LoadAll<WaveObject>("Waves"));
         // sort them in order of difficulty
         waveObjects.Sort();
-        foreach (WaveObject wave in waveObjects) Debug.Log($"{wave}({wave.difficultyThreshold})");
 
         OnChangeWave();
     }
-    public void OnEnemyDeath() {
+    public void OnEnemyDeath(Entity entity) {
         // scale difficulty
-        LocalDifficulty += ((GlobalDifficulty * 0.1f) + (LocalDifficulty * 0.1f)) * 0.5f;
+        LocalDifficulty += entity.difficultyWeight * GlobalDifficulty * 0.3f;
         // get next wave
-        Wave = GetWaveFromDifficulty();
+        GetWaveFromDifficulty();
         // decrement alive enemies counter, as this function runs on enemy death
         AliveEnemies -= 1;
-        waveSlider.value = LocalDifficulty;
-        if (waveObjects[Wave + 1] == null)
-            waveText.text = $"Max wave! Score: {LocalDifficulty * 1000}";
+        if (smoothToPointInstance != null)
+            StopCoroutine(smoothToPointInstance);
+        smoothToPointInstance = StartCoroutine(SmoothToPoint());
+        
+        if (waveObjects.Count - 1 < Wave + 1)
+            waveText.text = $"Max wave! Score: {(int)(LocalDifficulty * 1000)}";
     }
-    private int GetWaveFromDifficulty() {
+    private void GetWaveFromDifficulty() {
         // check whether the next wave exists, and if it does check whether LocalDifficulty meets the difficulty threshold
         if ((Wave + 1 < waveObjects.Count) && (LocalDifficulty > waveObjects[Wave + 1].difficultyThreshold)) {
+            Wave++;
             OnChangeWave();
-            return Wave + 1;
         }
-
-        // else do nothing
-        return Wave;
     }
     public GameObject GetNewEnemy()
     {
@@ -58,15 +57,28 @@ public class EnemyManager : MonoBehaviour
 
     private void OnChangeWave() {
         // if on last wave
-        if (waveObjects[Wave + 1] == null) {
+        if (waveObjects.Count - 1 < Wave + 1) {
             // Full slider
-            waveSlider.minValue = waveSlider.maxValue = waveSlider.value = 1;
-            waveText.text = $"Max wave! Score: {LocalDifficulty * 1000}";
+            waveSlider.minValue = 0;
+            waveSlider.maxValue = waveSlider.value = 1;
+            waveText.text = $"Max wave! Score: {(int)(LocalDifficulty * 1000)}";
             return;
-        }
+        } else {
         // set gui object limits
-        waveSlider.minValue = waveObjects[Wave].difficultyThreshold;
+        waveSlider.minValue = Mathf.Clamp(waveObjects[Wave].difficultyThreshold, 1, float.PositiveInfinity);
         waveSlider.maxValue = waveObjects[Wave + 1].difficultyThreshold;
         waveText.text = $"Wave {Wave + 1}";
+        }
+
+    }
+
+    private IEnumerator SmoothToPoint() {
+        float t = 0f;
+        float multiplier = 3f;
+        while (t < multiplier) {
+            waveSlider.value = Mathf.Lerp(waveSlider.value, LocalDifficulty, t / multiplier);
+            t += Time.deltaTime;
+            yield return null;
+        }
     }
 }

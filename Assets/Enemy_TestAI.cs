@@ -11,12 +11,14 @@ public class Enemy_TestAI : MonoBehaviour
     public LayerMask LineOfSightLayerMask;
     RaycastHit2D hit2;
     bool hasReachedEndPoint = false;
+    Entity playerEntity;
 
     Pathfinding_Grid grid;
 
-    void Start()
+    private void Awake() 
     {
         player = GameObject.Find("Player").transform;
+        playerEntity = player.GetComponent<Entity>();
         unit = GetComponent<Pathfinding_Unit>();
         gun = transform.GetChild(0).gameObject;
         gunManager = gun.GetComponent<GunManager>();
@@ -24,6 +26,10 @@ public class Enemy_TestAI : MonoBehaviour
     }
     void Update()
     {
+        // Don't check this! because the map doesnt have walls there will never be an instance where
+        // the player is not in line of sight
+        #region Unused line of sight code
+        /*
         // The result of the raycast
         RaycastHit2D hit;
 
@@ -42,7 +48,8 @@ public class Enemy_TestAI : MonoBehaviour
                 AimTowards(player.position);
                 gunManager.Shoot(player.position);
                 hasReachedEndPoint = false;
-            } 
+            }
+
             // if cannot see the player
             else
             {
@@ -56,6 +63,23 @@ public class Enemy_TestAI : MonoBehaviour
             }
         }
         hit2 = hit;
+        */
+        #endregion
+        if (playerEntity.Energy > 0) {
+            // assign target position if player.position is not target position
+            if (unit.target != (Vector2)player.position)
+                unit.target = player.position;
+
+            AimTowards(player.position);
+            gunManager.Shoot(player.position);
+            hasReachedEndPoint = false;
+        } else {
+            unit.target = Vector2.zero;
+            gun.transform.rotation = Quaternion.Euler(0, 0, gun.transform.rotation.eulerAngles.z + (90 * Time.deltaTime));
+            // this is just where they go for some reason
+            if (transform.position == new Vector3(-0.25f, -0.25f, 0)) gameObject.SetActive(false);
+        }
+
     }
     
     void AimTowards(Vector2 target)

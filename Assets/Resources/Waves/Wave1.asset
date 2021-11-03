@@ -15,3 +15,6 @@ MonoBehaviour:
   difficultyThreshold: 0
   enemyPrefabs:
   - {fileID: 2692285637037843655, guid: bdced3d0cea020a4b88e26181946fc71, type: 3}
+  maxEnemies: 1
+  damageMultiplier: 0.5
+  healthMultiplier: 0.7

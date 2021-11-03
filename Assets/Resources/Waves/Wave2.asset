@@ -18,3 +18,6 @@ MonoBehaviour:
   - {fileID: 2692285637037843655, guid: bdced3d0cea020a4b88e26181946fc71, type: 3}
   - {fileID: 2692285637037843655, guid: bdced3d0cea020a4b88e26181946fc71, type: 3}
   - {fileID: 7235757405154825812, guid: d8475334789c7624c897ed6aeb43468e, type: 3}
+  maxEnemies: 2
+  damageMultiplier: 1
+  healthMultiplier: 1
