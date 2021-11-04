@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>ArenaGame</title>
+    <title>Unity WebGL Player | ArenaGame</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title"></div>
+        <div id="unity-build-title">ArenaGame</div>
       </div>
     </div>
     <script>
@@ -44,7 +44,7 @@
         var div = document.createElement('div');
         div.innerHTML = msg;
         warningBanner.appendChild(div);
-        if (type == 'error') div.style = 'background: red; padding: 10;';
+        if (type == 'error') div.style = 'background: red; padding: 10px;';
         else {
           if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
           setTimeout(function() {
@@ -55,12 +55,12 @@
         updateBannerVisibility();
       }
 
-      var buildUrl = "BuildFiles";
-      var loaderUrl = buildUrl + "/webgl_release_1.loader.js";
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/docs.loader.js";
       var config = {
-        dataUrl: buildUrl + "/webgl_release_1.data.gz",
-        frameworkUrl: buildUrl + "/webgl_release_1.framework.js.gz",
-        codeUrl: buildUrl + "/webgl_release_1.wasm.gz",
+        dataUrl: buildUrl + "/docs.data",
+        frameworkUrl: buildUrl + "/docs.framework.js",
+        codeUrl: buildUrl + "/docs.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "ArenaGame",
@@ -102,7 +102,7 @@
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
-      script.src = "BuildFiles/webgl_release_1.loader.js";
+      script.src = loaderUrl;
       script.onload = () => {
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
