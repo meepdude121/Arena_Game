@@ -102,7 +102,7 @@
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
-      script.src = loaderUrl;
+      script.src = "BuildFiles/webgl_release_1.loader.js";
       script.onload = () => {
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
