@@ -12,7 +12,7 @@ public class Enemy_TestAI : MonoBehaviour
     RaycastHit2D hit2;
     bool hasReachedEndPoint = false;
     Entity playerEntity;
-
+    Rigidbody2D playerRigidbody;
     Pathfinding_Grid grid;
 
     private void Awake() 
@@ -23,6 +23,7 @@ public class Enemy_TestAI : MonoBehaviour
         gun = transform.GetChild(0).gameObject;
         gunManager = gun.GetComponent<GunManager>();
         grid = GameObject.Find("Pathfind Manager").GetComponent<Pathfinding_Grid>();
+        playerRigidbody = player.GetComponent<Rigidbody2D>();
     }
     void Update()
     {
@@ -71,7 +72,7 @@ public class Enemy_TestAI : MonoBehaviour
                 unit.target = player.position;
 
             AimTowards(player.position);
-            gunManager.Shoot(player.position);
+            gunManager.Shoot(player.position + ((Vector3)playerRigidbody.velocity * Time.deltaTime));
             hasReachedEndPoint = false;
         } else {
             unit.target = Vector2.zero;

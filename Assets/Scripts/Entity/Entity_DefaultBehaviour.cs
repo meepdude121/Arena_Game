@@ -26,6 +26,8 @@ public class Entity_DefaultBehaviour : Entity
 			
 			Player.instance.gameObject.GetComponent<SpriteRenderer>().enabled = false;
 			Player.instance.transform.GetChild(0).gameObject.SetActive(false);
+
+			Camera.main.GetComponent<CameraHandler>().StartPlayerDeathAnimation();
 		}
 	}
 }

@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SandAtlasTest
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: af431b233352c6d4b9735cf9ec40da7b, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -552109846412821989, guid: af431b233352c6d4b9735cf9ec40da7b, type: 3}
+  - {fileID: 7117766793085628423, guid: af431b233352c6d4b9735cf9ec40da7b, type: 3}
+  - {fileID: 8896817643263021550, guid: af431b233352c6d4b9735cf9ec40da7b, type: 3}
+  - {fileID: -5889572216092181685, guid: af431b233352c6d4b9735cf9ec40da7b, type: 3}
+  - {fileID: -5841280265411850936, guid: af431b233352c6d4b9735cf9ec40da7b, type: 3}
+  - {fileID: -1216524437028574945, guid: af431b233352c6d4b9735cf9ec40da7b, type: 3}
+  - {fileID: -6313390121482690097, guid: af431b233352c6d4b9735cf9ec40da7b, type: 3}
+  - {fileID: -5122161248910757182, guid: af431b233352c6d4b9735cf9ec40da7b, type: 3}
+  - {fileID: 7819093456711297878, guid: af431b233352c6d4b9735cf9ec40da7b, type: 3}
+  - {fileID: 5192725024999850355, guid: af431b233352c6d4b9735cf9ec40da7b, type: 3}
+  - {fileID: -3101644040194385050, guid: af431b233352c6d4b9735cf9ec40da7b, type: 3}
+  - {fileID: -2437469803461177583, guid: af431b233352c6d4b9735cf9ec40da7b, type: 3}
+  - {fileID: 389711862230284538, guid: af431b233352c6d4b9735cf9ec40da7b, type: 3}
+  - {fileID: -7466710669010567263, guid: af431b233352c6d4b9735cf9ec40da7b, type: 3}
+  - {fileID: 7295519920705599241, guid: af431b233352c6d4b9735cf9ec40da7b, type: 3}
+  - {fileID: 4329935551631876764, guid: af431b233352c6d4b9735cf9ec40da7b, type: 3}
+  - {fileID: 6886720618960116642, guid: af431b233352c6d4b9735cf9ec40da7b, type: 3}
+  - {fileID: -5615276328886187340, guid: af431b233352c6d4b9735cf9ec40da7b, type: 3}
+  - {fileID: 850746361188886264, guid: af431b233352c6d4b9735cf9ec40da7b, type: 3}
+  - {fileID: 1002670204307369084, guid: af431b233352c6d4b9735cf9ec40da7b, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Sand1_18
+  - Sand1_19
+  - Sand1_16
+  - Sand1_17
+  - Sand1_14
+  - Sand1_15
+  - Sand1_12
+  - Sand1_13
+  - Sand1_10
+  - Sand1_11
+  - Sand1_9
+  - Sand1_8
+  - Sand1_3
+  - Sand1_2
+  - Sand1_1
+  - Sand1_0
+  - Sand1_7
+  - Sand1_6
+  - Sand1_5
+  - Sand1_4
+  m_RenderDataMap: {}
+  m_Tag: SandAtlasTest
+  m_IsVariant: 0

@@ -13,7 +13,8 @@ public class EnemySpawner : MonoBehaviour
     }
 
     public IEnumerator loopOnSecond() {
-        while (true){
+        // loop forever
+        while (true) {
             var Enemy = enemyManager.GetNewEnemy();
 
             // if reference to enemy exists
@@ -36,6 +37,5 @@ public class EnemySpawner : MonoBehaviour
             }
             yield return new WaitForSeconds(1);
         }
-        
     }
 }
